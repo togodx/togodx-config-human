@@ -1,9 +1,9 @@
 name: "TogoDX human instance development deployment: dev-production and dev-dev"
 on:
   workflow_dispatch:
-  # push:
-  #   branches:
-  #     - develop
+  push:
+    branches:
+      - develop
 
 jobs:
   deploy-dev-production:
@@ -70,5 +70,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "ap-northeast-1"
           FROM_PATH: "./app/build"
-          DEST_PATH: "s3://togodx-dev-production/"
+          DEST_PATH: "s3://togodx-dev-dev/"
           OPTIONS: "--delete --acl public-read --exclude 'README.md'"
