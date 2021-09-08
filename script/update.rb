@@ -46,46 +46,49 @@ class Subject
   attr_accessor :id, :label, :properties
 end
 
-properties = JSON.load(open("./properties.json").read)
-config = properties.each_with_object({}) do |subject, hash|
-  hash[:tracks] ||= []
-  hash[:attributes] ||= {}
-  hash[:idTypes] ||= {}
+if __FILE__ == $0
+  properties_json_path = ARGV[0]
+  properties = JSON.load(open(properties_json_path).read)
+  config = properties.each_with_object({}) do |subject, hash|
+    hash[:tracks] ||= []
+    hash[:attributes] ||= {}
+    hash[:idTypes] ||= {}
 
-  s = Subject.new(subject)
+    s = Subject.new(subject)
 
-  # identifiers
-  ids = s.properties.map{|p| { idType: p.key, label: p.keyLabel } }.uniq
+    # identifiers
+    ids = s.properties.map{|p| { idType: p.key, label: p.keyLabel } }.uniq
 
-  ids.each do |id|
-    type = id.delete(:idType)
-    id[:template] = "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/#{type}.hbs"
-    id[:target] = true
+    ids.each do |id|
+      type = id.delete(:idType)
+      id[:template] = "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/#{type}.hbs"
+      id[:target] = true
 
-    hash[:idTypes][type] = id
+      hash[:idTypes][type] = id
+    end
+
+    s.properties.each do |prop|
+      a = prop.attribute
+      id = a.delete(:id)
+      hash[:attributes][id] = a
+    end
+
+    # categories and attributes
+    h = {
+      id: s.id,
+      label: s.label,
+      attributes: s.properties.map{|p| p.id }
+    }
+
+    hash[:tracks] << h
   end
 
-  s.properties.each do |prop|
-    a = prop.attribute
-    id = a.delete(:id)
-    hash[:attributes][id] = a
+  id_types = config[:idTypes].keys
+  id_types.each do |id|
+    config[:idTypes][id][:conversion] = id_types.each_with_object({}) do |oid, hash|
+      hash[oid] = "https://api.togoid.jp/convert?format=json&route=#{id},#{oid}" if id != oid
+    end
   end
 
-  # categories and attributes
-  h = {
-    id: s.id,
-    label: s.label,
-    attributes: s.properties.map{|p| p.id }
-  }
-
-  hash[:tracks] << h
+  puts JSON(config)
 end
-
-id_types = config[:idTypes].keys
-id_types.each do |id|
-  config[:idTypes][id][:conversion] = id_types.each_with_object({}) do |oid, hash|
-    hash[oid] = "https://api.togoid.jp/convert?format=json&route=#{id},#{oid}" if id != oid
-  end
-end
-
-puts JSON(config)
