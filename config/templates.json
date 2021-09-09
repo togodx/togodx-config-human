@@ -11,6 +11,7 @@
     "interaction": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/interaction.hbs",
     "proteinStructure": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/proteinStructure.hbs",
     "chemicalCompound": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/chemicalCompound.hbs",
-    "disease": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/disease.hbs"
+    "disease": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/disease.hbs",
+    "glycan": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/glycan.hbs"
   }
 }
