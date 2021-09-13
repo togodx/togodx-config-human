@@ -1,0 +1,91 @@
+<html>
+  <body>
+    <script type="module" src="https://togostanza.github.io/metastanza/hash-table.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/barchart.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/linechart.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/pagination-table.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/piechart.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/scatterplot.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/scorecard.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/scroll-table.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/text.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/tree.js" async></script>
+
+    <script type="text/javascript">
+
+      let view = async () => {
+	  const template = document.getElementById("template").value;
+	  const id = document.getElementById("id").value;
+	  const type = document.getElementById("type").value;
+	  const branch = document.getElementById("branch").value;
+	  const url = "https://raw.githubusercontent.com/togodx/togodx-config-human/" + branch + "/templates/" + template + ".hbs";
+	  let html = await fetch(url, {method: "get"}).then(res => res.text());
+
+	  html = html.replace(/\{\{id\}\}/g ,id);
+	  if (type) html = html.replace(/\{\{type\}\}/g ,type);
+	  let code = false;
+	  if (html.match(/<script/)) {
+	    let tmp = html.match(/([\s\S]*)<script[^>]*>([\s\S]+)<\/script[^>]*>([\s\S]*)/);
+	    console.log(tmp[1]);
+	    html = tmp[1] + tmp[3];
+	    code = tmp[2];
+	  }
+	  document.getElementById("report").innerHTML = html;
+	  if (code) eval(code);
+      }
+
+      let setExample = () => {
+	  const template = document.getElementById("template").value;
+	  if (template == "variant") {
+	      document.getElementById("id").value = "tgv66423708";
+	      document.getElementById("type").value = "";
+	  }
+	  if (template == "gene") {
+	      document.getElementById("id").value = "ENSG00000130234";
+	      document.getElementById("type").value = "ensembl_gene";
+	  }
+	  if (template == "protein") {
+	      document.getElementById("id").value = "Q9BYF1";
+	      document.getElementById("type").value = "";
+	  }
+	  if (template == "proteinStructure") {
+	      document.getElementById("id").value = "1R42";
+	      document.getElementById("type").value = "pdb";
+	  }
+          if (template == "interaction") {
+              document.getElementById("id").value = "Q9BYF1";
+              document.getElementById("type").value = "uniprot";
+          }
+	  if (template == "chemicalCompound") {
+	      document.getElementById("id").value = "CHEMBL491473";
+	      document.getElementById("type").value = "chembl_compound";
+	  }
+	  if (template == "disease") {
+	      document.getElementById("id").value = "0008903";
+	      document.getElementById("type").value = "mondo";
+	  }
+      }
+
+     </script>
+
+    <h2>report page template viewer</h2>
+    <form  autocomplete="on">
+    template: <select name="template" id="template" onchange="setExample()">
+      <option value="variant" selected>variant</option>
+      <option value="gene">gene</option>
+      <option value="protein">protein</option>
+      <option value="proteinStructure">proteinStructure</option>
+      <option value="interaction">interaction</option>
+      <option value="chemicalCompound">chemicalCompound</option>
+      <option value="disease">disease</option>
+    </select> (e.g. disease)<br>
+    id: <input type="text" name="id" id="id" value="tgv66423708"> (e.g. 0008903)<br>
+    type (optional): <input type="text" name="type" id="type"> (e.g. mondo)<br>
+    github branch: <input type="text" name="branch" id="branch" value="develop"><br>
+
+    <input type="button" onclick="view()" value="view">
+    </form>
+       <hr>
+    <div id="report"></div>
+</body>
+</html>
