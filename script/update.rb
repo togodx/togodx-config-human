@@ -13,8 +13,17 @@ class Property
     @key = property["primaryKey"]
     @keyLabel = property["keyLabel"]
     @view_method = property["viewMethod"]
+    @datamodel = define_datamodel
   end
   attr_accessor :id, :label, :desc, :data, :data_source, :data_source_url, :update, :key, :keyLabel
+
+  def define_datamodel
+    if @view_method
+      :distribution
+    else
+      :classification
+    end
+  end
 
   def attribute
     attr = {
@@ -22,7 +31,8 @@ class Property
       label: @label,
       description: @desc,
       api: @data,
-      idType: @key,
+      dataset: @key,
+      datamodel: @datamodel,
       data: [
         {
           label: @data_source,
