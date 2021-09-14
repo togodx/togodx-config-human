@@ -1,14 +1,16 @@
 <article data-stanza-database="ensembl_transcript">
   <header>
-    <h1>ensembl_transcript</h1>
+    <h1>Ensembl Transcript</h1>
   </header>
   <section>
-    <h2>Section heading</h2>
-    <togo-stanza></togo-stanza>
+    <h2>Transcript: {{id}}</h2>
+      <togostanza-pagination-table
+        data-url="https://integbio.jp/togosite/sparqlist/api/togosite_transcript_summary_2?enst={{id}}"
+        data-type="json"
+        padding="0"
+        page-size-option="10,20,50,100"
+        page-slider="true"
+        columns="[{&quot;id&quot;:&quot;enst_id&quot;,&quot;label&quot;:&quot;Ensembl Transcript ID&quot;,&quot;link&quot;:&quot;enst_url&quot;},{&quot;id&quot;:&quot;label&quot;,&quot;label&quot;:&quot;Name&quot;},{&quot;id&quot;:&quot;type&quot;,&quot;label&quot;:&quot;Biotype&quot;},{&quot;id&quot;:&quot;location&quot;,&quot;label&quot;:&quot;Location&quot;},{&quot;id&quot;:&quot;exon_count&quot;,&quot;label&quot;:&quot;# of Exons&quot;},{&quot;id&quot;:&quot;uniprot_id&quot;,&quot;label&quot;:&quot;Uniprot&quot;,&quot;escape&quot;:false}]"
+        />
   </section>
-  <section>
-    <h2>Section heading</h2>
-    <togo-stanza></togo-stanza>
-  </section>
-  <a href="http://xxx.com" target="_blank">External link</a>
 </article>
