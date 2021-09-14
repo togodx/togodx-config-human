@@ -109,7 +109,8 @@
       "label": "Gene biotype",
       "description": "Gene or transcript classification annotated in Ensembl",
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_biotype_ensembl",
-      "idType": "ensembl_gene",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Ensembl",
@@ -123,7 +124,8 @@
       "label": "Chromosome",
       "description": "Chromosome where a gene is located",
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_chromosome_ensembl",
-      "idType": "ensembl_gene",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Ensembl human release 102",
@@ -137,7 +139,8 @@
       "label": "# of exons",
       "description": "Number of exons for each transcript of each gene",
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_number_of_exons_ensembl",
-      "idType": "ensembl_transcript",
+      "dataset": "ensembl_transcript",
+      "datamodel": "distribution",
       "data": [
         {
           "label": "Ensembl human release 102",
@@ -151,7 +154,8 @@
       "label": "# of paralogs",
       "description": "Number of duplicated genes (paralogs) in each human gene calculated based on HomoloGene",
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_number_of_paralogs_homologene",
-      "idType": "ncbigene",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
       "data": [
         {
           "label": "HomoloGene",
@@ -165,7 +169,8 @@
       "label": "Evolutionary divergence",
       "description": "Most distant organisms from human that have orthologous genes in HomoloGene",
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_evolutionary_conservation_homologene",
-      "idType": "ncbigene",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
       "data": [
         {
           "label": "HomoloGene",
@@ -179,7 +184,8 @@
       "label": "High-level expression",
       "description": "Tissues in which a gene was tissue-specific highly expressed only in one of 34 tissues of RefEx",
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_high_level_expression_refex",
-      "idType": "ncbigene",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
@@ -193,7 +199,8 @@
       "label": "Low-level expression",
       "description": "Tissues in which a gene was tissue-specific lowly expressed only in one of 34 tissues of RefEx",
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_low_level_expression_refex",
-      "idType": "ncbigene",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
@@ -207,7 +214,8 @@
       "label": "Expressed in tissues",
       "description": "Tissues in which a gene is tissue-specific highly expressed in 48 tissues of GTEx",
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_high_level_expression_gtex6",
-      "idType": "ensembl_gene",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Supplementary Table 1 of A systematic survey of human tissue-specific gene expression and splicing reveals new opportunities for therapeutic target identification and evaluation; R. Y. Yang et al.; bioRxiv 311563",
@@ -221,7 +229,8 @@
       "label": "Not expressed in tissues",
       "description": "Tissues in which expression of a gene is not detected in 48 tissues of GTEx",
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_not_expressed_in_tissues_gtex",
-      "idType": "ensembl_gene",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Supplementary Table 1 of A systematic survey of human tissue-specific gene expression and splicing reveals new opportunities for therapeutic target identification and evaluation; R. Y. Yang et al.; bioRxiv 311563",
@@ -235,7 +244,8 @@
       "label": "Specifically expressed in tissues (HPA)",
       "description": "Tissues in which expression specificity of a gene is evaluated as \"Tissue enriched\", \"Tissue enhanced\", or\"Group enriched\" by HPA",
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_specific_expression_in_tissues_hpa",
-      "idType": "ensembl_gene",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
       "data": [
         {
           "label": "HPA TSV",
@@ -249,7 +259,8 @@
       "label": "Specifically expressed in cell types (HPA)",
       "description": "Cell types in which expression specificity of a gene is evaluated as \"Cell type enriched\", \"Cell type enhanced\", or\"Group enriched\" by HPA",
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_specific_expression_in_cells_hpa",
-      "idType": "ensembl_gene",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
       "data": [
         {
           "label": "HPA TSV",
@@ -263,7 +274,8 @@
       "label": "Transcription factors",
       "description": "Transcription factors with predicted target genes in ChIP-Atlas",
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_transcription_factors_chip_atlas",
-      "idType": "ensembl_gene",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
       "data": [
         {
           "label": "ChIP-Atlas",
@@ -277,7 +289,8 @@
       "label": "Protein domains",
       "description": "Protein domains from UniProt",
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_domains_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "data": [
         {
           "label": "UniProt",
@@ -291,7 +304,8 @@
       "label": "Cellular component",
       "description": "Functional annotations (GO terms) derived from the Cellular component category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_cellular_component_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Gene ontology cellular component annotation from UniProt",
@@ -305,7 +319,8 @@
       "label": "Biological process",
       "description": "Functional annotations (GO terms) derived from the Biological process category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_biological_process_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Gene ontology biological process annotation from UniProt",
@@ -319,7 +334,8 @@
       "label": "Molecular function",
       "description": "Functional annotations (GO terms) derived from the Molecular function category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_molecular_function_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Gene ontology molecular function annotation from UniProt",
@@ -333,7 +349,8 @@
       "label": "Ligands",
       "description": "Classification by non-protein molecules which bind/react with proteins in Function section from UniProt",
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_ligands_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Function from UniProt",
@@ -347,7 +364,8 @@
       "label": "Molecular mass",
       "description": "Molecular weight of the protein including information from multiple isoforms in Sequences section from UniProt",
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_molecular_mass_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "data": [
         {
           "label": "Sequences from UniProt",
@@ -361,7 +379,8 @@
       "label": "PTMs",
       "description": "Classification by types of post-translational modifications, including S-S bonds (disulfide bonds) in Amino acid modifications section from UniProt",
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_ptms_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Amino acid modifications from UniProt",
@@ -375,7 +394,8 @@
       "label": "# of transmembrane domains",
       "description": "Number of transmembrane domains. A group of molecules forming a family, such as channels, may have the same number of domains in Topology section from UniProt",
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_number_of_transmembrane_domains_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "data": [
         {
           "label": "Topology from UniProt",
@@ -389,7 +409,8 @@
       "label": "# of phosphorylation sites",
       "description": "Number of phosphorylation at Ser/Thr/Tyr, which may create an activation state for the protein and acts like a switch in Amino acid modifications section from UniProt",
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_number_of_phosphorylation_sites_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "data": [
         {
           "label": "Amino acid modifications from UniProt",
@@ -403,7 +424,8 @@
       "label": "# of glycosylation sites",
       "description": "Number of glycosylation sites, including N-linked,O-linked and others in Amino acid modifications section from UniProt",
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_number_of_glycosylation_sites_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "data": [
         {
           "label": "Amino acid modifications from UniProt",
@@ -417,7 +439,8 @@
       "label": "Disease-related proteins",
       "description": "Disease-related proteins in Pathology & Biotech section from UniProt",
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_disease_related_proteins_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Pathology & Biotech from UniProt",
@@ -431,7 +454,8 @@
       "label": "Tissues w/expression reported",
       "description": "Classification based on the name of the tissue from which the clone was isolated in the reference describing the protein sequence in Tissue section from UniProt",
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_isolation_source_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Tissue from UniProt",
@@ -445,7 +469,8 @@
       "label": "Evidence of existence",
       "description": "Classification by the basis of protein expression, such as whether it has been identified as a protein or transcript in Expression section from neXtProt",
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_evidence_of_existence_nextprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Expression from neXtProt",
@@ -459,7 +484,8 @@
       "label": "Structure data existence",
       "description": "Uniprot entries having 3D structure data in PDB in Structure section from Uniprot",
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_data_existence_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Structure from Uniprot",
@@ -473,7 +499,8 @@
       "label": "# of alpha-helices",
       "description": "Number of 'Helix' entities counted in each entry of PDB",
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_number_of_alpha_helices_pdb",
-      "idType": "pdb",
+      "dataset": "pdb",
+      "datamodel": "distribution",
       "data": [
         {
           "label": "'Helix' entities counted in each entry of PDB",
@@ -487,7 +514,8 @@
       "label": "# of beta-sheets",
       "description": "Number of 'Sheet' entities counted in each entry of PDB",
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_number_of_beta_sheets_pdb",
-      "idType": "pdb",
+      "dataset": "pdb",
+      "datamodel": "distribution",
       "data": [
         {
           "label": "'Sheet' entities counted in each entry of PDB",
@@ -501,7 +529,8 @@
       "label": "# of peptides in a PDB entry",
       "description": "The number of peptides in a PDB entry",
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_number_of_peptides_pdb",
-      "idType": "pdb",
+      "dataset": "pdb",
+      "datamodel": "distribution",
       "data": [
         {
           "label": "Entity from PDB",
@@ -515,7 +544,8 @@
       "label": "Other related molecules",
       "description": "Nonpeptide molecules related protein structures including water, metal ions, and low molecular weight compounds such as glycerol used to make crystals",
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_other_related_molecules_pdb",
-      "idType": "pdb",
+      "dataset": "pdb",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Entity from PDB",
@@ -529,7 +559,8 @@
       "label": "Analysis methods",
       "description": "Classification by the method used to determine the three-dimensional structure in Experimental method section from PDB",
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_analysis_methods_pdb",
-      "idType": "pdb",
+      "dataset": "pdb",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Experimental method from PDB",
@@ -543,7 +574,8 @@
       "label": "Crystallization temperature",
       "description": "Temperature of the crystallization solution obtained in Crystallization Conditions section from PDB",
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_crystallization_temperature_pdb",
-      "idType": "pdb",
+      "dataset": "pdb",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Crystallization Conditions from PDB",
@@ -557,7 +589,8 @@
       "label": "Crystallization pH",
       "description": "pH value of the crystallization solution in Crystallization Conditions section from PDB",
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_crystallization_ph_pdb",
-      "idType": "pdb",
+      "dataset": "pdb",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Crystallization Conditions from PDB",
@@ -571,7 +604,8 @@
       "label": "Proteins in pathway",
       "description": "Proteins participating as components classified by pathway (reaction) from Reactome",
       "api": "https://integbio.jp/togosite/sparqlist/api/interaction_proteins_in_pathway_reactome",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Reactome",
@@ -585,7 +619,8 @@
       "label": "Compounds in pathway",
       "description": "Compounds participating as components classified by pathway (reaction) from Reactome",
       "api": "https://integbio.jp/togosite/sparqlist/api/interaction_compounds_in_pathway_reactome",
-      "idType": "chebi",
+      "dataset": "chebi",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Reactome",
@@ -599,7 +634,8 @@
       "label": "# of interacting proteins",
       "description": "Classification of uniprot proteins by the number of target proteins they interact with in Interaction section from UniProt",
       "api": "https://integbio.jp/togosite/sparqlist/api/interaction_number_of_interacting_proteins_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "data": [
         {
           "label": "Interaction from UniProt",
@@ -613,7 +649,8 @@
       "label": "ChEMBL assay existence",
       "description": "Uniprot entries classified according to the presence or absence of a method to detect direct protein-compound interactions (ChEMBL assay)",
       "api": "https://integbio.jp/togosite/sparqlist/api/interaction_chembl_assay_existence_uniprot",
-      "idType": "uniprot",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Target protein from ChEMBL-RDF 28.0 against all UniProt entries",
@@ -627,7 +664,8 @@
       "label": "Substance type",
       "description": "Classification based on the type of drug, such as compound or nucleic acid drugs from ChEMBL",
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_substance_type_chembl",
-      "idType": "chembl_compound",
+      "dataset": "chembl_compound",
+      "datamodel": "classification",
       "data": [
         {
           "label": "ChEMBL-RDF",
@@ -641,7 +679,8 @@
       "label": "Chemical role",
       "description": "Classification based on the chemical roles, such as antioxidant or environmental contaminant from ChEBI",
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_chemical_role_chebi",
-      "idType": "chebi",
+      "dataset": "chebi",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Chemical role from ChEBI",
@@ -655,7 +694,8 @@
       "label": "Application type",
       "description": "Classification based on the application types, such as pharmaceutical or pesticide from ChEBI",
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_application_type_chebi",
-      "idType": "chebi",
+      "dataset": "chebi",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Application type from ChEBI",
@@ -669,7 +709,8 @@
       "label": "Action type",
       "description": "Classification based on the mechanism of action, such as an inhibitor or an antagonist from ChEMBL",
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_action_type_chembl",
-      "idType": "chembl_compound",
+      "dataset": "chembl_compound",
+      "datamodel": "classification",
       "data": [
         {
           "label": "ChEMBL-RDF",
@@ -683,7 +724,8 @@
       "label": "Biological role",
       "description": "Classification based on the biological roles, such as inhibitor or antimicrobial agent from ChEBI",
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_biological_role_chebi",
-      "idType": "chebi",
+      "dataset": "chebi",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Biological role from ChEBI ",
@@ -697,7 +739,8 @@
       "label": "Drug indication",
       "description": "Classification of diseases for which drugs are indicated, based on hierarchical data using MeSH, a life science thesaurus from ChEMBL",
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_drug_indication_mesh_chembl",
-      "idType": "chembl_compound",
+      "dataset": "chembl_compound",
+      "datamodel": "classification",
       "data": [
         {
           "label": "ChEMBL-RDF",
@@ -711,7 +754,8 @@
       "label": "Drug development phase",
       "description": "Classification based on the drug's development phase (research stage, phase I-III, and post-launch) from ChEMBL",
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_drug_development_phase_chembl",
-      "idType": "chembl_compound",
+      "dataset": "chembl_compound",
+      "datamodel": "classification",
       "data": [
         {
           "label": "ChEMBL-RDF",
@@ -725,7 +769,8 @@
       "label": "PubChem ATC classification",
       "description": "Classification of a medicine (in PubChem) according to its medicinal properties (WHO ATC Code)",
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_atc_classification_pubchem",
-      "idType": "pubchem_compound",
+      "dataset": "pubchem_compound",
+      "datamodel": "classification",
       "data": [
         {
           "label": "",
@@ -739,7 +784,8 @@
       "label": "ChEMBL ATC classification",
       "description": "Classification of a medicine (in ChEMBL) according to its medicinal properties (WHO ATC Code)",
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_atc_classification_chembl",
-      "idType": "chembl_compound",
+      "dataset": "chembl_compound",
+      "datamodel": "classification",
       "data": [
         {
           "label": "",
@@ -753,7 +799,8 @@
       "label": "Molecular mass of glycans",
       "description": "Molecular weight of the glycans from GlyCosmos",
       "api": "https://integbio.jp/togosite/sparqlist/api/glycan_mass_glycosmos",
-      "idType": "glytoucan",
+      "dataset": "glytoucan",
+      "datamodel": "distribution",
       "data": [
         {
           "label": "GlyCosmos",
@@ -767,7 +814,8 @@
       "label": "Tissues",
       "description": "Tissues where glycans are expressed",
       "api": "https://integbio.jp/togosite/sparqlist/api/glycan_tissue_glycosmos",
-      "idType": "glytoucan",
+      "dataset": "glytoucan",
+      "datamodel": "classification",
       "data": [
         {
           "label": "GlyCosmos",
@@ -781,7 +829,8 @@
       "label": "Diseases in Mondo",
       "description": "Subcategories in the Disease or disorder category in the Mondo Disease Ontology (Mondo)",
       "api": "https://integbio.jp/togosite/sparqlist/api/disease_diseases_mondo",
-      "idType": "mondo",
+      "dataset": "mondo",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Mondo Disease Ontology (Mondo)",
@@ -795,7 +844,8 @@
       "label": "Diseases in MeSH",
       "description": "Subcategories in the Disease category in Medical Subject Headings (MeSH)",
       "api": "https://integbio.jp/togosite/sparqlist/api/disease_diseases_mesh",
-      "idType": "mesh",
+      "dataset": "mesh",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Medical Subject Headings (MeSH)",
@@ -809,7 +859,8 @@
       "label": "Diseases in NANDO",
       "description": "Japanese rare and intractable disease categories in the Nanbyo Disease Ontology (NANDO)",
       "api": "https://integbio.jp/togosite/sparqlist/api/disease_diseases_nando",
-      "idType": "nando",
+      "dataset": "nando",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Nanbyo Disease Ontology (NANDO)",
@@ -823,7 +874,8 @@
       "label": "Cross referenced disease DBs in Mondo",
       "description": "Number of entries linked to Mondo in each of approx. 70 disease related databases from database cross reference in Mondo",
       "api": "https://integbio.jp/togosite/sparqlist/api/disease_related_dbs_mondo",
-      "idType": "mondo",
+      "dataset": "mondo",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Mondo Disease Ontology (Mondo)",
@@ -837,7 +889,8 @@
       "label": "Phenotypic abnormality",
       "description": "Classification the subcategories of the Phenotypic abnormality categories of the Human Phenotype Ontology (HPO)",
       "api": "https://integbio.jp/togosite/sparqlist/api/disease_phenotypic_abnormality_hpo",
-      "idType": "hp",
+      "dataset": "hp",
+      "datamodel": "classification",
       "data": [
         {
           "label": "Human Phenotype Ontology (HPO)",
@@ -851,7 +904,8 @@
       "label": "GWAS",
       "description": "Classification of statistically significant variants in genome-wide association studies (GWAS) based on associated traits. Obtained from GWAS catalog via TogoVar",
       "api": "https://integbio.jp/togosite/sparqlist/api/variant_gwas_togovar",
-      "idType": "togovar",
+      "dataset": "togovar",
+      "datamodel": "classification",
       "data": [
         {
           "label": "GWAS Catalog All associations ",
@@ -865,7 +919,8 @@
       "label": "Clinical significance",
       "description": "Classification of variants according to their clinical significance, such as whether they are the cause of the disease or not. Obtained from ClinVar via TogoVar",
       "api": "https://integbio.jp/togosite/sparqlist/api/variant_clinical_significance_togovar",
-      "idType": "togovar",
+      "dataset": "togovar",
+      "datamodel": "classification",
       "data": [
         {
           "label": "ClinVar",
