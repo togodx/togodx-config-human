@@ -1,17 +1,16 @@
 <article data-stanza-database="glytoucan">
   <header>
-    <h1>glytoucan</h1>
+    <h1>GlyTouCan</h1>
   </header>
 
   <section>
-    <h2>Section heading</h2>
-    <togo-stanza></togo-stanza>
+    <h2>glytoucan: {{id}}</h2>
+    <togostanza-hash-table
+    data-url="https://integbio.jp/togosite/sparqlist/api/togosite_glycan_summary?id={{id}}"
+    data-type="json"
+    format-key="true"
+    columns="[{&quot;id&quot;:&quot;GlyTouCan_ID&quot;,&quot;link&quot;:&quot;GlyTouCan_URL&quot;},{&quot;id&quot;:&quot;IUPAC&quot;},{&quot;id&quot;:&quot;WURCS&quot;},{&quot;id&quot;:&quot;mass&quot;},{&quot;id&quot;:&quot;Subsumption&quot;},{&quot;id&quot;:&quot;tissue&quot;}]"
+    custom-css-url="/css/stanza.css"/>
   </section>
 
-  <section>
-    <h2>Section heading</h2>
-    <togo-stanza></togo-stanza>
-  </section>
-
-  <a href="http://xxx.com" target="_blank">External link</a>
 </article>
