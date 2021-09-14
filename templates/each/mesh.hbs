@@ -1,17 +1,16 @@
 <article data-stanza-database="mesh">
   <header>
-    <h1>mesh</h1>
+    <h1>MeSH</h1>
   </header>
 
   <section>
-    <h2>Section heading</h2>
-    <togo-stanza></togo-stanza>
+    <h2>MeSH: {{id}}</h2>
+    <togostanza-hash-table
+    data-url="https://integbio.jp/togosite/sparqlist/api/test_disease_template_2?id={{id}}&amp;type=mesh"
+    data-type="json"
+    format-key="true"
+    columns="[{&quot;id&quot;:&quot;MeSH_ID&quot;},{&quot;id&quot;:&quot;MeSH_label&quot;},{&quot;id&quot;:&quot;MeSH_tree_URI&quot;,&quot;link&quot;:&quot;MeSH_tree_URI&quot;},{&quot;id&quot;:&quot;MeSH_concept&quot;,&quot;link&quot;:&quot;MeSH_concept&quot;},{&quot;id&quot;:&quot;MeSH_scope_note&quot;}]"
+    custom-css-url="/css/stanza.css"/>
   </section>
 
-  <section>
-    <h2>Section heading</h2>
-    <togo-stanza></togo-stanza>
-  </section>
-
-  <a href="http://xxx.com" target="_blank">External link</a>
 </article>
