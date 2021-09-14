@@ -1,0 +1,124 @@
+<html>
+  <body>
+    <script type="module" src="https://togostanza.github.io/metastanza/hash-table.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/barchart.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/linechart.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/pagination-table.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/piechart.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/scatterplot.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/scorecard.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/scroll-table.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/text.js" async></script>
+    <script type="module" src="https://togostanza.github.io/metastanza/tree.js" async></script>
+
+    <script type="text/javascript">
+      let view = async () => {
+    	  const template = document.getElementById("template").value;
+    	  const id = document.getElementById("id").value;
+    	  const type = document.getElementById("type").value;
+    	  const branch = document.getElementById("branch").value;
+    	  const url = "https://raw.githubusercontent.com/togodx/togodx-config-human/" + branch + "/templates/" + template + ".hbs";
+    	  let html = await fetch(url, {method: "get"}).then(res => res.text());
+
+    	  html = html.replace(/\{\{id\}\}/g ,id);
+    	  if (type) html = html.replace(/\{\{type\}\}/g ,type);
+    	  let code = false;
+    	  if (html.match(/<script/)) {
+    	    let tmp = html.match(/([\s\S]*)<script[^>]*>([\s\S]+)<\/script[^>]*>([\s\S]*)/);
+    	    console.log(tmp[1]);
+    	    html = tmp[1] + tmp[3];
+    	    code = tmp[2];
+    	  }
+    	  document.getElementById("report").innerHTML = html;
+	      if (code) eval(code);
+      }
+
+      let setExample = () => {
+        const template = document.getElementById("template").value;
+        if (template == "chebi") {
+          document.getElementById("id").value = "94782";
+          document.getElementById("type").value = "chebi";
+        }
+        if (template == "chembl_compound") {
+          document.getElementById("id").value = "CHEMBL491473";
+          document.getElementById("type").value = "chembl_compound";
+        }
+        if (template == "ensembl_gene") {
+          document.getElementById("id").value = "ENSG00000130234";
+          document.getElementById("type").value = "ensembl_gene";
+        }
+        if (template == "ensembl_transcript") {
+          document.getElementById("id").value = "";
+          document.getElementById("type").value = "ensembl_transcript";
+        }
+        if (template == "glytoucan") {
+          document.getElementById("id").value = "G14606UO";
+          document.getElementById("type").value = "glytoucan";
+        }
+        if (template == "hp") {
+          document.getElementById("id").value = "0030432";
+          document.getElementById("type").value = "hp";
+        }
+        if (template == "mesh") {
+          document.getElementById("id").value = "D002804";
+          document.getElementById("type").value = "mesh";
+        }
+        if (template == "mondo") {
+          document.getElementById("id").value = "0008903";
+          document.getElementById("type").value = "mondo";
+        }
+        if (template == "nando") {
+          document.getElementById("id").value = "2200051";
+          document.getElementById("type").value = "nando";
+        }
+        if (template == "ncbigene") {
+          document.getElementById("id").value = "59272";
+          document.getElementById("type").value = "ncbigene";
+        }
+        if (template == "pdb") {
+          document.getElementById("id").value = "1R42";
+          document.getElementById("type").value = "pdb";
+        }
+        if (template == "pubchem_compound") {
+          document.getElementById("id").value = "CID9933475";
+          document.getElementById("type").value = "pubchem_compound";
+        }
+        if (template == "togovar") {
+          document.getElementById("id").value = "tgv66423708";
+          document.getElementById("type").value = "togovar";
+        }
+        if (template == "uniprot") {
+          document.getElementById("id").value = "Q9BYF1";
+          document.getElementById("type").value = "uniprot";
+        }
+      }
+     </script>
+
+    <h2>report page template viewer</h2>
+    <form  autocomplete="on">
+    template: <select name="template" id="template" onchange="setExample()">
+      <option value="chebi">chebi</option>
+      <option value="chembl_compound">chembl_compound</option>
+      <option value="ensembl_gene">ensembl_gene</option>
+      <option value="ensembl_transcript">ensembl_transcript</option>
+      <option value="glytoucan">glytoucan</option>
+      <option value="hp">hp</option>
+      <option value="mesh">mesh</option>
+      <option value="mondo">mondo</option>
+      <option value="nando">nando</option>
+      <option value="ncbigene">ncbigene</option>
+      <option value="pdb">pdb</option>
+      <option value="pubchem_compound">pubchem_compound</option>
+      <option value="togovar">togovar</option>
+      <option value="uniprot">uniprot</option>
+    </select> (e.g. disease)<br>
+    id: <input type="text" name="id" id="id" value="94782"> (e.g. 94782)<br>
+    type (optional): <input type="text" name="type" id="type" value="chebi"> (e.g. chebi)<br>
+    github branch: <input type="text" name="branch" id="branch" value="split-templates"><br>
+
+    <input type="button" onclick="view()" value="view">
+    </form>
+       <hr>
+    <div id="report"></div>
+</body>
+</html>
