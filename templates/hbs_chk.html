@@ -17,7 +17,7 @@
     	  const id = document.getElementById("id").value;
     	  const type = document.getElementById("type").value;
     	  const branch = document.getElementById("branch").value;
-    	  const url = "https://raw.githubusercontent.com/togodx/togodx-config-human/" + branch + "/templates/each/" + template + ".hbs";
+    	  const url = "https://raw.githubusercontent.com/togodx/togodx-config-human/" + branch + "/templates/" + template + ".hbs";
     	  let html = await fetch(url, {method: "get"}).then(res => res.text());
 
     	  html = html.replace(/\{\{id\}\}/g ,id);
