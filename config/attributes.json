@@ -936,6 +936,13 @@
       "label": "Ensembl gene",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ensembl_gene.hbs",
       "target": true,
+      "examples": [
+        "ENSG00000186283",
+        "ENSAMEG00000018238",
+        "ENSG00000167916",
+        "ENSG00000213417",
+        "ENSG00000133328"
+      ],
       "conversion": {
         "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,ensembl_transcript",
         "ncbigene": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,ncbigene",
@@ -956,6 +963,13 @@
       "label": "Ensembl transcript",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ensembl_transcript.hbs",
       "target": true,
+      "examples": [
+        "ENST00000638000",
+        "ENST00000307864",
+        "ENSTRUT00000006732",
+        "ENSAMET00000021072",
+        "ENSAZOT00000021040"
+      ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,ensembl_gene",
         "ncbigene": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,ncbigene",
@@ -976,6 +990,13 @@
       "label": "NCBI gene",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ncbigene.hbs",
       "target": true,
+      "examples": [
+        "63962027",
+        "1046",
+        "63961921",
+        "102606930",
+        "100472895"
+      ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=ncbigene,ensembl_gene",
         "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=ncbigene,ensembl_transcript",
@@ -996,6 +1017,13 @@
       "label": "UniProt",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/uniprot.hbs",
       "target": true,
+      "examples": [
+        "A0A174V9D2",
+        "A0A1V4U2Y9",
+        "Q7NXD4",
+        "P0AAM3",
+        "O43423"
+      ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=uniprot,ensembl_gene",
         "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=uniprot,ensembl_transcript",
@@ -1016,6 +1044,13 @@
       "label": "PDB",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/pdb.hbs",
       "target": true,
+      "examples": [
+        "3PFQ",
+        "2OUY",
+        "6EBX",
+        "5GHP",
+        "6ETH"
+      ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=pdb,ensembl_gene",
         "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=pdb,ensembl_transcript",
@@ -1036,6 +1071,13 @@
       "label": "ChEBI compound",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/chebi.hbs",
       "target": true,
+      "examples": [
+        "84824",
+        "40167",
+        "32807",
+        "87666",
+        "57524"
+      ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=chebi,ensembl_gene",
         "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=chebi,ensembl_transcript",
@@ -1056,6 +1098,13 @@
       "label": "ChEMBL compound",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/chembl_compound.hbs",
       "target": true,
+      "examples": [
+        "CHEMBL121649",
+        "CHEMBL190334",
+        "CHEMBL3103282",
+        "CHEMBL69329",
+        "CHEMBL2105131"
+      ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=chembl_compound,ensembl_gene",
         "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=chembl_compound,ensembl_transcript",
@@ -1076,6 +1125,13 @@
       "label": "PubChem compound",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/pubchem_compound.hbs",
       "target": true,
+      "examples": [
+        "9548669",
+        "160419",
+        "9869929",
+        "76333303",
+        "9868491"
+      ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,ensembl_gene",
         "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,ensembl_transcript",
@@ -1096,6 +1152,12 @@
       "label": "GlyTouCan",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/glytoucan.hbs",
       "target": true,
+      "examples": [
+        "G88006IV",
+        "G53085MI",
+        "G17896UT",
+        "G50341PG"
+      ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=glytoucan,ensembl_gene",
         "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=glytoucan,ensembl_transcript",
@@ -1116,6 +1178,13 @@
       "label": "Mondo",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/mondo.hbs",
       "target": true,
+      "examples": [
+        "MONDO:0000115",
+        "MONDO:0002345",
+        "MONDO:0011571",
+        "MONDO:0020035",
+        "MONDO:0020920"
+      ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=mondo,ensembl_gene",
         "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=mondo,ensembl_transcript",
@@ -1136,6 +1205,13 @@
       "label": "MeSH",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/mesh.hbs",
       "target": true,
+      "examples": [
+        "D002065",
+        "C562829",
+        "C566582",
+        "D010623",
+        "D003327"
+      ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=mesh,ensembl_gene",
         "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=mesh,ensembl_transcript",
@@ -1156,6 +1232,13 @@
       "label": "NANDO",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/nando.hbs",
       "target": true,
+      "examples": [
+        "NANDO:1200461",
+        "NANDO:1200466",
+        "NANDO:1200851",
+        "NANDO:1200061",
+        "NANDO:1200315"
+      ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=nando,ensembl_gene",
         "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=nando,ensembl_transcript",
@@ -1176,6 +1259,13 @@
       "label": "Human Phenotype Ontology",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/hp.hbs",
       "target": true,
+      "examples": [
+        "HP:0001947",
+        "HP:0031592",
+        "HP:0012085",
+        "HP:0000956",
+        "HP:0025238"
+      ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=hp,ensembl_gene",
         "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=hp,ensembl_transcript",
@@ -1195,7 +1285,14 @@
     "togovar": {
       "label": "TogoVar variant",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/togovar.hbs",
-      "target": true,
+      "target": false,
+      "examples": [
+        "tgv100005930",
+        "tgv100000890",
+        "tgv16331",
+        "tgv10000341",
+        "tgv21330879"
+      ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=togovar,ensembl_gene",
         "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=togovar,ensembl_transcript",

@@ -1,4 +1,6 @@
 require 'json'
+require 'open-uri'
+require 'yaml'
 
 class Property
   def initialize(property)
@@ -59,6 +61,14 @@ end
 if __FILE__ == $0
   properties_json_path = ARGV[0]
   properties = JSON.load(open(properties_json_path).read)
+
+  togoid_dataset_config_url = 'https://raw.githubusercontent.com/dbcls/togoid-config/main/config/dataset.yaml'
+  id_config = YAML.load(open(togoid_dataset_config_url).read)
+  id_examples = id_config.each_with_object({}) do |(id, dataset), hash|
+    examples = dataset["examples"]
+    hash[id] = examples[0].slice(0,5) if examples
+  end
+
   config = properties.each_with_object({}) do |subject, hash|
     hash[:tracks] ||= []
     hash[:attributes] ||= {}
@@ -72,7 +82,15 @@ if __FILE__ == $0
     ids.each do |id|
       type = id.delete(:dataset)
       id[:template] = "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/#{type}.hbs"
-      id[:target] = true
+
+      id[:target] = case type
+      when "togovar"
+        false
+      else
+        true
+      end
+
+      id[:examples] = id_examples[type]
 
       hash[:datasets][type] = id
     end
