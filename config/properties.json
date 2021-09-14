@@ -15,7 +15,6 @@
         "dataSourceUrl": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
         "dataSourceVersion": "human release 102",
         "updatedAt": "2020-10-29",
-        "datamodel": "classification",
         "primaryKey": "ensembl_gene",
         "keyLabel": "Ensembl gene"
       },
@@ -28,7 +27,6 @@
         "dataSourceUrl": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
         "dataSourceVersion": "human release 102",
         "updatedAt": "2020-10-29",
-        "datamodel": "classification",
         "primaryKey": "ensembl_gene",
         "keyLabel": "Ensembl gene"
       },
@@ -41,7 +39,6 @@
         "dataSourceUrl": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
         "dataSourceVersion": "human release 102",
         "updatedAt": "2020-10-29",
-        "datamodel": "distribution",
         "primaryKey": "ensembl_transcript",
         "keyLabel": "Ensembl transcript",
         "viewMethod": "histogram"
@@ -55,7 +52,6 @@
         "dataSourceUrl": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
         "dataSourceVersion": "Release 68",
         "updatedAt": "2021-03-12",
-        "datamodel": "classification",
         "primaryKey": "ncbigene",
         "keyLabel": "NCBI gene"
       },
@@ -68,7 +64,6 @@
         "dataSourceUrl": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
         "dataSourceVersion": "Release 68",
         "updatedAt": "2021-03-12",
-        "datamodel": "classification",
         "primaryKey": "ncbigene",
         "keyLabel": "NCBI gene"
       },
@@ -81,7 +76,6 @@
         "dataSourceUrl": "https://doi.org/10.6084/m9.figshare.4028700.v3",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-03-12",
-        "datamodel": "classification",
         "primaryKey": "ncbigene",
         "keyLabel": "NCBI gene"
       },
@@ -94,7 +88,6 @@
         "dataSourceUrl": "https://doi.org/10.6084/m9.figshare.4028700.v3",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-03-12",
-        "datamodel": "classification",
         "primaryKey": "ncbigene",
         "keyLabel": "NCBI gene"
       },
@@ -107,7 +100,6 @@
         "dataSourceUrl": "https://doi.org/10.1101/311563",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-03-29",
-        "datamodel": "classification",
         "primaryKey": "ensembl_gene",
         "keyLabel": "Ensembl gene"
       },
@@ -120,7 +112,6 @@
         "dataSourceUrl": "https://doi.org/10.1101/311563",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-03-29",
-        "datamodel": "classification",
         "primaryKey": "ensembl_gene",
         "keyLabel": "Ensembl gene"
       },
@@ -133,7 +124,6 @@
         "dataSourceUrl": "https://www.proteinatlas.org/about/download",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-07-28",
-        "datamodel": "classification",
         "primaryKey": "ensembl_gene",
         "keyLabel": "Ensembl gene"
       },
@@ -146,7 +136,6 @@
         "dataSourceUrl": "https://www.proteinatlas.org/about/download",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-07-28",
-        "datamodel": "classification",
         "primaryKey": "ensembl_gene",
         "keyLabel": "Ensembl gene"
       },
@@ -159,7 +148,6 @@
         "dataSourceUrl": "http://dbarchive.biosciencedbc.jp/kyushu-u/hg38/target/",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-03-12",
-        "datamodel": "classification",
         "primaryKey": "ensembl_gene",
         "keyLabel": "Ensembl gene"
       }
@@ -181,7 +169,6 @@
         "dataSourceUrl": "https://www.uniprot.org/",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "classification",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt"
       },{
@@ -193,7 +180,6 @@
         "dataSourceUrl": "https://www.uniprot.org/",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "classification",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt"
       },
@@ -206,7 +192,6 @@
         "dataSourceUrl": "https://www.uniprot.org/",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "classification",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt"
       },
@@ -219,7 +204,6 @@
         "dataSourceUrl": "https://www.uniprot.org/",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "classification",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt"
       },
@@ -232,7 +216,6 @@
         "dataSourceUrl": "https://www.uniprot.org/",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "classification",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt"
       },
@@ -245,7 +228,6 @@
         "dataSourceUrl": "https://www.uniprot.org/",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "distribution",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt",
         "viewMethod": "histogram"
@@ -259,7 +241,6 @@
         "dataSourceUrl": "https://www.uniprot.org/",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "classification",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt"
       },
@@ -272,7 +253,6 @@
         "dataSourceUrl": "https://www.uniprot.org/",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "distribution",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt",
         "viewMethod": "histogram"
@@ -286,7 +266,6 @@
         "dataSourceUrl": "https://www.uniprot.org/",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "distribution",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt",
         "viewMethod": "histogram"
@@ -300,7 +279,6 @@
         "dataSourceUrl": "https://www.uniprot.org/",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "distribution",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt",
         "viewMethod": "histogram"
@@ -314,7 +292,6 @@
         "dataSourceUrl": "https://www.uniprot.org/",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "classification",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt"
       },
@@ -327,7 +304,6 @@
         "dataSourceUrl": "https://www.uniprot.org/",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "classification",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt"
       },
@@ -340,7 +316,6 @@
         "dataSourceUrl": "https://www.nextprot.org/",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-02-18",
-        "datamodel": "classification",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt"
       }
@@ -362,7 +337,6 @@
         "dataSourceUrl": "https://www.uniprot.org/help/structure_section",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "classification",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt"
       },
@@ -375,7 +349,6 @@
         "dataSourceUrl": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-08-19",
-        "datamodel": "classification",
         "primaryKey": "pdb",
         "keyLabel": "PDB",
         "viewMethod": "histogram"
@@ -389,7 +362,6 @@
         "dataSourceUrl": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-08-19",
-        "datamodel": "classification",
         "primaryKey": "pdb",
         "keyLabel": "PDB",
         "viewMethod": "histogram"
@@ -403,7 +375,6 @@
         "dataSourceUrl": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-08-19",
-        "datamodel": "classification",
         "primaryKey": "pdb",
         "keyLabel": "PDB",
         "viewMethod": "histogram"
@@ -417,7 +388,6 @@
         "dataSourceUrl": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-08-19",
-        "datamodel": "classification",
         "primaryKey": "pdb",
         "keyLabel": "PDB"
       },
@@ -430,7 +400,6 @@
         "dataSourceUrl": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-08-19",
-        "datamodel": "classification",
         "primaryKey": "pdb",
         "keyLabel": "PDB"
       },
@@ -443,7 +412,6 @@
         "dataSourceUrl": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-08-19",
-        "datamodel": "classification",
         "primaryKey": "pdb",
         "keyLabel": "PDB"
       },
@@ -456,7 +424,6 @@
         "dataSourceUrl": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-08-19",
-        "datamodel": "classification",
         "primaryKey": "pdb",
         "keyLabel": "PDB"
       }
@@ -475,7 +442,6 @@
         "dataSourceUrl": "https://reactome.org/download-data",
         "dataSourceVersion": "71",
         "updatedAt": "2021-03-05",
-        "datamodel": "classification",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt"
       },
@@ -488,7 +454,6 @@
         "dataSourceUrl": "https://reactome.org/download-data",
         "dataSourceVersion": "71",
         "updatedAt": "2021-03-05",
-        "datamodel": "classification",
         "primaryKey": "chebi",
         "keyLabel": "ChEBI compound"
       },
@@ -501,7 +466,6 @@
         "dataSourceUrl": "https://www.uniprot.org/help/interaction_section",
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
-        "datamodel": "classification",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt",
         "viewMethod": "histogram"
@@ -515,7 +479,6 @@
         "dataSourceUrl": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
         "dataSourceVersion": "CHEMBL29",
         "updatedAt": "2021-03-01",
-        "datamodel": "classification",
         "primaryKey": "uniprot",
         "keyLabel": "UniProt"
       }
@@ -537,7 +500,6 @@
         "dataSourceUrl": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
         "dataSourceVersion": "CHEMBL29",
         "updatedAt": "2021-03-01",
-        "datamodel": "classification",
         "primaryKey": "chembl_compound",
         "keyLabel": "ChEMBL compound"
       },
@@ -550,7 +512,6 @@
         "dataSourceUrl": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:51086",
         "dataSourceVersion": "Release 202",
         "updatedAt": "2021-08-01",
-        "datamodel": "classification",
         "primaryKey": "chebi",
         "keyLabel": "ChEBI compound"
       },
@@ -563,7 +524,6 @@
         "dataSourceUrl": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33232",
         "dataSourceVersion": "Release 202",
         "updatedAt": "2021-08-01",
-        "datamodel": "classification",
         "primaryKey": "chebi",
         "keyLabel": "ChEBI compound"
       },
@@ -576,7 +536,6 @@
         "dataSourceUrl": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
         "dataSourceVersion": "CHEMBL28",
         "updatedAt": "2021-03-01",
-        "datamodel": "classification",
         "primaryKey": "chembl_compound",
         "keyLabel": "ChEMBL compound"
       },
@@ -589,7 +548,6 @@
         "dataSourceUrl": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:24432",
         "dataSourceVersion": "Release 202",
         "updatedAt": "2021-08-01",
-        "datamodel": "classification",
         "primaryKey": "chebi",
         "keyLabel": "ChEBI compound"
       },
@@ -602,7 +560,6 @@
         "dataSourceUrl": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
         "dataSourceVersion": "CHEMBL28",
         "updatedAt": "2021-03-01",
-        "datamodel": "classification",
         "primaryKey": "chembl_compound",
         "keyLabel": "ChEMBL compound"
       },
@@ -615,7 +572,6 @@
         "dataSourceUrl": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
         "dataSourceVersion": "CHEMBL28",
         "updatedAt": "2021-03-01",
-        "datamodel": "classification",
         "primaryKey": "chembl_compound",
         "keyLabel": "ChEMBL compound"
       },
@@ -628,7 +584,6 @@
         "dataSourceUrl": "",
         "dataSourceVersion": "",
         "updatedAt": "14 Jul, 2021",
-        "datamodel": "classification",
         "primaryKey": "pubchem_compound",
         "keyLabel": "PubChem compound"
       },
@@ -641,7 +596,6 @@
         "dataSourceUrl": "",
         "dataSourceVersion": "",
         "updatedAt": "14 Jul, 2021",
-        "datamodel": "classification",
         "primaryKey": "chembl_compound",
         "keyLabel": "ChEMBL compound"
       }
@@ -663,7 +617,6 @@
         "dataSourceUrl": "https://glycosmos.org/data",
         "dataSourceVersion": "N/A",
         "updatedAt": "N/A",
-        "datamodel": "classification",
         "primaryKey": "glytoucan",
         "keyLabel": "GlyTouCan",
         "viewMethod": "histogram"
@@ -677,7 +630,6 @@
         "dataSourceUrl": "https://glycosmos.org/data",
         "dataSourceVersion": "N/A",
         "updatedAt": "N/A",
-        "datamodel": "classification",
         "primaryKey": "glytoucan",
         "keyLabel": "GlyTouCan"
       }
@@ -699,7 +651,6 @@
         "dataSourceUrl": "https://mondo.monarchinitiative.org/",
         "dataSourceVersion": "v2021-08-11",
         "updatedAt": "2021-08-11",
-        "datamodel": "classification",
         "primaryKey": "mondo",
         "keyLabel": "Mondo"
       },
@@ -712,7 +663,6 @@
         "dataSourceUrl": "https://www.nlm.nih.gov/mesh/meshhome.html",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-03-05",
-        "datamodel": "classification",
         "primaryKey": "mesh",
         "keyLabel": "MeSH"
       },
@@ -725,7 +675,6 @@
         "dataSourceUrl": "http://nanbyodata.jp/ontology/nando",
         "dataSourceVersion": "1.0.1",
         "updatedAt": "2021-08-05",
-        "datamodel": "classification",
         "primaryKey": "nando",
         "keyLabel": "NANDO"
       },
@@ -738,7 +687,6 @@
         "dataSourceUrl": "https://mondo.monarchinitiative.org/",
         "dataSourceVersion": "v2021-06-01",
         "updatedAt": "2021-06-23",
-        "datamodel": "classification",
         "primaryKey": "mondo",
         "keyLabel": "Mondo"
       },
@@ -751,7 +699,6 @@
         "dataSourceUrl": "https://hpo.jax.org/app/browse/term/HP:0000118",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-02-17",
-        "datamodel": "classification",
         "primaryKey": "hp",
         "keyLabel": "Human Phenotype Ontology"
       }
@@ -770,7 +717,6 @@
         "dataSourceUrl": "https://www.ebi.ac.uk/gwas/docs/file-downloads",
         "dataSourceVersion": "v1.0.2",
         "updatedAt": "2021-03-25",
-        "datamodel": "classification",
         "primaryKey": "togovar",
         "keyLabel": "TogoVar variant"
       },
@@ -783,7 +729,6 @@
         "dataSourceUrl": "https://www.ncbi.nlm.nih.gov/clinvar/docs/clinsig/",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-08-05",
-        "datamodel": "classification",
         "primaryKey": "togovar",
         "keyLabel": "TogoVar variant"
       }
