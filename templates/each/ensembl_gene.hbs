@@ -2,7 +2,6 @@
   <header>
     <h1>Ensembl Gene</h1>
   </header>
-
   <section>
     <h2>Transcripts from {{id}}</h2>
       <togostanza-pagination-table
@@ -12,9 +11,8 @@
         page-size-option="10,20,50,100"
         page-slider="true"
         columns="[{&quot;id&quot;:&quot;enst_id&quot;,&quot;label&quot;:&quot;Ensembl Transcript ID&quot;,&quot;link&quot;:&quot;enst_url&quot;},{&quot;id&quot;:&quot;label&quot;,&quot;label&quot;:&quot;Name&quot;},{&quot;id&quot;:&quot;type&quot;,&quot;label&quot;:&quot;Biotype&quot;},{&quot;id&quot;:&quot;location&quot;,&quot;label&quot;:&quot;Location&quot;},{&quot;id&quot;:&quot;exon_count&quot;,&quot;label&quot;:&quot;# of Exons&quot;},{&quot;id&quot;:&quot;uniprot_id&quot;,&quot;label&quot;:&quot;Uniprot&quot;,&quot;escape&quot;:false}]"
-        custom-css-url="/css/stanza.css"/>
+        />
   </section>
-
   <section>
     <h2>Expression of {{id}} (GTEx v8)</h2>
     <togostanza-barchart
@@ -50,8 +48,7 @@
       bar-width="0.8"
       legend="true"
       metastanza-menu-placement="top-right"
-      custom-css-url="/css/stanza.css"/>
+      />
   </section>
-
   <a href="https://gtexportal.org/home/gene/{{id}}" target="_blank">View at GTEx Portal</a>
 </article>
