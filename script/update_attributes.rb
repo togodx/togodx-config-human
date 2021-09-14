@@ -62,19 +62,19 @@ if __FILE__ == $0
   config = properties.each_with_object({}) do |subject, hash|
     hash[:tracks] ||= []
     hash[:attributes] ||= {}
-    hash[:idTypes] ||= {}
+    hash[:datasets] ||= {}
 
     s = Subject.new(subject)
 
     # identifiers
-    ids = s.properties.map{|p| { idType: p.key, label: p.keyLabel } }.uniq
+    ids = s.properties.map{|p| { dataset: p.key, label: p.keyLabel } }.uniq
 
     ids.each do |id|
-      type = id.delete(:idType)
+      type = id.delete(:dataset)
       id[:template] = "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/#{type}.hbs"
       id[:target] = true
 
-      hash[:idTypes][type] = id
+      hash[:datasets][type] = id
     end
 
     s.properties.each do |prop|
@@ -93,9 +93,9 @@ if __FILE__ == $0
     hash[:tracks] << h
   end
 
-  id_types = config[:idTypes].keys
+  id_types = config[:datasets].keys
   id_types.each do |id|
-    config[:idTypes][id][:conversion] = id_types.each_with_object({}) do |oid, hash|
+    config[:datasets][id][:conversion] = id_types.each_with_object({}) do |oid, hash|
       hash[oid] = "https://api.togoid.jp/convert?format=json&route=#{id},#{oid}" if id != oid
     end
   end

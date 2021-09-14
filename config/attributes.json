@@ -931,7 +931,7 @@
       ]
     }
   },
-  "idTypes": {
+  "datasets": {
     "ensembl_gene": {
       "label": "Ensembl gene",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ensembl_gene.hbs",
