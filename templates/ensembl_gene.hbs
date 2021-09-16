@@ -2,4 +2,12 @@
   <header>
     <h1>Ensembl Gene: {{id}}</h1>
   </header>
+  <section>
+    <togostanza-hash-table
+    data-url="https://integbio.jp/togosite/sparqlist/api/togosite_ensembl_gene_summary?id={{id}}&amp;type=ensembl_gene"
+    data-type="json"
+    format-key="true"
+    columns="[{&quot;id&quot;:&quot;Ensembl ID&quot;,&quot;link&quot;:&quot;Ensembl URL&quot;},{&quot;id&quot;:&quot;Gene symbol&quot;},{&quot;id&quot;:&quot;Description&quot;},{&quot;id&quot;:&quot;Gene type&quot;},{&quot;id&quot;:&quot;Location&quot;},{&quot;id&quot;:&quot;Tissue specificity (GTEx)&quot;},{&quot;id&quot;:&quot;Tissue specificity (HPA)&quot;},{&quot;id&quot;:&quot;Cell specificity (HPA)&quot;},{&quot;id&quot;:&quot;Expression&quot;,&quot;escape&quot;:false}]"
+    />
+  </section>
 </article>
