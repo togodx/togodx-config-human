@@ -35,12 +35,12 @@ class Property
       api: @data,
       dataset: @key,
       datamodel: @datamodel,
-      data: [
+      source: [
         {
           label: @data_source,
           url: @data_source_url,
           version: @data_source_version,
-          updateDate: @update,
+          updated: @update,
         },
       ],
     }
@@ -70,7 +70,7 @@ if __FILE__ == $0
   end
 
   config = properties.each_with_object({}) do |subject, hash|
-    hash[:tracks] ||= []
+    hash[:categories] ||= []
     hash[:attributes] ||= {}
     hash[:datasets] ||= {}
 
@@ -108,7 +108,7 @@ if __FILE__ == $0
       attributes: s.properties.map{|p| p.id }
     }
 
-    hash[:tracks] << h
+    hash[:categories] << h
   end
 
   id_types = config[:datasets].keys
