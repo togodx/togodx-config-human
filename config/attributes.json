@@ -38,8 +38,8 @@
       ]
     },
     {
-      "id": "proteinStructure",
-      "label": "Protein structure",
+      "id": "structure",
+      "label": "Structure",
       "attributes": [
         "structure_data_existence_uniprot",
         "structure_number_of_alpha_helices_pdb",
@@ -62,8 +62,8 @@
       ]
     },
     {
-      "id": "chemicalCompound",
-      "label": "Chemical compound",
+      "id": "compound",
+      "label": "Compound",
       "attributes": [
         "compound_substance_type_chembl",
         "compound_chemical_role_chebi",
@@ -111,12 +111,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_biotype_ensembl",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Ensembl",
           "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
           "version": null,
-          "updateDate": "2020-10-29"
+          "updated": "2020-10-29"
         }
       ]
     },
@@ -126,12 +126,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_chromosome_ensembl",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Ensembl human release 102",
           "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
           "version": null,
-          "updateDate": "2020-10-29"
+          "updated": "2020-10-29"
         }
       ]
     },
@@ -141,12 +141,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_number_of_exons_ensembl",
       "dataset": "ensembl_transcript",
       "datamodel": "distribution",
-      "data": [
+      "source": [
         {
           "label": "Ensembl human release 102",
           "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
           "version": null,
-          "updateDate": "2020-10-29"
+          "updated": "2020-10-29"
         }
       ]
     },
@@ -156,12 +156,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_number_of_paralogs_homologene",
       "dataset": "ncbigene",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "HomoloGene",
           "url": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
           "version": null,
-          "updateDate": "2021-03-12"
+          "updated": "2021-03-12"
         }
       ]
     },
@@ -171,12 +171,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_evolutionary_conservation_homologene",
       "dataset": "ncbigene",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "HomoloGene",
           "url": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
           "version": null,
-          "updateDate": "2021-03-12"
+          "updated": "2021-03-12"
         }
       ]
     },
@@ -186,12 +186,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_high_level_expression_refex",
       "dataset": "ncbigene",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
           "url": "https://doi.org/10.6084/m9.figshare.4028700.v3",
           "version": null,
-          "updateDate": "2021-03-12"
+          "updated": "2021-03-12"
         }
       ]
     },
@@ -201,12 +201,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_low_level_expression_refex",
       "dataset": "ncbigene",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
           "url": "https://doi.org/10.6084/m9.figshare.4028700.v3",
           "version": null,
-          "updateDate": "2021-03-12"
+          "updated": "2021-03-12"
         }
       ]
     },
@@ -216,12 +216,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_high_level_expression_gtex6",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Supplementary Table 1 of A systematic survey of human tissue-specific gene expression and splicing reveals new opportunities for therapeutic target identification and evaluation; R. Y. Yang et al.; bioRxiv 311563",
           "url": "https://doi.org/10.1101/311563",
           "version": null,
-          "updateDate": "2021-03-29"
+          "updated": "2021-03-29"
         }
       ]
     },
@@ -231,12 +231,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_not_expressed_in_tissues_gtex",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Supplementary Table 1 of A systematic survey of human tissue-specific gene expression and splicing reveals new opportunities for therapeutic target identification and evaluation; R. Y. Yang et al.; bioRxiv 311563",
           "url": "https://doi.org/10.1101/311563",
           "version": null,
-          "updateDate": "2021-03-29"
+          "updated": "2021-03-29"
         }
       ]
     },
@@ -246,12 +246,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_specific_expression_in_tissues_hpa",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "HPA TSV",
           "url": "https://www.proteinatlas.org/about/download",
           "version": null,
-          "updateDate": "2021-07-28"
+          "updated": "2021-07-28"
         }
       ]
     },
@@ -261,12 +261,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_specific_expression_in_cells_hpa",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "HPA TSV",
           "url": "https://www.proteinatlas.org/about/download",
           "version": null,
-          "updateDate": "2021-07-28"
+          "updated": "2021-07-28"
         }
       ]
     },
@@ -276,12 +276,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/gene_transcription_factors_chip_atlas",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "ChIP-Atlas",
           "url": "http://dbarchive.biosciencedbc.jp/kyushu-u/hg38/target/",
           "version": null,
-          "updateDate": "2021-03-12"
+          "updated": "2021-03-12"
         }
       ]
     },
@@ -291,12 +291,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_domains_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "UniProt",
           "url": "https://www.uniprot.org/",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -306,12 +306,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_cellular_component_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Gene ontology cellular component annotation from UniProt",
           "url": "https://www.uniprot.org/",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -321,12 +321,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_biological_process_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Gene ontology biological process annotation from UniProt",
           "url": "https://www.uniprot.org/",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -336,12 +336,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_molecular_function_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Gene ontology molecular function annotation from UniProt",
           "url": "https://www.uniprot.org/",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -351,12 +351,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_ligands_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Function from UniProt",
           "url": "https://www.uniprot.org/",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -366,12 +366,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_molecular_mass_uniprot",
       "dataset": "uniprot",
       "datamodel": "distribution",
-      "data": [
+      "source": [
         {
           "label": "Sequences from UniProt",
           "url": "https://www.uniprot.org/",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -381,12 +381,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_ptms_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Amino acid modifications from UniProt",
           "url": "https://www.uniprot.org/",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -396,12 +396,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_number_of_transmembrane_domains_uniprot",
       "dataset": "uniprot",
       "datamodel": "distribution",
-      "data": [
+      "source": [
         {
           "label": "Topology from UniProt",
           "url": "https://www.uniprot.org/",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -411,12 +411,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_number_of_phosphorylation_sites_uniprot",
       "dataset": "uniprot",
       "datamodel": "distribution",
-      "data": [
+      "source": [
         {
           "label": "Amino acid modifications from UniProt",
           "url": "https://www.uniprot.org/",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -426,12 +426,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_number_of_glycosylation_sites_uniprot",
       "dataset": "uniprot",
       "datamodel": "distribution",
-      "data": [
+      "source": [
         {
           "label": "Amino acid modifications from UniProt",
           "url": "https://www.uniprot.org/",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -441,12 +441,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_disease_related_proteins_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Pathology & Biotech from UniProt",
           "url": "https://www.uniprot.org/",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -456,12 +456,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_isolation_source_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Tissue from UniProt",
           "url": "https://www.uniprot.org/",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -471,12 +471,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/protein_evidence_of_existence_nextprot",
       "dataset": "uniprot",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Expression from neXtProt",
           "url": "https://www.nextprot.org/",
           "version": null,
-          "updateDate": "2021-02-18"
+          "updated": "2021-02-18"
         }
       ]
     },
@@ -486,12 +486,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_data_existence_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Structure from Uniprot",
           "url": "https://www.uniprot.org/help/structure_section",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -501,12 +501,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_number_of_alpha_helices_pdb",
       "dataset": "pdb",
       "datamodel": "distribution",
-      "data": [
+      "source": [
         {
           "label": "'Helix' entities counted in each entry of PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
           "version": null,
-          "updateDate": "2021-08-19"
+          "updated": "2021-08-19"
         }
       ]
     },
@@ -516,12 +516,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_number_of_beta_sheets_pdb",
       "dataset": "pdb",
       "datamodel": "distribution",
-      "data": [
+      "source": [
         {
           "label": "'Sheet' entities counted in each entry of PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
           "version": null,
-          "updateDate": "2021-08-19"
+          "updated": "2021-08-19"
         }
       ]
     },
@@ -531,12 +531,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_number_of_peptides_pdb",
       "dataset": "pdb",
       "datamodel": "distribution",
-      "data": [
+      "source": [
         {
           "label": "Entity from PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
           "version": null,
-          "updateDate": "2021-08-19"
+          "updated": "2021-08-19"
         }
       ]
     },
@@ -546,12 +546,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_other_related_molecules_pdb",
       "dataset": "pdb",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Entity from PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
           "version": null,
-          "updateDate": "2021-08-19"
+          "updated": "2021-08-19"
         }
       ]
     },
@@ -561,12 +561,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_analysis_methods_pdb",
       "dataset": "pdb",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Experimental method from PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
           "version": null,
-          "updateDate": "2021-08-19"
+          "updated": "2021-08-19"
         }
       ]
     },
@@ -576,12 +576,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_crystallization_temperature_pdb",
       "dataset": "pdb",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Crystallization Conditions from PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
           "version": null,
-          "updateDate": "2021-08-19"
+          "updated": "2021-08-19"
         }
       ]
     },
@@ -591,12 +591,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/structure_crystallization_ph_pdb",
       "dataset": "pdb",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Crystallization Conditions from PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
           "version": null,
-          "updateDate": "2021-08-19"
+          "updated": "2021-08-19"
         }
       ]
     },
@@ -606,12 +606,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/interaction_proteins_in_pathway_reactome",
       "dataset": "uniprot",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Reactome",
           "url": "https://reactome.org/download-data",
           "version": null,
-          "updateDate": "2021-03-05"
+          "updated": "2021-03-05"
         }
       ]
     },
@@ -621,12 +621,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/interaction_compounds_in_pathway_reactome",
       "dataset": "chebi",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Reactome",
           "url": "https://reactome.org/download-data",
           "version": null,
-          "updateDate": "2021-03-05"
+          "updated": "2021-03-05"
         }
       ]
     },
@@ -636,12 +636,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/interaction_number_of_interacting_proteins_uniprot",
       "dataset": "uniprot",
       "datamodel": "distribution",
-      "data": [
+      "source": [
         {
           "label": "Interaction from UniProt",
           "url": "https://www.uniprot.org/help/interaction_section",
           "version": null,
-          "updateDate": "2021-06-17"
+          "updated": "2021-06-17"
         }
       ]
     },
@@ -651,12 +651,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/interaction_chembl_assay_existence_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Target protein from ChEMBL-RDF 28.0 against all UniProt entries",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
           "version": null,
-          "updateDate": "2021-03-01"
+          "updated": "2021-03-01"
         }
       ]
     },
@@ -666,12 +666,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_substance_type_chembl",
       "dataset": "chembl_compound",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
           "version": null,
-          "updateDate": "2021-03-01"
+          "updated": "2021-03-01"
         }
       ]
     },
@@ -681,12 +681,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_chemical_role_chebi",
       "dataset": "chebi",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Chemical role from ChEBI",
           "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:51086",
           "version": null,
-          "updateDate": "2021-08-01"
+          "updated": "2021-08-01"
         }
       ]
     },
@@ -696,12 +696,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_application_type_chebi",
       "dataset": "chebi",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Application type from ChEBI",
           "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33232",
           "version": null,
-          "updateDate": "2021-08-01"
+          "updated": "2021-08-01"
         }
       ]
     },
@@ -711,12 +711,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_action_type_chembl",
       "dataset": "chembl_compound",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
           "version": null,
-          "updateDate": "2021-03-01"
+          "updated": "2021-03-01"
         }
       ]
     },
@@ -726,12 +726,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_biological_role_chebi",
       "dataset": "chebi",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Biological role from ChEBI ",
           "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:24432",
           "version": null,
-          "updateDate": "2021-08-01"
+          "updated": "2021-08-01"
         }
       ]
     },
@@ -741,12 +741,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_drug_indication_mesh_chembl",
       "dataset": "chembl_compound",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
           "version": null,
-          "updateDate": "2021-03-01"
+          "updated": "2021-03-01"
         }
       ]
     },
@@ -756,12 +756,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_drug_development_phase_chembl",
       "dataset": "chembl_compound",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
           "version": null,
-          "updateDate": "2021-03-01"
+          "updated": "2021-03-01"
         }
       ]
     },
@@ -771,12 +771,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_atc_classification_pubchem",
       "dataset": "pubchem_compound",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "",
           "url": "",
           "version": null,
-          "updateDate": "14 Jul, 2021"
+          "updated": "14 Jul, 2021"
         }
       ]
     },
@@ -786,12 +786,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/compound_atc_classification_chembl",
       "dataset": "chembl_compound",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "",
           "url": "",
           "version": null,
-          "updateDate": "14 Jul, 2021"
+          "updated": "14 Jul, 2021"
         }
       ]
     },
@@ -801,12 +801,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/glycan_mass_glycosmos",
       "dataset": "glytoucan",
       "datamodel": "distribution",
-      "data": [
+      "source": [
         {
           "label": "GlyCosmos",
           "url": "https://glycosmos.org/data",
           "version": null,
-          "updateDate": "N/A"
+          "updated": "N/A"
         }
       ]
     },
@@ -816,12 +816,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/glycan_tissue_glycosmos",
       "dataset": "glytoucan",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "GlyCosmos",
           "url": "https://glycosmos.org/data",
           "version": null,
-          "updateDate": "N/A"
+          "updated": "N/A"
         }
       ]
     },
@@ -831,12 +831,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/disease_diseases_mondo",
       "dataset": "mondo",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Mondo Disease Ontology (Mondo)",
           "url": "https://mondo.monarchinitiative.org/",
           "version": null,
-          "updateDate": "2021-08-11"
+          "updated": "2021-08-11"
         }
       ]
     },
@@ -846,12 +846,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/disease_diseases_mesh",
       "dataset": "mesh",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Medical Subject Headings (MeSH)",
           "url": "https://www.nlm.nih.gov/mesh/meshhome.html",
           "version": null,
-          "updateDate": "2021-03-05"
+          "updated": "2021-03-05"
         }
       ]
     },
@@ -861,12 +861,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/disease_diseases_nando",
       "dataset": "nando",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Nanbyo Disease Ontology (NANDO)",
           "url": "http://nanbyodata.jp/ontology/nando",
           "version": null,
-          "updateDate": "2021-08-05"
+          "updated": "2021-08-05"
         }
       ]
     },
@@ -876,12 +876,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/disease_related_dbs_mondo",
       "dataset": "mondo",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Mondo Disease Ontology (Mondo)",
           "url": "https://mondo.monarchinitiative.org/",
           "version": null,
-          "updateDate": "2021-06-23"
+          "updated": "2021-06-23"
         }
       ]
     },
@@ -891,12 +891,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/disease_phenotypic_abnormality_hpo",
       "dataset": "hp",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "Human Phenotype Ontology (HPO)",
           "url": "https://hpo.jax.org/app/browse/term/HP:0000118",
           "version": null,
-          "updateDate": "2021-02-17"
+          "updated": "2021-02-17"
         }
       ]
     },
@@ -906,12 +906,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/variant_gwas_togovar",
       "dataset": "togovar",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "GWAS Catalog All associations ",
           "url": "https://www.ebi.ac.uk/gwas/docs/file-downloads",
           "version": null,
-          "updateDate": "2021-03-25"
+          "updated": "2021-03-25"
         }
       ]
     },
@@ -921,12 +921,12 @@
       "api": "https://integbio.jp/togosite/sparqlist/api/variant_clinical_significance_togovar",
       "dataset": "togovar",
       "datamodel": "classification",
-      "data": [
+      "source": [
         {
           "label": "ClinVar",
           "url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/clinsig/",
           "version": null,
-          "updateDate": "2021-08-05"
+          "updated": "2021-08-05"
         }
       ]
     }
