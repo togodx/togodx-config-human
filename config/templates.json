@@ -5,12 +5,27 @@
     "https://togostanza.github.io/metastanza/pagination-table.js"
   ],
   "templates": {
-    "variant": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/variant.hbs",
-    "gene": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/gene.hbs",
-    "protein": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/protein.hbs",
-    "interaction": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/interaction.hbs",
-    "proteinStructure": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/proteinStructure.hbs",
-    "chemicalCompound": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/chemicalCompound.hbs",
-    "disease": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/disease.hbs"
+    "chebi": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/chebi.hbs",
+    "chembl_compound": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/chembl_compound.hbs",
+    "chemicalCompound": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/chemicalCompound.hbs",
+    "disease": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/disease.hbs",
+    "ensembl_gene": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ensembl_gene.hbs",
+    "ensembl_transcript": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ensembl_transcript.hbs",
+    "gene": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/gene.hbs",
+    "glycan": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/glycan.hbs",
+    "glytoucan": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/glytoucan.hbs",
+    "hp": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/hp.hbs",
+    "interaction": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/interaction.hbs",
+    "mesh": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/mesh.hbs",
+    "mondo": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/mondo.hbs",
+    "nando": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/nando.hbs",
+    "ncbigene": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ncbigene.hbs",
+    "pdb": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/pdb.hbs",
+    "protein": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/protein.hbs",
+    "proteinStructure": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/proteinStructure.hbs",
+    "pubchem_compound": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/pubchem_compound.hbs",
+    "togovar": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/togovar.hbs",
+    "uniprot": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/uniprot.hbs",
+    "variant": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/variant.hbs"
   }
 }

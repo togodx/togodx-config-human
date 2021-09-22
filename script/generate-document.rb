@@ -40,7 +40,7 @@ class TogoSite
   end
 
   module Human
-    SUBJECTS_JSON_URL = "https://github.com/dbcls/togosite/raw/develop/config/togosite-human/properties.json"
+    SUBJECTS_JSON_URL = "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/config/properties.json"
 
     class << self
       include Subjects

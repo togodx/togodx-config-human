@@ -322,8 +322,8 @@
     ]
   },
   {
-    "subject": "Protein structure",
-    "subjectId": "proteinStructure",
+    "subject": "Structure",
+    "subjectId": "structure",
     "togoKey": "pdb",
     "keyLabel": "Protein structure (PDB)",
     "togoKeyExamples": ["1914", "5PQ5", "5YZU"],
@@ -485,8 +485,8 @@
     ]
   },
   {
-    "subject": "Chemical compound",
-    "subjectId": "chemicalCompound",
+    "subject": "Compound",
+    "subjectId": "compound",
     "togoKey": "pubchem_compound",
     "keyLabel": "Chemical compound (PubChem)",
     "togoKeyExamples": ["564", "1046", "1981"],
