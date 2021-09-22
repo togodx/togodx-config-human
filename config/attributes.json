@@ -1074,7 +1074,7 @@
         "P35222",
         "P21359-1",
         "P01111",
-        "P60484-1",
+        "P60484-1"
       ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=uniprot,ensembl_gene",
@@ -1101,7 +1101,7 @@
         "2N9C",
         "1G3J",
         "2ENQ",
-        "1DD1",
+        "1DD1"
       ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=pdb,ensembl_gene",
@@ -1133,7 +1133,7 @@
         "CHEBI:30616",
         "CHEBI:456216",
         "CHEBI:29108",
-        "CHEBI:29105",
+        "CHEBI:29105"
       ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=chebi,ensembl_gene",
@@ -1159,7 +1159,7 @@
         "CHEMBL2007625",
         "CHEMBL4005",
         "CHEMBL5866",
-        "CHEMBL2079845",
+        "CHEMBL2079845"
       ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=chembl_compound,ensembl_gene",
@@ -1190,7 +1190,7 @@
         "5461108",
         "7058055",
         "271",
-        "32051",
+        "32051"
       ],
       "conversion": {
         "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,ensembl_gene",
