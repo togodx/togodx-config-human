@@ -39,7 +39,7 @@ TogoDX は知識グラフを用いて統合されたデータであれば、対�
 
 ## TogoDX/Human とは
 
-TogoDX/Human は　TogoDXのフレームワークを用いて、ヒトに関するデータを統合的に探索するためのインターフェースを提供します。遺伝子、タンパク質、化合物、疾患などの情報を国内外のデータベースからデータを収集・統合しています。本サイトは、[NBDC](https://biosciencedbc.jp/)/[DBCLS](https://dbcls.rois.ac.jp/) が開発・提供しています。
+TogoDX/Human は　TogoDXのフレームワークを用いて、ヒトに関するデータを統合的に探索するためのインターフェースを提供します。遺伝子、タンパク質、化合物、疾患などの情報を国内外のデータベースから収集・統合しています。本サイトは、[NBDC](https://biosciencedbc.jp/)/[DBCLS](https://dbcls.rois.ac.jp/) が開発・提供しています。
 
 ## TogoDX/Human の特長
 
