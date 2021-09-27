@@ -9,7 +9,7 @@
       {
         "propertyId": "gene_biotype_ensembl",
         "label": "Gene biotype",
-        "description": "Gene or transcript classification annotated in Ensembl",
+        "description": "Gene classification annotated in Ensembl. Definition of gene biotypes is described [here](http://useast.ensembl.org/info/genome/genebuild/biotypes.html).",
         "data": "https://integbio.jp/togosite/sparqlist/api/gene_biotype_ensembl",
         "dataSource": "Ensembl",
         "dataSourceUrl": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
@@ -58,7 +58,7 @@
       {
         "propertyId": "gene_evolutionary_conservation_homologene",
         "label": "Evolutionary divergence",
-        "description": "Most distant organisms from human that have orthologous genes in HomoloGene",
+        "description": "Most distant organisms from human that have orthologous genes in HomoloGene. On the basis of HomoloGene database including 21 eukaryotic species and divergence times between human and each species, the most distant organisms where each human gene is conserved are shown.",
         "data": "https://integbio.jp/togosite/sparqlist/api/gene_evolutionary_conservation_homologene",
         "dataSource": "HomoloGene",
         "dataSourceUrl": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
@@ -70,7 +70,7 @@
       {
         "propertyId": "gene_high_level_expression_refex",
         "label": "High-level expression",
-        "description": "Tissues in which a gene was tissue-specific highly expressed only in one of 34 tissues of RefEx",
+        "description": "Tissues in which a gene was tissue-specific highly expressed only in one of 34 tissues of RefEx. The tissue-specific highly expressed genes provided in this attribute are data available from [RefEx](https://refex.dbcls.jp) and are calculated for 34 organ samples in the original gene expression data ([GSE7307](https://www.ncbi.nlm.nih.gov /geo/query/acc.cgi?acc=GSE7307)). Tissue specificity of each gene was calculated using the ROKU method [(Kadota et al., BMC Bioinformatics, 2006, 7:294)](https://doi.org/10.1186/1471-2105-7-294), with 1 for high expression outliers, -1 for low expression outliers, and 0 for non-outliers. Tissue-specific highly expressed genes provided here refer to genes flagged with \"1\" as outliers that are highly expressed only in a single organ.",
         "data": "https://integbio.jp/togosite/sparqlist/api/gene_high_level_expression_refex",
         "dataSource": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
         "dataSourceUrl": "https://doi.org/10.6084/m9.figshare.4028700.v3",
@@ -82,7 +82,7 @@
       {
         "propertyId": "gene_low_level_expression_refex",
         "label": "Low-level expression",
-        "description": "Tissues in which a gene was tissue-specific lowly expressed only in one of 34 tissues of RefEx",
+        "description": "Tissues in which a gene was tissue-specific lowly expressed only in one of 34 tissues of RefEx. The tissue-specific lowly expressed genes provided in this attribute are data available from [RefEx](https://refex.dbcls.jp) and are calculated for 34 organ samples in the original gene expression data ([GSE7307](https://www.ncbi.nlm.nih.gov /geo/query/acc.cgi?acc=GSE7307)). Tissue specificity of each gene was calculated using the ROKU method [(Kadota et al., BMC Bioinformatics, 2006, 7:294)](https://doi.org/10.1186/1471-2105-7-294), with 1 for high expression outliers, -1 for low expression outliers, and 0 for non-outliers. Tissue-specific lowly expressed genes provided here refer to genes flagged with \"-1\" as outliers that are lowly expressed only in a single organ.",
         "data": "https://integbio.jp/togosite/sparqlist/api/gene_low_level_expression_refex",
         "dataSource": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
         "dataSourceUrl": "https://doi.org/10.6084/m9.figshare.4028700.v3",
@@ -94,7 +94,7 @@
       {
         "propertyId": "gene_high_level_expression_gtex6",
         "label": "Expressed in tissues",
-        "description": "Tissues in which a gene is tissue-specific highly expressed in 48 tissues of GTEx",
+        "description": "Tissues in which a gene is tissue-specific highly expressed in 49 tissues of GTEx. In 49 tissues of GTEx V6, a gene whose expression level in the target tissue is eight times higher than the weighted average expression level of the rest of the tissues is defined as a tissue-specific highly expressed gene. Mapping from tissue names to the corresponding [Uberon](https://uberon.github.io/about.html) or [Experimental Factor Ontology \(EFO\)] term is based on [GTEx documentation (Tissue Sampling Sites)](https://gtexportal.org/home/samplingSitePage).",
         "data": "https://integbio.jp/togosite/sparqlist/api/gene_high_level_expression_gtex6",
         "dataSource": "Supplementary Table 1 of A systematic survey of human tissue-specific gene expression and splicing reveals new opportunities for therapeutic target identification and evaluation; R. Y. Yang et al.; bioRxiv 311563",
         "dataSourceUrl": "https://doi.org/10.1101/311563",
@@ -106,19 +106,19 @@
       {
         "propertyId": "gene_not_expressed_in_tissue_gtex",
         "label": "Not expressed in tissues",
-        "description": "Tissues in which expression of a gene is not detected in 48 tissues of GTEx",
+        "description": "Tissues in which expression of a gene is not detected in 53 tissues of GTEx. Tissues in which the gene with zero TPM expression was detected among 53 tissues of GTEx are shown. Mapping from tissue names to the corresponding [Uberon](https://uberon.github.io/about.html) or [Experimental Factor Ontology \(EFO\)] term is based on [GTEx documentation (Tissue Sampling Sites)](https://gtexportal.org/home/samplingSitePage).",
         "data": "https://integbio.jp/togosite/sparqlist/api/gene_not_expressed_in_tissues_gtex",
-        "dataSource": "Supplementary Table 1 of A systematic survey of human tissue-specific gene expression and splicing reveals new opportunities for therapeutic target identification and evaluation; R. Y. Yang et al.; bioRxiv 311563",
-        "dataSourceUrl": "https://doi.org/10.1101/311563",
-        "dataSourceVersion": "N/A",
+        "dataSource": "GTEx",
+        "dataSourceUrl": "https://gtexportal.org/home/datasets",
+        "dataSourceVersion": "Release V8",
         "updatedAt": "2021-03-29",
         "primaryKey": "ensembl_gene",
         "keyLabel": "Ensembl gene"
       },
       {
         "propertyId": "gene_specific_expression_in_tissues_hpa",
-        "label": "Specifically expressed in tissues (HPA)",
-        "description": "Tissues in which expression specificity of a gene is evaluated as \"Tissue enriched\", \"Tissue enhanced\", or\"Group enriched\" by HPA",
+        "label": "Specifically expressed in tissues",
+        "description": "Tissues in which expression specificity of a gene is evaluated as \"Tissue enriched\", \"Tissue enhanced\", or\"Group enriched\" by HPA. Definition of specificity category is described [here](https://www.proteinatlas.org/about/assays+annotation#classification_rna).",
         "data": "https://integbio.jp/togosite/sparqlist/api/gene_specific_expression_in_tissues_hpa",
         "dataSource": "HPA TSV",
         "dataSourceUrl": "https://www.proteinatlas.org/about/download",
@@ -129,8 +129,8 @@
       },
       {
         "propertyId": "gene_specific_expression_in_cells_hpa",
-        "label": "Specifically expressed in cell types (HPA)",
-        "description": "Cell types in which expression specificity of a gene is evaluated as \"Cell type enriched\", \"Cell type enhanced\", or\"Group enriched\" by HPA",
+        "label": "Specifically expressed in cell types",
+        "description": "Cell types in which expression specificity of a gene is evaluated as \"Cell type enriched\", \"Cell type enhanced\", or\"Group enriched\" by HPA. Definition of specificity category is described [here](https://www.proteinatlas.org/about/assays+annotation#classification_rna).",
         "data": "https://integbio.jp/togosite/sparqlist/api/gene_specific_expression_in_cells_hpa",
         "dataSource": "HPA TSV",
         "dataSourceUrl": "https://www.proteinatlas.org/about/download",
