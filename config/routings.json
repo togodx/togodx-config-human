@@ -84,7 +84,7 @@
     "chembl_compound": "https://api.togoid.dbcls.jp/convert?format=json&route=hp,chembl_compound&ids=",
     "pubchem_compound": "https://api.togoid.dbcls.jp/convert?format=json&route=hp,pubchem_compound&ids=",
     "glytoucan": "https://api.togoid.dbcls.jp/convert?format=json&route=hp,glytoucan&ids=",
-    "mondo": "https://api.togoid.dbcls.jp/convert?format=json&route=hp,mondo&ids=",
+    "mondo": "https://api.togoid.dbcls.jp/convert?format=json&route=hp,medgen,mondo&ids=",
     "mesh": "https://api.togoid.dbcls.jp/convert?format=json&route=hp,mesh&ids=",
     "nando": "https://api.togoid.dbcls.jp/convert?format=json&route=hp,nando&ids=",
     "togovar": "https://api.togoid.dbcls.jp/convert?format=json&route=hp,togovar&ids="
@@ -116,7 +116,7 @@
     "glytoucan": "https://api.togoid.dbcls.jp/convert?format=json&route=mondo,glytoucan&ids=",
     "mesh": "https://api.togoid.dbcls.jp/convert?format=json&route=mondo,mesh&ids=",
     "nando": "https://api.togoid.dbcls.jp/convert?format=json&route=mondo,nando&ids=",
-    "hp": "https://api.togoid.dbcls.jp/convert?format=json&route=mondo,hp&ids=",
+    "hp": "https://api.togoid.dbcls.jp/convert?format=json&route=mondo,medgen,hp&ids=",
     "togovar": "https://api.togoid.dbcls.jp/convert?format=json&route=mondo,togovar&ids="
   },
   "nando": {
