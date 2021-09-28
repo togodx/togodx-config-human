@@ -62,7 +62,7 @@ if __FILE__ == $0
   workdir_path = File.expand_path(File.dirname(__FILE__))
 
   properties_json_path = "#{workdir_path}/../config/properties.json"
-  properties = JSON.load(open(properties_json_path).read)
+  properties = JSON.load(open(properties_json_path))
 
   # togoid_dataset_config_url = 'https://raw.githubusercontent.com/dbcls/togoid-config/main/config/dataset.yaml'
   # id_config = YAML.load(open(togoid_dataset_config_url).read)
@@ -72,7 +72,10 @@ if __FILE__ == $0
   # end
 
   id_examples_json_path = "#{workdir_path}/../config/human_examples.json"
-  examples = JSON.load(open(id_examples_json_path).read)
+  examples = JSON.load(open(id_examples_json_path))
+
+  routings_json_path = "#{workdir_path}/../config/routings.json"
+  routings = JSON.load(open(routings_json_path))
 
   config = properties.each_with_object({}) do |subject, hash|
     hash[:categories] ||= []
@@ -116,11 +119,8 @@ if __FILE__ == $0
     hash[:categories] << h
   end
 
-  id_types = config[:datasets].keys
-  id_types.each do |id|
-    config[:datasets][id][:conversion] = id_types.each_with_object({}) do |oid, hash|
-      hash[oid] = "https://api.togoid.dbcls.jp/convert?format=json&route=#{id},#{oid}&ids=" if id != oid
-    end
+  config[:datasets].keys.each do |dataset|
+    config[:datasets][dataset][:conversion] = routings[dataset].each_with_object({}){|(t, r), obj| obj[t] = "https://api.togoid.dbcls.jp/convert?format=json&route=" + r + "&ids=" }
   end
 
   puts JSON(config)
