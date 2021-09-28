@@ -197,7 +197,7 @@
     "omim_phenotype": "pubchem_compound,chembl_compound,mesh,mondo,omim_phenotype",
     "orphanet": "pubchem_compound,chembl_compound,mesh,mondo,orphanet",
     "hp": "pubchem_compound,chembl_compound,mesh,mondo,hp",
-    "mesh": "pubchem_compound,chembl_compound,mesh,mondo"
+    "mesh": "pubchem_compound,chembl_compound,mesh"
   },
   "chembl_compound": {
     "glytoucan": "chembl_compound,pubchem_compound,glytoucan",
@@ -213,11 +213,11 @@
     "chebi": "chembl_compound,chebi",
     "nando": "chembl_compound,mesh,mondo,medgen,nando",
     "mondo": "chembl_compound,mesh,mondo",
-    "medgen": "chembl_compound,mesh,mondo,medgen",
-    "omim_phenotype": "chembl_compound,mesh,mondo,omim_phenotype",
-    "orphanet": "chembl_compound,mesh,mondo,orphanet",
-    "hp": "chembl_compound,mesh,mondo,hp",
-    "mesh": "chembl_compound,mesh,mondo"
+    "medgen": "chembl_compound,mesh,medgen",
+    "omim_phenotype": "chembl_compound,mesh,omim_phenotype",
+    "orphanet": "chembl_compound,mesh,orphanet",
+    "hp": "chembl_compound,mesh,hp",
+    "mesh": "chembl_compound,mesh"
   },
   "chebi": {
     "glytoucan": "chebi,pubchem_compound,glytoucan",
@@ -232,12 +232,12 @@
     "pubchem_compound": "chebi,pubchem_compound",
     "chembl_compound": "chebi,chembl_compound",
     "nando": "chebi,chembl_compound,mesh,mondo,medgen,nando",
-    "mondo": "chebi,chembl_compound,mesh,mondo",
-    "medgen": "chebi,chembl_compound,mesh,mondo,medgen",
-    "omim_phenotype": "chebi,chembl_compound,mesh,mondo,omim_phenotype",
-    "orphanet": "chebi,chembl_compound,mesh,mondo,orphanet",
-    "hp": "chebi,chembl_compound,mesh,mondo,hp",
-    "mesh": "chebi,chembl_compound,mesh,mondo"
+    "mondo": "chebi,chembl_compound,mondo",
+    "medgen": "chebi,chembl_compound,medgen",
+    "omim_phenotype": "chebi,chembl_compound,omim_phenotype",
+    "orphanet": "chebi,chembl_compound,orphanet",
+    "hp": "chebi,chembl_compound,hp",
+    "mesh": "chebi,mesh"
   },
   "nando": {
     "glytoucan": "nando,mondo,medgen,ncbigene,uniprot,glytoucan",
@@ -269,15 +269,15 @@
     "uniprot": "mondo,medgen,ncbigene,uniprot",
     "chembl_target": "mondo,medgen,ncbigene,chembl_target",
     "pdb": "mondo,medgen,ncbigene,uniprot,pdb",
-    "pubchem_compound": "mondo,mesh,chembl_compound,pubchem_compound",
-    "chembl_compound": "mondo,mesh,chembl_compound",
-    "chebi": "mondo,mesh,chembl_compound,chebi",
+    "pubchem_compound": "mondo,pubchem_compound",
+    "chembl_compound": "mondo,chembl_compound",
+    "chebi": "mondo,chebi",
     "nando": "mondo,nando",
     "medgen": "mondo,medgen",
     "omim_phenotype": "mondo,omim_phenotype",
     "orphanet": "mondo,orphanet",
-    "hp": "mondo,hp",
-    "mesh": "mondo,mesh"
+    "hp": "mondo,medgen,hp",
+    "mesh": "mondo,medgen,mesh"
   },
   "medgen": {
     "glytoucan": "medgen,ncbigene,uniprot,glytoucan",
@@ -289,9 +289,9 @@
     "uniprot": "medgen,ncbigene,uniprot",
     "chembl_target": "medgen,ncbigene,chembl_target",
     "pdb": "medgen,ncbigene,uniprot,pdb",
-    "pubchem_compound": "medgen,mondo,mesh,chembl_compound,pubchem_compound",
-    "chembl_compound": "medgen,mondo,mesh,chembl_compound",
-    "chebi": "medgen,mondo,mesh,chembl_compound,chebi",
+    "pubchem_compound": "medgen,pubchem_compound",
+    "chembl_compound": "medgen,chembl_compound",
+    "chebi": "medgen,chebi",
     "nando": "medgen,mondo,nando",
     "mondo": "medgen,mondo",
     "omim_phenotype": "medgen,mondo,omim_phenotype",
@@ -309,15 +309,15 @@
     "uniprot": "omim_phenotype,medgen,ncbigene,uniprot",
     "chembl_target": "omim_phenotype,medgen,ncbigene,chembl_target",
     "pdb": "omim_phenotype,medgen,ncbigene,uniprot,pdb",
-    "pubchem_compound": "omim_phenotype,mondo,mesh,chembl_compound,pubchem_compound",
-    "chembl_compound": "omim_phenotype,mondo,mesh,chembl_compound",
-    "chebi": "omim_phenotype,mondo,mesh,chembl_compound,chebi",
+    "pubchem_compound": "omim_phenotype,pubchem_compound",
+    "chembl_compound": "omim_phenotype,chembl_compound",
+    "chebi": "omim_phenotype,chebi",
     "nando": "omim_phenotype,mondo,nando",
-    "mondo": "omim_phenotype,mondo",
+    "mondo": "omim_phenotype,mondo,medgen",
     "medgen": "omim_phenotype,mondo,medgen",
-    "orphanet": "omim_phenotype,mondo,orphanet",
-    "hp": "omim_phenotype,mondo,hp",
-    "mesh": "omim_phenotype,mondo,mesh"
+    "orphanet": "omim_phenotype,mondo,medgen,orphanet",
+    "hp": "omim_phenotype,mondo,medgen,hp",
+    "mesh": "omim_phenotype,mondo,medgen,mesh"
   },
   "orphanet": {
     "glytoucan": "orphanet,medgen,ncbigene,uniprot,glytoucan",
@@ -329,15 +329,15 @@
     "uniprot": "orphanet,medgen,ncbigene,uniprot",
     "chembl_target": "orphanet,medgen,ncbigene,chembl_target",
     "pdb": "orphanet,medgen,ncbigene,uniprot,pdb",
-    "pubchem_compound": "orphanet,mondo,mesh,chembl_compound,pubchem_compound",
-    "chembl_compound": "orphanet,mondo,mesh,chembl_compound",
-    "chebi": "orphanet,mondo,mesh,chembl_compound,chebi",
+    "pubchem_compound": "orphanet,pubchem_compound",
+    "chembl_compound": "orphanet,chembl_compound",
+    "chebi": "orphanet,chebi",
     "nando": "orphanet,mondo,nando",
-    "mondo": "orphanet,mondo",
+    "mondo": "orphanet,mondo,medgen",
     "medgen": "orphanet,mondo,medgen",
-    "omim_phenotype": "orphanet,mondo,omim_phenotype",
-    "hp": "orphanet,mondo,hp",
-    "mesh": "orphanet,mondo,mesh"
+    "omim_phenotype": "orphanet,mondo,medgen,omim_phenotype",
+    "hp": "orphanet,mondo,medgen,hp",
+    "mesh": "orphanet,mondo,medgen,mesh"
   },
   "hp": {
     "glytoucan": "hp,medgen,ncbigene,uniprot,glytoucan",
@@ -349,15 +349,15 @@
     "uniprot": "hp,medgen,ncbigene,uniprot",
     "chembl_target": "hp,medgen,ncbigene,chembl_target",
     "pdb": "hp,medgen,ncbigene,uniprot,pdb",
-    "pubchem_compound": "hp,mondo,mesh,chembl_compound,pubchem_compound",
-    "chembl_compound": "hp,mondo,mesh,chembl_compound",
-    "chebi": "hp,mondo,mesh,chembl_compound,chebi",
+    "pubchem_compound": "hp,pubchem_compound",
+    "chembl_compound": "hp,chembl_compound",
+    "chebi": "hp,chebi",
     "nando": "hp,mondo,nando",
-    "mondo": "hp,mondo",
-    "medgen": "hp,mondo,medgen",
-    "omim_phenotype": "hp,mondo,omim_phenotype",
-    "orphanet": "hp,mondo,orphanet",
-    "mesh": "hp,mondo,mesh"
+    "mondo": "hp,medgen,mondo",
+    "medgen": "hp,medgen,mondo",
+    "omim_phenotype": "hp,medgen,mondo,omim_phenotype",
+    "orphanet": "hp,medgen,mondo,orphanet",
+    "mesh": "hp,medgen,mondo,mesh"
   },
   "mesh": {
     "glytoucan": "mesh,medgen,ncbigene,uniprot,glytoucan",
@@ -369,14 +369,14 @@
     "uniprot": "mesh,medgen,ncbigene,uniprot",
     "chembl_target": "mesh,medgen,ncbigene,chembl_target",
     "pdb": "mesh,medgen,ncbigene,uniprot,pdb",
-    "pubchem_compound": "mesh,mondo,chembl_compound,pubchem_compound",
-    "chembl_compound": "mesh,mondo,chembl_compound",
-    "chebi": "mesh,mondo,chembl_compound,chebi",
+    "pubchem_compound": "mesh,pubchem_compound",
+    "chembl_compound": "mesh,chembl_compound",
+    "chebi": "mesh,chebi",
     "nando": "mesh,mondo,nando",
-    "mondo": "mesh,mondo",
-    "medgen": "mesh,mondo,medgen",
-    "omim_phenotype": "mesh,mondo,omim_phenotype",
-    "orphanet": "mesh,mondo,orphanet",
-    "hp": "mesh,mondo,hp"
+    "mondo": "mesh,medgen,mondo",
+    "medgen": "mesh,medgen,mondo",
+    "omim_phenotype": "mesh,medgen,mondo,omim_phenotype",
+    "orphanet": "mesh,medgen,mondo,orphanet",
+    "hp": "mesh,medgen,mondo,hp"
   }
 }
