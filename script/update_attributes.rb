@@ -59,15 +59,23 @@ class Subject
 end
 
 if __FILE__ == $0
-  properties_json_path = ARGV[0]
-  properties = JSON.load(open(properties_json_path).read)
+  workdir_path = File.expand_path(File.dirname(__FILE__))
 
-  togoid_dataset_config_url = 'https://raw.githubusercontent.com/dbcls/togoid-config/main/config/dataset.yaml'
-  id_config = YAML.load(open(togoid_dataset_config_url).read)
-  id_examples = id_config.each_with_object({}) do |(id, dataset), hash|
-    examples = dataset["examples"]
-    hash[id] = examples[0].slice(0,5) if examples
-  end
+  properties_json_path = "#{workdir_path}/../config/properties.json"
+  properties = JSON.load(open(properties_json_path))
+
+  # togoid_dataset_config_url = 'https://raw.githubusercontent.com/dbcls/togoid-config/main/config/dataset.yaml'
+  # id_config = YAML.load(open(togoid_dataset_config_url).read)
+  # id_examples = id_config.each_with_object({}) do |(id, dataset), hash|
+  #   examples = dataset["examples"]
+  #   hash[id] = examples[0].slice(0,5) if examples
+  # end
+
+  id_examples_json_path = "#{workdir_path}/../config/human_examples.json"
+  examples = JSON.load(open(id_examples_json_path))
+
+  routings_json_path = "#{workdir_path}/../config/routings.json"
+  routings = JSON.load(open(routings_json_path))
 
   config = properties.each_with_object({}) do |subject, hash|
     hash[:categories] ||= []
@@ -90,7 +98,7 @@ if __FILE__ == $0
         true
       end
 
-      id[:examples] = id_examples[type]
+      id[:examples] = examples[type]
 
       hash[:datasets][type] = id
     end
@@ -111,11 +119,8 @@ if __FILE__ == $0
     hash[:categories] << h
   end
 
-  id_types = config[:datasets].keys
-  id_types.each do |id|
-    config[:datasets][id][:conversion] = id_types.each_with_object({}) do |oid, hash|
-      hash[oid] = "https://api.togoid.jp/convert?format=json&route=#{id},#{oid}" if id != oid
-    end
+  config[:datasets].keys.each do |dataset|
+    config[:datasets][dataset][:conversion] = routings[dataset].each_with_object({}){|(t, r), obj| obj[t] = "https://api.togoid.dbcls.jp/convert?format=json&route=" + r + "&ids=" }
   end
 
   puts JSON(config)
