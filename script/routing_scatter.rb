@@ -13,7 +13,7 @@ if __FILE__ == $0
   end
 
   sections = dataset_category.each_with_object({}) do |(source, s_cat), obj|
-    obj[source] = dataset_category.each_with_object({}) do |(target, t_cat), obj|
+    routes = dataset_category.each_with_object({}) do |(target, t_cat), obj|
       if source != target
         route_s_t = routing["route"][s_cat][t_cat]
         route_t_s = routing["route"][t_cat][s_cat]
@@ -50,7 +50,7 @@ if __FILE__ == $0
         obj[target] = route_complete.join(",")
       end
     end
+    obj[source] = routes.sort_by{|key, value| key }.each_with_object({}){|arr, obj| obj[arr[0]] = arr[1]}
   end
-
-  puts JSON(sections)
+  puts JSON(sections.sort_by{|key, value| key }.each_with_object({}){|arr, obj| obj[arr[0]] = arr[1]})
 end
