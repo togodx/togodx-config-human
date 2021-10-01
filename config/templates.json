@@ -18,6 +18,6 @@
     "pdb": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/pdb.hbs",
     "pubchem_compound": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/pubchem_compound.hbs",
     "togovar": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/togovar.hbs",
-    "uniprot": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/uniprot.hbs",
+    "uniprot": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/uniprot.hbs"
   }
 }
