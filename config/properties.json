@@ -104,7 +104,7 @@
         "keyLabel": "Ensembl gene"
       },
       {
-        "propertyId": "gene_not_expressed_in_tissue_gtex",
+        "propertyId": "gene_not_expressed_in_tissues_gtex",
         "label": "Not expressed in tissues",
         "description": "Tissues in which expression of a gene is not detected in 53 tissues of GTEx V8",
         "data": "https://integbio.jp/togosite/sparqlist/api/gene_not_expressed_in_tissues_gtex",
@@ -492,18 +492,6 @@
     "togoKeyExamples": ["564", "1046", "1981"],
     "properties": [
       {
-        "propertyId": "compound_substance_type_chembl",
-        "label": "Substance type",
-        "description": "Classification based on the type of drug, such as compound or nucleic acid drugs from ChEMBL",
-        "data": "https://integbio.jp/togosite/sparqlist/api/compound_substance_type_chembl",
-        "dataSource": "ChEMBL-RDF",
-        "dataSourceUrl": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
-        "dataSourceVersion": "CHEMBL29",
-        "updatedAt": "2021-03-01",
-        "primaryKey": "chembl_compound",
-        "keyLabel": "ChEMBL compound"
-      },
-      {
         "propertyId": "compound_chemical_role_chebi",
         "label": "Chemical role",
         "description": "Classification based on the chemical roles, such as antioxidant or environmental contaminant from ChEBI",
@@ -626,6 +614,18 @@
         "label": "Tissues",
         "description": "Tissues where glycans are expressed",
         "data": "https://integbio.jp/togosite/sparqlist/api/glycan_tissue_glycosmos",
+        "dataSource": "GlyCosmos",
+        "dataSourceUrl": "https://glycosmos.org/data",
+        "dataSourceVersion": "N/A",
+        "updatedAt": "N/A",
+        "primaryKey": "glytoucan",
+        "keyLabel": "GlyTouCan"
+      },
+      {
+        "propertyId": "glycan_subsumption_glycosmos",
+        "label": "Subsumption ",
+        "description": "Glycan subsumption",
+        "data": "https://integbio.jp/togosite/sparqlist/api/glycan_subsumption_glycosmos",
         "dataSource": "GlyCosmos",
         "dataSourceUrl": "https://glycosmos.org/data",
         "dataSourceVersion": "N/A",
