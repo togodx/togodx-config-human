@@ -5,13 +5,12 @@
     - `UniProt`
 - Add filters
     - `Protein` / `Tissues w/expression reported` / `Lung`
-    - `Protein` / `Cellular component` / `Membrane` / `plasma membrane`
+    - `Protein` / `Cellular component` / `cellular anatomical entity` / `membrane` / `plasma membrane`
     - `Structure` / `Structure data existence` / `Proteins with structure data`
     - `Interaction` / `ChEMBL assay existence` / `Conf-score 9: Direct single protein target assigned` 
-- [検索結果を再現する](http://ep.dbcls.jp/togodx-server/build/?togoKey=uniprot&keys=%5B%5D&values=%5B%7B%22propertyId%22%3A%22protein_isolation_source_uniprot%22%2C%22ids%22%3A%5B%7B%22categoryId%22%3A%22568%22%7D%5D%7D%2C%7B%22propertyId%22%3A%22protein_cellular_component_uniprot%22%2C%22ids%22%3A%5B%7B%22categoryId%22%3A%22GO_0005886%22%2C%22ancestors%22%3A%5B%22GO_0110165%22%2C%22GO_0016020%22%5D%7D%5D%7D%2C%7B%22propertyId%22%3A%22structure_data_existence_uniprot%22%2C%22ids%22%3A%5B%7B%22categoryId%22%3A%221%22%7D%5D%7D%2C%7B%22propertyId%22%3A%22interaction_chembl_assay_existence_uniprot%22%2C%22ids%22%3A%5B%7B%22categoryId%22%3A%221%22%7D%5D%7D%5D)
-    - [TODO]ep6のままなので、後で　togodx.dbcls.jp/human/ に直す。
+- [検索結果を再現する](http://togodx.dbcls.jp/human/?togoKey=uniprot&keys=%5B%5D&values=%5B%7B%22propertyId%22%3A%22protein_isolation_source_uniprot%22%2C%22ids%22%3A%5B%7B%22categoryId%22%3A%22568%22%7D%5D%7D%2C%7B%22propertyId%22%3A%22protein_cellular_component_uniprot%22%2C%22ids%22%3A%5B%7B%22categoryId%22%3A%22GO_0005886%22%2C%22ancestors%22%3A%5B%22GO_0110165%22%2C%22GO_0016020%22%5D%7D%5D%7D%2C%7B%22propertyId%22%3A%22structure_data_existence_uniprot%22%2C%22ids%22%3A%5B%7B%22categoryId%22%3A%221%22%7D%5D%7D%2C%7B%22propertyId%22%3A%22interaction_chembl_assay_existence_uniprot%22%2C%22ids%22%3A%5B%7B%22categoryId%22%3A%221%22%7D%5D%7D%5D)
 
-### 検索のコツ
+### 検索条件の解説
 - `Tissues w/expression reported` では、タンパク質配列が解析されたクローンが単離された組織を検索できる。
 - `Protein` / `Cellular component` では、ヒトの各タンパク質に[UniProtが根拠情報とともに付与したGeneOntology(GO)](https://www.uniprot.org/help/gene_ontology)のCellular component (細胞内局在)カテゴリに由来する機能アノテーション(GO term)を検索できる。
 - `Structure` / `Structure data existence` では、UniProtの各エントリーに付与されている、PDBにおけるタンパク質立体構造データの有無を区別して検索できる。同じタンパク質でも異なる条件で立体構造を取得されている場合がある。
