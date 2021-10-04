@@ -20,7 +20,7 @@
 
 ### Explorer画面
 
-![Explorer](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20210825_togodx_beta_toppage.png)
+![Explorer](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20211004_togodx_help_attributekeys.png)
 
 Explorer画面(トップページ)では、遺伝子・タンパク質・化合物・疾患など各カテゴリごとに、様々な属性の内訳を俯瞰的に表示したり、絞り込み条件を指定することができます。また、ユーザが持つIDのリストを指定することで、各属性における分布を簡易的なエンリッチメント解析のように表示させることができます。
 
@@ -78,7 +78,7 @@ Explorer画面(トップページ)では、遺伝子・タンパク質・化合�
 
 ### Results画面
 
-![result](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20210826_togodx_devpro_result.png)
+![result](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20211004_togodx_help_results.png)
 
 絞り込み条件に合致する`Select target dataset`で指定したIDの一覧、または、`Map your IDs`で指定したIDに対応する結果の一覧と、`Add filters`の値および`Map attributes`の内訳が取得できます。画面上部には検索結果の`分布の内訳グラフ`が表示されます。検索結果に含まれる各IDからは、より詳細な情報をポップアップ表示することができます。検索結果は`Saved conditions`からダウンロードすることができます。
 
@@ -100,7 +100,7 @@ Explorer画面(トップページ)では、遺伝子・タンパク質・化合�
   - ブラウザの戻るボタンでは[Explorer画面](#explorer画面)に戻れないので注意が必要です。
   - [Explorer画面](#explorer画面)からは`Saved conditions`を選択することで[Results画面](#results画面)に戻ってくることができます。
 
-![result_stanza](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20210826_togodx_devpro_result_stanza.png)
+![result_stanza](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20211004_togodx_help_resultsstanza.png)
 
 ## 操作方法
 
