@@ -53,8 +53,14 @@ TogoDXは、全データを俯瞰しながらデータを探索する使い方�
 
 TogoDXの検索条件はURLとして保存可能で、他のユーザーと共有することができます。
 
-- [使い方の詳細についてはこちら](https://)
-- [その他の事例はこちら](https://)
+- [使い方の詳細についてはこちら](https://togodx.github.io/togodx-config-human/usage.html)
+- [その他の事例はこちら](https://togodx.github.io/togodx-config-human/examples.html)
+
+# 推奨ブラウザ
+- Google Chrome (最新版)
+- Mozilla Firefox　(最新版)
+- Microsoft Edge　(最新版)
+- Apple Safari　(最新版)
 
 # ファンディング
 
