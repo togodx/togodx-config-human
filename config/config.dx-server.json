@@ -1,0 +1,6 @@
+{
+    "PROPERTIES": "http://ep.dbcls.jp/togodx-server/config/properties.json",
+    "TEMPLATES": "http://ep.dbcls.jp/togodx-server/config/templates.json",
+    "BACKEND": "http://ep.dbcls.jp/togodx-server/config/backend.json",
+    "ATTRIBUTES": "http://ep.dbcls.jp/togodx-server/config/attributes.json"
+}

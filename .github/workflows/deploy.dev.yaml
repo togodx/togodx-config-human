@@ -20,9 +20,9 @@ jobs:
           fetch-depth: 1
           path: app
 
-      - name: "Copy api.dev.json"
+      - name: "Copy config.dev.json"
         run: |
-          cp -f ./config/api.dev-production.json ./app/build/api.json
+          cp -f ./config/config.dev-production.json ./app/build/config.json
 
       - name: "Upload to S3 bucket: togodx-dev-production"
         uses: opspresso/action-s3-sync@master
@@ -48,7 +48,7 @@ jobs:
           fetch-depth: 1
           path: app
 
-      - name: "Rewrite property APIs from togosite/sparqlist to togosite_dev/sparqlist"
+      - name: "Rewrite properties.json: from togosite/sparqlist to togosite_dev/sparqlist"
         run: |
           sed -i "s:integbio.jp/togosite/:integbio.jp/togosite_dev/:g" ./config/properties.json
 
@@ -59,9 +59,9 @@ jobs:
           branch: sparqlist-develop
           force: true
 
-      - name: "Copy api.dev.json"
+      - name: "Copy config.dev.json"
         run: |
-          cp -f ./config/api.dev-dev.json ./app/build/api.json
+          cp -f ./config/config.dev-dev.json ./app/build/config.json
 
       - name: "Upload to S3 bucket: togodx-dev-dev"
         uses: opspresso/action-s3-sync@master
