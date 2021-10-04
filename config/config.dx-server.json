@@ -1,6 +1,6 @@
 {
-    "PROPERTIES": "http://ep.dbcls.jp/togodx-server/config/properties.json",
-    "TEMPLATES": "http://ep.dbcls.jp/togodx-server/config/templates.json",
-    "BACKEND": "http://ep.dbcls.jp/togodx-server/config/backend.json",
-    "ATTRIBUTES": "http://ep.dbcls.jp/togodx-server/config/attributes.json"
+  "PROPERTIES": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/config/properties.server.json",
+  "TEMPLATES": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/config/templates.json",
+  "BACKEND": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/config/backend.server.json",
+  "ATTRIBUTES": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/config/attributes.server.json"
 }
