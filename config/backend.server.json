@@ -1,11 +1,11 @@
 {
     "aggregate": {
-        "url": "https://ep.dbcls.jp/togodx-server/aggregate"
+        "url": "https://togodx.dbcls.jp/human/aggregate"
     },
     "dataframe": {
-        "url": "https://ep.dbcls.jp/togodx-server/dataframe"
+        "url": "https://togodx.dbcls.jp/human/dataframe"
     },
     "locate": {
-        "url": "https://ep.dbcls.jp/togodx-server/locate"
+        "url": "https://togodx.dbcls.jp/human/locate"
     }
 }
