@@ -570,6 +570,18 @@
                 "viewMethod": "histogram"
             },
             {
+                "propertyId": "glycan_tissue_glycosmos",
+                "label": "Tissues",
+                "description": "Tissues where glycans are expressed",
+                "data": "https://togodx.dbcls.jp/human/breakdown/glycan_tissue_glycosmos",
+                "dataSource": "GlyCosmos",
+                "dataSourceUrl": "https://glycosmos.org/data",
+                "dataSourceVersion": "N/A",
+                "updatedAt": "N/A",
+                "primaryKey": "glytoucan",
+                "keyLabel": "GlyTouCan"
+            },
+            {
                 "propertyId": "glycan_subsumption_glycosmos",
                 "label": "Subsumption ",
                 "description": "Glycan subsumption",
