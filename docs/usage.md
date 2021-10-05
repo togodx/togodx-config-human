@@ -54,7 +54,7 @@ Explorer画面(トップページ)では、遺伝子・タンパク質・化合�
 
 #### 属性詳細
 
-![Explore](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20210825_togodx_devpro_attribute.png)
+![Explore](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20211005_togodx_help_attribute.png)
 
 各属性の`>`ボタンで、詳細データを展開表示することができます。
 
@@ -137,13 +137,13 @@ Explorer画面(トップページ)では、遺伝子・タンパク質・化合�
   - 手持ちのIDが`Select target dataset`に含まれていない場合は、[TogoID](https://togoid.dbcls.jp/)で変換したものを用いることができます。
 - `Submit`ボタンを押すと、`In progress`の表記とともに進捗状況を示すバーが表示されます。
 
-![Map your IDs](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20210826_togodx_devpro_mapyourIDs.png)
+![Map your IDs](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20211005_togodx_help_mapyourids_in_progress.png)
 
 - 各属性の内訳ごとに該当するIDの数とp値が計算されます。
   - 各属性で、対応するIDを含む内訳には左肩にピンが表示され、該当するIDがない部分はグレーアウトされます。
   - ピンにマウスオーバーすることで該当数とp値が表示されます。
 
-![Map your IDs](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20210826_togodx_devpro_mapyourIDs_2.png)
+![Map your IDs](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20211005_togodx_help_mapyourids.png)
 
 ## その他
 
