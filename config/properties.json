@@ -31,19 +31,6 @@
         "keyLabel": "Ensembl gene"
       },
       {
-        "propertyId": "gene_number_of_exons_ensembl",
-        "label": "# of exons",
-        "description": "Number of exons for each transcript of each gene",
-        "data": "https://integbio.jp/togosite/sparqlist/api/gene_number_of_exons_ensembl",
-        "dataSource": "Ensembl human release 102",
-        "dataSourceUrl": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
-        "dataSourceVersion": "human release 102",
-        "updatedAt": "2020-10-29",
-        "primaryKey": "ensembl_transcript",
-        "keyLabel": "Ensembl transcript",
-        "viewMethod": "histogram"
-      },
-      {
         "propertyId": "gene_number_of_paralogs_homologene",
         "label": "# of paralogs",
         "description": "Number of duplicated genes (paralogs) in each human gene calculated based on HomoloGene",
