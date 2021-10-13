@@ -586,7 +586,7 @@
       {
         "propertyId": "glycan_mass_glycosmos",
         "label": "Molecular mass of glycans",
-        "description": "Molecular weight of the glycans from GlyCosmos",
+        "description": "Molecular weight of glycans from GlyCosmos",
         "data": "https://integbio.jp/togosite/sparqlist/api/glycan_mass_glycosmos",
         "dataSource": "GlyCosmos",
         "dataSourceUrl": "https://glycosmos.org/data",
@@ -611,7 +611,7 @@
       {
         "propertyId": "glycan_subsumption_glycosmos",
         "label": "Subsumption ",
-        "description": "Glycan subsumption",
+        "description": "The relationship between four levels of glycan types registered in GlyCosmos. For details, see <a href=\"https://glycosmos.org/faq\" target=\"_blank\">the Help page of GlyCosmos</a>.",
         "data": "https://integbio.jp/togosite/sparqlist/api/glycan_subsumption_glycosmos",
         "dataSource": "GlyCosmos",
         "dataSourceUrl": "https://glycosmos.org/data",
