@@ -104,7 +104,7 @@
       },
       {
         "propertyId": "gene_specific_expression_in_tissues_hpa",
-        "label": "No expression in tissues (GTEx)",
+        "label": "Tissue-specific high expression (HPA)",
         "description": "Tissues in which expression specificity of a gene is evaluated as \"Tissue enriched\", \"Tissue enhanced\", or\"Group enriched\" by Human Protein Atlas",
         "data": "https://integbio.jp/togosite/sparqlist/api/gene_specific_expression_in_tissues_hpa",
         "dataSource": "HPA TSV",
@@ -116,7 +116,7 @@
       },
       {
         "propertyId": "gene_specific_expression_in_cells_hpa",
-        "label": "No expression in tissues (GTEx)",
+        "label": "Cell type-specific high expression (HPA)",
         "description": "Cell types in which expression specificity of a gene is evaluated as \"Cell type enriched\", \"Cell type enhanced\", or\"Group enriched\" by Human Protein Atlas",
         "data": "https://integbio.jp/togosite/sparqlist/api/gene_specific_expression_in_cells_hpa",
         "dataSource": "HPA TSV",
