@@ -60,8 +60,8 @@
       },
       {
         "propertyId": "gene_high_level_expression_refex",
-        "label": "High-level expression",
-        "description": "Tissues in which a gene was tissue-specific highly expressed only in one of 34 tissues of RefEx",
+        "label": "Tissue-specific high expression (RefEx GeneChip)",
+        "description": "Tissues in which a gene was tissue-specific highly expressed in 34 tissues of RefEx(GeneChip microarray)",
         "data": "https://togodx.dbcls.jp/human/breakdown/gene_high_level_expression_refex",
         "dataSource": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
         "dataSourceUrl": "https://doi.org/10.6084/m9.figshare.4028700.v3",
@@ -72,8 +72,8 @@
       },
       {
         "propertyId": "gene_low_level_expression_refex",
-        "label": "Low-level expression",
-        "description": "Tissues in which a gene was tissue-specific lowly expressed only in one of 34 tissues of RefEx",
+        "label": "Tissue-specific low expression (RefEx GeneChip)",
+        "description": "Tissues in which a gene was tissue-specific lowly expressed in 34 tissues of RefEx(GeneChip microarray)",
         "data": "https://togodx.dbcls.jp/human/breakdown/gene_low_level_expression_refex",
         "dataSource": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
         "dataSourceUrl": "https://doi.org/10.6084/m9.figshare.4028700.v3",
@@ -84,7 +84,7 @@
       },
       {
         "propertyId": "gene_high_level_expression_gtex6",
-        "label": "Expressed in tissues",
+        "label": "Tissue-specific high expression (GTEx)",
         "description": "Tissues in which a gene is tissue-specific highly expressed in 49 tissues of GTEx V6",
         "data": "https://togodx.dbcls.jp/human/breakdown/gene_high_level_expression_gtex6",
         "dataSource": "Supplementary Table 1 of A systematic survey of human tissue-specific gene expression and splicing reveals new opportunities for therapeutic target identification and evaluation; R. Y. Yang et al.; bioRxiv 311563",
@@ -96,7 +96,7 @@
       },
       {
         "propertyId": "gene_not_expressed_in_tissues_gtex",
-        "label": "Not expressed in tissues",
+        "label": "No expression in tissues (GTEx)",
         "description": "Tissues in which expression of a gene is not detected in 53 tissues of GTEx V8",
         "data": "https://togodx.dbcls.jp/human/breakdown/gene_not_expressed_in_tissues_gtex",
         "dataSource": "GTEx",
@@ -108,7 +108,7 @@
       },
       {
         "propertyId": "gene_specific_expression_in_tissues_hpa",
-        "label": "Specifically expressed in tissues",
+        "label": "Tissue-specific high expression (HPA)",
         "description": "Tissues in which expression specificity of a gene is evaluated as \"Tissue enriched\", \"Tissue enhanced\", or\"Group enriched\" by Human Protein Atlas",
         "data": "https://togodx.dbcls.jp/human/breakdown/gene_specific_expression_in_tissues_hpa",
         "dataSource": "HPA TSV",
@@ -120,7 +120,7 @@
       },
       {
         "propertyId": "gene_specific_expression_in_cells_hpa",
-        "label": "Specifically expressed in cell types",
+        "label": "Cell type-specific high expression (HPA)",
         "description": "Cell types in which expression specificity of a gene is evaluated as \"Cell type enriched\", \"Cell type enhanced\", or\"Group enriched\" by Human Protein Atlas",
         "data": "https://togodx.dbcls.jp/human/breakdown/gene_specific_expression_in_cells_hpa",
         "dataSource": "HPA TSV",
@@ -559,7 +559,7 @@
       {
         "propertyId": "glycan_mass_glycosmos",
         "label": "Molecular mass of glycans",
-        "description": "Molecular weight of the glycans from GlyCosmos",
+        "description": "Molecular weight of glycans from GlyCosmos",
         "data": "https://togodx.dbcls.jp/human/breakdown/glycan_mass_glycosmos",
         "dataSource": "GlyCosmos",
         "dataSourceUrl": "https://glycosmos.org/data",
@@ -584,7 +584,7 @@
       {
         "propertyId": "glycan_subsumption_glycosmos",
         "label": "Subsumption ",
-        "description": "Glycan subsumption",
+        "description": "The relationship between four levels of glycan types registered in GlyCosmos. For details, see <a href=\"https://glycosmos.org/faq\" target=\"_blank\">the Help page of GlyCosmos</a>.",
         "data": "https://togodx.dbcls.jp/human/breakdown/glycan_subsumption_glycosmos",
         "dataSource": "GlyCosmos",
         "dataSourceUrl": "https://glycosmos.org/data",
