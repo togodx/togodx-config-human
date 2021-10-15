@@ -19,6 +19,7 @@ jobs:
           repository: togodx/togodx-app
           fetch-depth: 1
           path: app
+          ref: main
 
       - name: "Copy config.production.json"
         run: |
