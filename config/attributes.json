@@ -1215,11 +1215,11 @@
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/mondo.hbs",
       "target": true,
       "examples": [
-        "MONDO:0000115",
-        "MONDO:0002345",
-        "MONDO:0011571",
-        "MONDO:0020035",
-        "MONDO:0020920"
+        "0010679",
+        "0016830",
+        "0016971",
+        "0001347",
+        "0009678"
       ],
       "conversion": {
         "chebi": "https://api.togoid.dbcls.jp/convert?format=json&route=mondo,chebi&ids=",
@@ -1246,11 +1246,10 @@
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/mesh.hbs",
       "target": true,
       "examples": [
-        "D002065",
-        "C562829",
-        "C566582",
-        "D010623",
-        "D003327"
+        "D020389",
+        "D020388",
+        "D049288",
+        "D020391"
       ],
       "conversion": {
         "chebi": "https://api.togoid.dbcls.jp/convert?format=json&route=mesh,chebi&ids=",
@@ -1277,11 +1276,11 @@
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/nando.hbs",
       "target": true,
       "examples": [
-        "NANDO:1200461",
-        "NANDO:1200466",
-        "NANDO:1200851",
-        "NANDO:1200061",
-        "NANDO:1200315"
+        "2200856",
+        "2200857",
+        "2200858",
+        "2200859",
+        "2200860"
       ],
       "conversion": {
         "chebi": "https://api.togoid.dbcls.jp/convert?format=json&route=nando,medgen,mondo,mesh,chembl_compound,chebi&ids=",
@@ -1308,11 +1307,11 @@
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/hp.hbs",
       "target": true,
       "examples": [
-        "HP:0001947",
-        "HP:0031592",
-        "HP:0012085",
-        "HP:0000956",
-        "HP:0025238"
+        "0000643",
+        "0000717",
+        "0000739",
+        "0000863",
+        "0001321"
       ],
       "conversion": {
         "chebi": "https://api.togoid.dbcls.jp/convert?format=json&route=hp,chebi&ids=",
