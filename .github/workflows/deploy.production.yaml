@@ -19,10 +19,11 @@ jobs:
           repository: togodx/togodx-app
           fetch-depth: 1
           path: app
+          ref: main
 
-      - name: "Copy api.production.json"
+      - name: "Copy config.production.json"
         run: |
-          cp -f ./config/api.production.json ./app/build/api.json
+          cp -f ./config/config.production.json ./app/build/config.json
 
       - name: "Commit & Push changes to main"
         uses: actions-js/push@master

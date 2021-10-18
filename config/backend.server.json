@@ -1,0 +1,11 @@
+{
+    "aggregate": {
+        "url": "https://togodx.dbcls.jp/human/aggregate"
+    },
+    "dataframe": {
+        "url": "https://togodx.dbcls.jp/human/dataframe"
+    },
+    "locate": {
+        "url": "https://togodx.dbcls.jp/human/locate"
+    }
+}
