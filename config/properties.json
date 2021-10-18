@@ -157,7 +157,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },{
         "propertyId": "protein_cellular_component_uniprot",
         "label": "Cellular component",
@@ -168,7 +169,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },
       {
         "propertyId": "protein_biological_process_uniprot",
@@ -180,7 +182,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },
       {
         "propertyId": "protein_molecular_function_uniprot",
@@ -192,7 +195,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },
       {
         "propertyId": "protein_ligands_uniprot",
@@ -204,7 +208,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },
       {
         "propertyId": "protein_molecular_mass_uniprot",
@@ -229,7 +234,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },
       {
         "propertyId": "protein_number_of_transmembrane_domains_uniprot",
@@ -280,7 +286,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },
       {
         "propertyId": "protein_isolation_source_uniprot",
@@ -536,7 +543,8 @@
         "dataSourceVersion": "CHEMBL28",
         "updatedAt": "2021-03-01",
         "primaryKey": "chembl_compound",
-        "keyLabel": "ChEMBL compound"
+        "keyLabel": "ChEMBL compound",
+        "dag": true
       },
       {
         "propertyId": "compound_drug_development_phase_chembl",
@@ -687,7 +695,8 @@
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-02-17",
         "primaryKey": "hp",
-        "keyLabel": "Human Phenotype Ontology"
+        "keyLabel": "Human Phenotype Ontology",
+        "dag": true
       }
     ]
   },
