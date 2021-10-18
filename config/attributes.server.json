@@ -1084,16 +1084,13 @@
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/chebi.hbs",
       "target": true,
       "examples": [
-        "CHEBI:15996",
-        "CHEBI:50114",
-        "CHEBI:15377",
-        "CHEBI:57540",
-        "CHEBI:17154",
-        "CHEBI:18367",
-        "CHEBI:30616",
-        "CHEBI:456216",
-        "CHEBI:29108",
-        "CHEBI:29105"
+        "3128",
+        "9927",
+        "4785",
+        "9589",
+        "32301",
+        "2668",
+        "9637"
       ],
       "conversion": {
         "chembl_compound": "https://api.togoid.dbcls.jp/convert?format=json&route=chebi,chembl_compound&ids=",
@@ -1120,10 +1117,13 @@
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/chembl_compound.hbs",
       "target": true,
       "examples": [
-        "CHEMBL2007625",
-        "CHEMBL4005",
-        "CHEMBL5866",
-        "CHEMBL2079845"
+        "CHEMBL1472989",
+        "CHEMBL1069",
+        "CHEMBL578",
+        "CHEMBL1717",
+        "CHEMBL1200772",
+        "CHEMBL1491",
+        "CHEMBL1148"
       ],
       "conversion": {
         "chebi": "https://api.togoid.dbcls.jp/convert?format=json&route=chembl_compound,chebi&ids=",
