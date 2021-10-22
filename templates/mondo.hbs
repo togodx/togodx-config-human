@@ -1,13 +1,13 @@
 <article data-stanza-database="mondo">
   <header>
-    <h1>Mondo: {{id}}</h1>
+    <h1>Mondo:{{id}}</h1>
   </header>
   <section>
     <togostanza-hash-table
-      data-url="https://integbio.jp/togosite/sparqlist/api/test_disease_template_2?id={{id}}&amp;type=mondo"
+      data-url="https://integbio.jp/togosite/sparqlist/api/metastanza_mondo?id={{id}}"
       data-type="json"
       format-key="true"
-      columns="[{&quot;id&quot;:&quot;Mondo_ID&quot;},{&quot;id&quot;:&quot;Mondo_label&quot;},{&quot;id&quot;:&quot;Mondo_definition&quot;},{&quot;id&quot;:&quot;Mondo_relatedDB&quot;},{&quot;id&quot;:&quot;Mondo_synonym&quot;},{&quot;id&quot;:&quot;Mondo_upperClass&quot;},{&quot;id&quot;:&quot;Mondo_upperLabel&quot;}]"
+      columns="[{&quot;id&quot;:&quot;ID&quot;,&quot;link&quot;:&quot;URL&quot;},{&quot;id&quot;:&quot;label&quot;},{&quot;id&quot;:&quot;definition&quot;},{&quot;id&quot;:&quot;synonym&quot;,&quot;escape&quot;:false},{&quot;id&quot;:&quot;subclass_of&quot;,&quot;escape&quot;:false},{&quot;id&quot;:&quot;xref&quot;,&quot;escape&quot;:false}]"
       custom-css-url="css/stanza.css"
     />
   </section>
