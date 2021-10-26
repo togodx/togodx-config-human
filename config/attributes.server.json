@@ -44,10 +44,7 @@
         "structure_number_of_alpha_helices_pdb",
         "structure_number_of_beta_sheets_pdb",
         "structure_number_of_peptides_pdb",
-        "structure_other_related_molecules_pdb",
-        "structure_analysis_methods_pdb",
-        "structure_crystallization_temperature_pdb",
-        "structure_crystallization_ph_pdb"
+        "structure_analysis_methods_pdb"
       ]
     },
     {
@@ -524,21 +521,6 @@
         }
       ]
     },
-    "structure_other_related_molecules_pdb": {
-      "label": "Other related molecules",
-      "description": "Nonpeptide molecules related protein structures including water, metal ions, and low molecular weight compounds such as glycerol used to make crystals",
-      "api": "https://togodx.dbcls.jp/human/breakdown/structure_other_related_molecules_pdb",
-      "dataset": "pdb",
-      "datamodel": "classification",
-      "source": [
-        {
-          "label": "Entity from PDB",
-          "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
-          "version": null,
-          "updated": "2021-08-19"
-        }
-      ]
-    },
     "structure_analysis_methods_pdb": {
       "label": "Analysis methods",
       "description": "Classification by the method used to determine the three-dimensional structure in Experimental method section from PDB",
@@ -548,36 +530,6 @@
       "source": [
         {
           "label": "Experimental method from PDB",
-          "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
-          "version": null,
-          "updated": "2021-08-19"
-        }
-      ]
-    },
-    "structure_crystallization_temperature_pdb": {
-      "label": "Crystallization temperature",
-      "description": "Temperature of the crystallization solution obtained in Crystallization Conditions section from PDB",
-      "api": "https://togodx.dbcls.jp/human/breakdown/structure_crystallization_temperature_pdb",
-      "dataset": "pdb",
-      "datamodel": "classification",
-      "source": [
-        {
-          "label": "Crystallization Conditions from PDB",
-          "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
-          "version": null,
-          "updated": "2021-08-19"
-        }
-      ]
-    },
-    "structure_crystallization_ph_pdb": {
-      "label": "Crystallization pH",
-      "description": "pH value of the crystallization solution in Crystallization Conditions section from PDB",
-      "api": "https://togodx.dbcls.jp/human/breakdown/structure_crystallization_ph_pdb",
-      "dataset": "pdb",
-      "datamodel": "classification",
-      "source": [
-        {
-          "label": "Crystallization Conditions from PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
           "version": null,
           "updated": "2021-08-19"
