@@ -13,7 +13,9 @@ if __FILE__ == $0
   end
 
   sections = dataset_category.each_with_object({}) do |(source, s_cat), obj|
+    next if source == "ensembl_transcript"
     routes = dataset_category.each_with_object({}) do |(target, t_cat), obj|
+      next if target == "ensembl_transcript"
       if source != target
         route_s_t = routing["route"][s_cat][t_cat]
         route_t_s = routing["route"][t_cat][s_cat]
