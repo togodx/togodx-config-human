@@ -157,7 +157,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },{
         "propertyId": "protein_cellular_component_uniprot",
         "label": "Cellular component",
@@ -168,7 +169,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },
       {
         "propertyId": "protein_biological_process_uniprot",
@@ -180,7 +182,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },
       {
         "propertyId": "protein_molecular_function_uniprot",
@@ -192,7 +195,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },
       {
         "propertyId": "protein_ligands_uniprot",
@@ -204,7 +208,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },
       {
         "propertyId": "protein_molecular_mass_uniprot",
@@ -229,7 +234,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },
       {
         "propertyId": "protein_number_of_transmembrane_domains_uniprot",
@@ -280,7 +286,8 @@
         "dataSourceVersion": "Release 2021_03",
         "updatedAt": "2021-06-17",
         "primaryKey": "uniprot",
-        "keyLabel": "UniProt"
+        "keyLabel": "UniProt",
+        "dag": true
       },
       {
         "propertyId": "protein_isolation_source_uniprot",
@@ -367,47 +374,11 @@
         "viewMethod": "histogram"
       },
       {
-        "propertyId": "structure_other_related_molecules_pdb",
-        "label": "Other related molecules",
-        "description": "Nonpeptide molecules related protein structures including water, metal ions, and low molecular weight compounds such as glycerol used to make crystals",
-        "data": "https://integbio.jp/togosite/sparqlist/api/structure_other_related_molecules_pdb",
-        "dataSource": "Entity from PDB",
-        "dataSourceUrl": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
-        "dataSourceVersion": "N/A",
-        "updatedAt": "2021-08-19",
-        "primaryKey": "pdb",
-        "keyLabel": "PDB"
-      },
-      {
         "propertyId": "structure_analysis_methods_pdb",
         "label": "Analysis methods",
         "description": "Classification by the method used to determine the three-dimensional structure in Experimental method section from PDB",
         "data": "https://integbio.jp/togosite/sparqlist/api/structure_analysis_methods_pdb",
         "dataSource": "Experimental method from PDB",
-        "dataSourceUrl": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
-        "dataSourceVersion": "N/A",
-        "updatedAt": "2021-08-19",
-        "primaryKey": "pdb",
-        "keyLabel": "PDB"
-      },
-      {
-        "propertyId": "structure_crystallization_temperature_pdb",
-        "label": "Crystallization temperature",
-        "description": "Temperature of the crystallization solution obtained in Crystallization Conditions section from PDB",
-        "data": "https://integbio.jp/togosite/sparqlist/api/structure_crystallization_temperature_pdb",
-        "dataSource": "Crystallization Conditions from PDB",
-        "dataSourceUrl": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
-        "dataSourceVersion": "N/A",
-        "updatedAt": "2021-08-19",
-        "primaryKey": "pdb",
-        "keyLabel": "PDB"
-      },
-      {
-        "propertyId": "structure_crystallization_ph_pdb",
-        "label": "Crystallization pH",
-        "description": "pH value of the crystallization solution in Crystallization Conditions section from PDB",
-        "data": "https://integbio.jp/togosite/sparqlist/api/structure_crystallization_ph_pdb",
-        "dataSource": "Crystallization Conditions from PDB",
         "dataSourceUrl": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-08-19",
@@ -536,7 +507,8 @@
         "dataSourceVersion": "CHEMBL28",
         "updatedAt": "2021-03-01",
         "primaryKey": "chembl_compound",
-        "keyLabel": "ChEMBL compound"
+        "keyLabel": "ChEMBL compound",
+        "dag": true
       },
       {
         "propertyId": "compound_drug_development_phase_chembl",
@@ -687,7 +659,8 @@
         "dataSourceVersion": "N/A",
         "updatedAt": "2021-02-17",
         "primaryKey": "hp",
-        "keyLabel": "Human Phenotype Ontology"
+        "keyLabel": "Human Phenotype Ontology",
+        "dag": true
       }
     ]
   },

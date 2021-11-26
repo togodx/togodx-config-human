@@ -38,7 +38,7 @@
         "propertyId": "gene_number_of_paralogs_homologene",
         "label": "# of paralogs",
         "description": "Number of duplicated genes (paralogs) in each human gene calculated based on HomoloGene",
-        "data": "https://togodx.dbcls.jp/human/breakdown/gene_number_of_paralogs_homologene",
+        "data": "https://togodx.dbcls.jp/human/breakdown/gene_number_of_paralogs_homologene?mode=id_asc",
         "dataSource": "HomoloGene",
         "dataSourceUrl": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
         "dataSourceVersion": "Release 68",
