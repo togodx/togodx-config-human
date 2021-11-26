@@ -13,8 +13,7 @@
         "gene_high_level_expression_gtex6",
         "gene_not_expressed_in_tissues_gtex",
         "gene_specific_expression_in_tissues_hpa",
-        "gene_specific_expression_in_cells_hpa",
-        "gene_transcription_factors_chip_atlas"
+        "gene_specific_expression_in_cells_hpa"
       ]
     },
     {
