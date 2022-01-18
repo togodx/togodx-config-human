@@ -250,21 +250,6 @@
         }
       ]
     },
-    "gene_transcription_factors_chip_atlas": {
-      "label": "Transcription factors",
-      "description": "Transcription factors with predicted target genes in ChIP-Atlas",
-      "api": "https://togodx.dbcls.jp/human/breakdown/gene_transcription_factors_chip_atlas",
-      "dataset": "ensembl_gene",
-      "datamodel": "classification",
-      "source": [
-        {
-          "label": "ChIP-Atlas",
-          "url": "http://dbarchive.biosciencedbc.jp/kyushu-u/hg38/target/",
-          "version": null,
-          "updated": "2021-03-12"
-        }
-      ]
-    },
     "protein_domains_uniprot": {
       "label": "Protein domains",
       "description": "Protein domains from UniProt",
