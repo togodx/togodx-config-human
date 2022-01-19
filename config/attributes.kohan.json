@@ -103,7 +103,7 @@
     "gene_biotype_ensembl": {
       "label": "Gene biotype",
       "description": "Gene classification annotated in Ensembl",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_biotype_ensembl",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_biotype_ensembl",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
       "source": [
@@ -118,7 +118,7 @@
     "gene_chromosome_ensembl": {
       "label": "Chromosome",
       "description": "Chromosome where a gene is located",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_chromosome_ensembl",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_chromosome_ensembl",
       "order": "asc",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
@@ -134,7 +134,7 @@
     "gene_number_of_paralogs_homologene": {
       "label": "# of paralogs",
       "description": "Number of duplicated genes (paralogs) in each human gene calculated based on HomoloGene",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_number_of_paralogs_homologene",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_number_of_paralogs_homologene",
       "order": "asc",
       "dataset": "ncbigene",
       "datamodel": "classification",
@@ -150,7 +150,7 @@
     "gene_evolutionary_conservation_homologene": {
       "label": "Evolutionary divergence",
       "description": "Most distant organisms from human that have orthologous genes in HomoloGene",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_evolutionary_conservation_homologene",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_evolutionary_conservation_homologene",
       "order": "asc",
       "dataset": "ncbigene",
       "datamodel": "classification",
@@ -166,7 +166,7 @@
     "gene_high_level_expression_refex": {
       "label": "Tissue-specific high expression (RefEx GeneChip)",
       "description": "Tissues in which a gene was tissue-specific highly expressed in 34 tissues of RefEx(GeneChip microarray)",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_high_level_expression_refex",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_high_level_expression_refex",
       "dataset": "ncbigene",
       "datamodel": "classification",
       "source": [
@@ -181,7 +181,7 @@
     "gene_low_level_expression_refex": {
       "label": "Tissue-specific low expression (RefEx GeneChip)",
       "description": "Tissues in which a gene was tissue-specific lowly expressed in 34 tissues of RefEx(GeneChip microarray)",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_low_level_expression_refex",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_low_level_expression_refex",
       "dataset": "ncbigene",
       "datamodel": "classification",
       "source": [
@@ -196,7 +196,7 @@
     "gene_high_level_expression_gtex6": {
       "label": "Tissue-specific high expression (GTEx)",
       "description": "Tissues in which a gene is tissue-specific highly expressed in 49 tissues of GTEx V6",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_high_level_expression_gtex6",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_high_level_expression_gtex6",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
       "source": [
@@ -211,7 +211,7 @@
     "gene_not_expressed_in_tissues_gtex": {
       "label": "No expression in tissues (GTEx)",
       "description": "Tissues in which expression of a gene is not detected in 53 tissues of GTEx V8",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_not_expressed_in_tissues_gtex",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_not_expressed_in_tissues_gtex",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
       "source": [
@@ -226,7 +226,7 @@
     "gene_specific_expression_in_tissues_hpa": {
       "label": "Tissue-specific high expression (HPA)",
       "description": "Tissues in which expression specificity of a gene is evaluated as \"Tissue enriched\", \"Tissue enhanced\", or\"Group enriched\" by Human Protein Atlas",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_specific_expression_in_tissues_hpa",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_specific_expression_in_tissues_hpa",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
       "source": [
@@ -241,7 +241,7 @@
     "gene_specific_expression_in_cells_hpa": {
       "label": "Cell type-specific high expression (HPA)",
       "description": "Cell types in which expression specificity of a gene is evaluated as \"Cell type enriched\", \"Cell type enhanced\", or\"Group enriched\" by Human Protein Atlas",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_specific_expression_in_cells_hpa",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_specific_expression_in_cells_hpa",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
       "source": [
@@ -256,7 +256,7 @@
     "protein_domains_uniprot": {
       "label": "Protein domains",
       "description": "Protein domains from UniProt",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_domains_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_domains_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
@@ -271,7 +271,7 @@
     "protein_cellular_component_uniprot": {
       "label": "Cellular component",
       "description": "Functional annotations (GO terms) derived from the Cellular component category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_cellular_component_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_cellular_component_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
@@ -286,7 +286,7 @@
     "protein_biological_process_uniprot": {
       "label": "Biological process",
       "description": "Functional annotations (GO terms) derived from the Biological process category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_biological_process_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_biological_process_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
@@ -301,7 +301,7 @@
     "protein_molecular_function_uniprot": {
       "label": "Molecular function",
       "description": "Functional annotations (GO terms) derived from the Molecular function category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_molecular_function_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_molecular_function_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
@@ -316,7 +316,7 @@
     "protein_ligands_uniprot": {
       "label": "Ligands",
       "description": "Classification by non-protein molecules which bind/react with proteins in Function section from UniProt",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_ligands_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_ligands_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
@@ -331,7 +331,7 @@
     "protein_molecular_mass_uniprot": {
       "label": "Molecular mass",
       "description": "Molecular weight of the protein including information from multiple isoforms in Sequences section from UniProt",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_molecular_mass_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_molecular_mass_uniprot",
       "dataset": "uniprot",
       "datamodel": "distribution",
       "source": [
@@ -346,7 +346,7 @@
     "protein_ptms_uniprot": {
       "label": "PTMs",
       "description": "Classification by types of post-translational modifications, including S-S bonds (disulfide bonds) in Amino acid modifications section from UniProt",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_ptms_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_ptms_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
@@ -361,7 +361,7 @@
     "protein_number_of_transmembrane_domains_uniprot": {
       "label": "# of transmembrane domains",
       "description": "Number of transmembrane domains. A group of molecules forming a family, such as channels, may have the same number of domains in Topology section from UniProt",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_number_of_transmembrane_domains_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_number_of_transmembrane_domains_uniprot",
       "dataset": "uniprot",
       "datamodel": "distribution",
       "source": [
@@ -376,7 +376,7 @@
     "protein_number_of_phosphorylation_sites_uniprot": {
       "label": "# of phosphorylation sites",
       "description": "Number of phosphorylation at Ser/Thr/Tyr, which may create an activation state for the protein and acts like a switch in Amino acid modifications section from UniProt",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_number_of_phosphorylation_sites_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_number_of_phosphorylation_sites_uniprot",
       "dataset": "uniprot",
       "datamodel": "distribution",
       "source": [
@@ -391,7 +391,7 @@
     "protein_number_of_glycosylation_sites_uniprot": {
       "label": "# of glycosylation sites",
       "description": "Number of glycosylation sites, including N-linked,O-linked and others in Amino acid modifications section from UniProt",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_number_of_glycosylation_sites_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_number_of_glycosylation_sites_uniprot",
       "dataset": "uniprot",
       "datamodel": "distribution",
       "source": [
@@ -406,7 +406,7 @@
     "protein_disease_related_proteins_uniprot": {
       "label": "Disease-related proteins",
       "description": "Disease-related proteins in Pathology & Biotech section from UniProt",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_disease_related_proteins_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_disease_related_proteins_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
@@ -421,7 +421,7 @@
     "protein_isolation_source_uniprot": {
       "label": "Tissues w/expression reported",
       "description": "Classification based on the name of the tissue from which the clone was isolated in the reference describing the protein sequence in Tissue section from UniProt",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_isolation_source_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_isolation_source_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
@@ -436,7 +436,7 @@
     "protein_evidence_of_existence_nextprot": {
       "label": "Evidence of existence",
       "description": "Classification by the basis of protein expression, such as whether it has been identified as a protein or transcript in Expression section from neXtProt",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_evidence_of_existence_nextprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_evidence_of_existence_nextprot",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
@@ -451,7 +451,7 @@
     "structure_data_existence_uniprot": {
       "label": "Structure data existence",
       "description": "Uniprot entries having 3D structure data in PDB in Structure section from Uniprot",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/structure_data_existence_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/structure_data_existence_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
@@ -466,7 +466,7 @@
     "structure_number_of_alpha_helices_pdb": {
       "label": "# of alpha-helices",
       "description": "Number of 'Helix' entities counted in each entry of PDB",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/structure_number_of_alpha_helices_pdb",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/structure_number_of_alpha_helices_pdb",
       "dataset": "pdb",
       "datamodel": "distribution",
       "source": [
@@ -481,7 +481,7 @@
     "structure_number_of_beta_sheets_pdb": {
       "label": "# of beta-sheets",
       "description": "Number of 'Sheet' entities counted in each entry of PDB",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/structure_number_of_beta_sheets_pdb",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/structure_number_of_beta_sheets_pdb",
       "dataset": "pdb",
       "datamodel": "distribution",
       "source": [
@@ -496,7 +496,7 @@
     "structure_number_of_peptides_pdb": {
       "label": "# of peptides in a PDB entry",
       "description": "The number of peptides in a PDB entry",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/structure_number_of_peptides_pdb",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/structure_number_of_peptides_pdb",
       "dataset": "pdb",
       "datamodel": "distribution",
       "source": [
@@ -511,7 +511,7 @@
     "structure_analysis_methods_pdb": {
       "label": "Analysis methods",
       "description": "Classification by the method used to determine the three-dimensional structure in Experimental method section from PDB",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/structure_analysis_methods_pdb",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/structure_analysis_methods_pdb",
       "dataset": "pdb",
       "datamodel": "classification",
       "source": [
@@ -526,7 +526,7 @@
     "interaction_proteins_in_pathway_reactome": {
       "label": "Proteins in pathway",
       "description": "Proteins participating as components classified by pathway (reaction) from Reactome",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/interaction_proteins_in_pathway_reactome",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/interaction_proteins_in_pathway_reactome",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
@@ -541,7 +541,7 @@
     "interaction_compounds_in_pathway_reactome": {
       "label": "Compounds in pathway",
       "description": "Compounds participating as components classified by pathway (reaction) from Reactome",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/interaction_compounds_in_pathway_reactome",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/interaction_compounds_in_pathway_reactome",
       "dataset": "chebi",
       "datamodel": "classification",
       "source": [
@@ -556,7 +556,7 @@
     "interaction_number_of_interacting_proteins_uniprot": {
       "label": "# of interacting proteins",
       "description": "Classification of uniprot proteins by the number of target proteins they interact with in Interaction section from UniProt",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/interaction_number_of_interacting_proteins_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/interaction_number_of_interacting_proteins_uniprot",
       "dataset": "uniprot",
       "datamodel": "distribution",
       "source": [
@@ -571,7 +571,7 @@
     "interaction_chembl_assay_existence_uniprot": {
       "label": "ChEMBL assay existence",
       "description": "Uniprot entries classified according to the presence or absence of a method to detect direct protein-compound interactions (ChEMBL assay)",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/interaction_chembl_assay_existence_uniprot",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/interaction_chembl_assay_existence_uniprot",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
@@ -586,7 +586,7 @@
     "compound_chemical_role_chebi": {
       "label": "Chemical role",
       "description": "Classification based on the chemical roles, such as antioxidant or environmental contaminant from ChEBI",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_chemical_role_chebi",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_chemical_role_chebi",
       "dataset": "chebi",
       "datamodel": "classification",
       "source": [
@@ -601,7 +601,7 @@
     "compound_application_type_chebi": {
       "label": "Application type",
       "description": "Classification based on the application types, such as pharmaceutical or pesticide from ChEBI",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_application_type_chebi",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_application_type_chebi",
       "dataset": "chebi",
       "datamodel": "classification",
       "source": [
@@ -616,7 +616,7 @@
     "compound_action_type_chembl": {
       "label": "Action type",
       "description": "Classification based on the mechanism of action, such as an inhibitor or an antagonist from ChEMBL",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_action_type_chembl",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_action_type_chembl",
       "dataset": "chembl_compound",
       "datamodel": "classification",
       "source": [
@@ -631,7 +631,7 @@
     "compound_biological_role_chebi": {
       "label": "Biological role",
       "description": "Classification based on the biological roles, such as inhibitor or antimicrobial agent from ChEBI",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_biological_role_chebi",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_biological_role_chebi",
       "dataset": "chebi",
       "datamodel": "classification",
       "source": [
@@ -646,7 +646,7 @@
     "compound_drug_indication_mesh_chembl": {
       "label": "Drug indication",
       "description": "Classification of diseases for which drugs are indicated, based on hierarchical data using MeSH, a life science thesaurus from ChEMBL",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_drug_indication_mesh_chembl",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_drug_indication_mesh_chembl",
       "dataset": "chembl_compound",
       "datamodel": "classification",
       "source": [
@@ -661,7 +661,7 @@
     "compound_drug_development_phase_chembl": {
       "label": "Drug development phase",
       "description": "Classification based on the drug's development phase (research stage, phase I-III, and post-launch) from ChEMBL",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_drug_development_phase_chembl",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_drug_development_phase_chembl",
       "dataset": "chembl_compound",
       "datamodel": "classification",
       "source": [
@@ -676,7 +676,7 @@
     "compound_atc_classification_pubchem": {
       "label": "PubChem ATC classification",
       "description": "Classification of a medicine (in PubChem) according to its medicinal properties (WHO ATC Code)",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_atc_classification_pubchem",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_atc_classification_pubchem",
       "dataset": "pubchem_compound",
       "datamodel": "classification",
       "source": [
@@ -691,7 +691,7 @@
     "compound_atc_classification_chembl": {
       "label": "ChEMBL ATC classification",
       "description": "Classification of a medicine (in ChEMBL) according to its medicinal properties (WHO ATC Code)",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_atc_classification_chembl",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/compound_atc_classification_chembl",
       "dataset": "chembl_compound",
       "datamodel": "classification",
       "source": [
@@ -706,7 +706,7 @@
     "glycan_mass_glycosmos": {
       "label": "Molecular mass of glycans",
       "description": "Molecular weight of glycans from GlyCosmos",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/glycan_mass_glycosmos",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/glycan_mass_glycosmos",
       "dataset": "glytoucan",
       "datamodel": "distribution",
       "source": [
@@ -721,7 +721,7 @@
     "glycan_tissue_glycosmos": {
       "label": "Tissues",
       "description": "Tissues where glycans are expressed",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/glycan_tissue_glycosmos",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/glycan_tissue_glycosmos",
       "dataset": "glytoucan",
       "datamodel": "classification",
       "source": [
@@ -736,7 +736,7 @@
     "glycan_subsumption_glycosmos": {
       "label": "Subsumption ",
       "description": "The relationship between four levels of glycan types registered in GlyCosmos. For details, see <a href=\"https://glycosmos.org/faq\" target=\"_blank\">the Help page of GlyCosmos</a>.",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/glycan_subsumption_glycosmos",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/glycan_subsumption_glycosmos",
       "dataset": "glytoucan",
       "datamodel": "classification",
       "source": [
@@ -751,7 +751,7 @@
     "disease_diseases_mondo": {
       "label": "Diseases in Mondo",
       "description": "Subcategories in the Disease or disorder category in the Mondo Disease Ontology (Mondo)",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/disease_diseases_mondo",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/disease_diseases_mondo",
       "dataset": "mondo",
       "datamodel": "classification",
       "source": [
@@ -766,7 +766,7 @@
     "disease_diseases_mesh": {
       "label": "Diseases in MeSH",
       "description": "Subcategories in the Disease category in Medical Subject Headings (MeSH)",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/disease_diseases_mesh",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/disease_diseases_mesh",
       "dataset": "mesh",
       "datamodel": "classification",
       "source": [
@@ -781,7 +781,7 @@
     "disease_diseases_nando": {
       "label": "Diseases in NANDO",
       "description": "Japanese rare and intractable disease categories in the Nanbyo Disease Ontology (NANDO)",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/disease_diseases_nando",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/disease_diseases_nando",
       "dataset": "nando",
       "datamodel": "classification",
       "source": [
@@ -796,7 +796,7 @@
     "disease_related_dbs_mondo": {
       "label": "Cross referenced disease DBs in Mondo",
       "description": "Number of entries linked to Mondo in each of approx. 70 disease related databases from database cross reference in Mondo",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/disease_related_dbs_mondo",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/disease_related_dbs_mondo",
       "dataset": "mondo",
       "datamodel": "classification",
       "source": [
@@ -811,7 +811,7 @@
     "disease_phenotypic_abnormality_hpo": {
       "label": "Phenotypic abnormality",
       "description": "Classification the subcategories of the Phenotypic abnormality categories of the Human Phenotype Ontology (HPO)",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/disease_phenotypic_abnormality_hpo",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/disease_phenotypic_abnormality_hpo",
       "dataset": "hp",
       "datamodel": "classification",
       "source": [
@@ -826,7 +826,7 @@
     "variant_gwas_togovar": {
       "label": "GWAS",
       "description": "Classification of statistically significant variants in genome-wide association studies (GWAS) based on associated traits. Obtained from GWAS catalog via TogoVar",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/variant_gwas_togovar",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/variant_gwas_togovar",
       "dataset": "togovar",
       "datamodel": "classification",
       "source": [
@@ -841,7 +841,7 @@
     "variant_clinical_significance_togovar": {
       "label": "Clinical significance",
       "description": "Classification of variants according to their clinical significance, such as whether they are the cause of the disease or not. Obtained from ClinVar via TogoVar",
-      "api": "https://ep.dbcls.jp/togodx-server-kohan/breakdown/variant_clinical_significance_togovar",
+      "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/variant_clinical_significance_togovar",
       "dataset": "togovar",
       "datamodel": "classification",
       "source": [
