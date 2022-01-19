@@ -1,4 +1,4 @@
-name: "TogoDX human instance development deployment: dev-production and dev-dev"
+name: "sparqlist-dev deployment"
 on:
   workflow_dispatch:
   push:
@@ -6,7 +6,7 @@ on:
       - develop
 
 jobs:
-  deploy-dev-production:
+  deploy-sparqlist-dev:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,55 +20,16 @@ jobs:
           fetch-depth: 1
           path: app
 
-      - name: "Copy config.dev.json"
+      - name: "Copy config.json"
         run: |
-          cp -f ./config/config.dev-production.json ./app/build/config.json
+          cp -f ./config/config.sparqlist-dev.json ./app/build/config.json
 
-      - name: "Upload to S3 bucket: togodx-dev-production"
+      - name: "Upload to S3 bucket"
         uses: opspresso/action-s3-sync@master
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "ap-northeast-1"
           FROM_PATH: "./app/build"
-          DEST_PATH: "s3://togodx-dev-production/"
-          OPTIONS: "--delete --acl public-read --exclude 'README.md'"
-
-  deploy-dev-dev:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 1
-
-      - name: "Checkout app repo"
-        uses: actions/checkout@v2
-        with:
-          repository: togodx/togodx-app
-          fetch-depth: 1
-          path: app
-
-      - name: "Rewrite properties.json: from togosite/sparqlist to togosite_dev/sparqlist"
-        run: |
-          sed -i "s:integbio.jp/togosite/:integbio.jp/togosite_dev/:g" ./config/properties.json
-
-      - name: "Push to sparqlist-develop branch"
-        uses: actions-js/push@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: sparqlist-develop
-          force: true
-
-      - name: "Copy config.dev.json"
-        run: |
-          cp -f ./config/config.dev-dev.json ./app/build/config.json
-
-      - name: "Upload to S3 bucket: togodx-dev-dev"
-        uses: opspresso/action-s3-sync@master
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: "ap-northeast-1"
-          FROM_PATH: "./app/build"
-          DEST_PATH: "s3://togodx-dev-dev/"
+          DEST_PATH: "s3://togodx-sparqlist-dev/"
           OPTIONS: "--delete --acl public-read --exclude 'README.md'"
