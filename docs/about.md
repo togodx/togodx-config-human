@@ -43,7 +43,7 @@ TogoDX/HumanはTogoDXのフレームワークを用いて、ヒトに関する�
 
 TogoDX/Humanでは、これまで多種多様なデータベースに散在して収録されてきたヒトに関する情報をワンストップで探索することができます。現在、21個のデータベースに由来する50個の属性(各データセットから抽出されたattribute)が利用可能です。
 
-## 利用事例
+## 使い方
 
 TogoDXは、全データを俯瞰しながらデータを探索する使い方と、自分のデータをIDとしてマッピングする使い方があり、その結果がさらなる解析につながるようなフレームワークを目指しています。
 
@@ -54,7 +54,7 @@ TogoDXは、全データを俯瞰しながらデータを探索する使い方�
 TogoDXの検索条件はURLとして保存可能で、他のユーザーと共有することができます。
 
 - [使い方の詳細についてはこちら](https://togodx.github.io/togodx-config-human/usage.html)
-- [その他の事例はこちら](https://togodx.github.io/togodx-config-human/examples.html)
+- [具体的な利用事例はこちら](https://togodx.github.io/togodx-config-human/examples.html)
 
 # 推奨ブラウザ
 - Google Chrome (最新版)
