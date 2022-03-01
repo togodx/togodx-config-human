@@ -119,7 +119,7 @@
       "label": "Chromosome",
       "description": "Chromosome where a gene is located",
       "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_chromosome_ensembl",
-      "order": "asc",
+      "order": "id_asc",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
       "source": [
@@ -135,7 +135,7 @@
       "label": "# of paralogs",
       "description": "Number of duplicated genes (paralogs) in each human gene calculated based on HomoloGene",
       "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_number_of_paralogs_homologene",
-      "order": "asc",
+      "order": "id_asc",
       "dataset": "ncbigene",
       "datamodel": "classification",
       "source": [
@@ -151,7 +151,7 @@
       "label": "Evolutionary divergence",
       "description": "Most distant organisms from human that have orthologous genes in HomoloGene",
       "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/gene_evolutionary_conservation_homologene",
-      "order": "asc",
+      "order": "id_asc",
       "dataset": "ncbigene",
       "datamodel": "classification",
       "source": [
