@@ -452,7 +452,7 @@
       "label": "Evidence of existence",
       "description": "Classification by the basis of protein expression, such as whether it has been identified as a protein or transcript in Expression section from neXtProt",
       "api": "http://ep.dbcls.jp/togodx-server-kohan/breakdown/protein_evidence_of_existence_nextprot",
-      "order": "numerical_desc",
+      "order": "id_asc",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
