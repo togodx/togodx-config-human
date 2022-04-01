@@ -1,0 +1,5 @@
+{
+  "TEMPLATES": "https://raw.githubusercontent.com/togodx/togodx-config-human/sparqlist-develop/config/templates.json",
+  "BACKEND": "https://raw.githubusercontent.com/togodx/togodx-config-human/sparqlist-develop/config/backend.sparqlist.json",
+  "ATTRIBUTES": "https://raw.githubusercontent.com/togodx/togodx-config-human/sparqlist-develop/config/attributes.sparqlist.json"
+}

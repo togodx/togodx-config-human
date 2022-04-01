@@ -1,5 +1,6 @@
-name: "Deployment: dx-server-dev"
+name: "dx-server-dev deployment"
 on:
+  workflow_dispatch:
   push:
     branches:
       - develop
@@ -19,11 +20,11 @@ jobs:
           fetch-depth: 1
           path: app
 
-      - name: "Copy config.dx-server.json"
+      - name: "Copy config.json"
         run: |
-          cp -f ./config/config.dx-server.json ./app/build/config.json
+          cp -f ./config/config.dx-server-dev.json ./app/build/config.json
 
-      - name: "Upload to S3 bucket: togodx-dev-production"
+      - name: "Upload to S3 bucket"
         uses: opspresso/action-s3-sync@master
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

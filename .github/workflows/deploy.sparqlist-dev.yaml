@@ -1,15 +1,17 @@
-name: "Deployment: dx-server"
+name: "sparqlist-dev deployment"
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - develop
 
 jobs:
-  deploy-dx-server:
+  deploy-sparqlist-dev:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 1
-          ref: main
 
       - name: "Checkout app repo"
         uses: actions/checkout@v2
@@ -17,18 +19,17 @@ jobs:
           repository: togodx/togodx-app
           fetch-depth: 1
           path: app
-          ref: main
 
-      - name: "Copy config.dx-server.json"
+      - name: "Copy config.json"
         run: |
-          cp -f ./config/config.dx-server.json ./app/build/config.json
+          cp -f ./config/config.sparqlist-dev.json ./app/build/config.json
 
-      - name: "Upload to S3 bucket: togodx-dev-production"
+      - name: "Upload to S3 bucket"
         uses: opspresso/action-s3-sync@master
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "ap-northeast-1"
           FROM_PATH: "./app/build"
-          DEST_PATH: "s3://togodx-dx-server/"
+          DEST_PATH: "s3://togodx-sparqlist-dev/"
           OPTIONS: "--delete --acl public-read --exclude 'README.md'"
