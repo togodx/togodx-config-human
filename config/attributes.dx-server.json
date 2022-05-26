@@ -110,9 +110,9 @@
       "source": [
         {
           "label": "Ensembl",
-          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
-          "version": null,
-          "updated": "2020-10-29"
+          "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
+          "version": "Human release 106",
+          "updated": "2022-04-12"
         }
       ]
     },
@@ -125,10 +125,10 @@
       "datamodel": "classification",
       "source": [
         {
-          "label": "Ensembl human release 102",
-          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
-          "version": null,
-          "updated": "2020-10-29"
+          "label": "Ensembl",
+          "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
+          "version": "Human release 106",
+          "updated": "2022-04-12"
         }
       ]
     },
