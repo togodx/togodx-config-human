@@ -371,6 +371,36 @@
         }
       ]
     },
+        "protein_helical_regions_uniprot": {
+      "label": "Ratio of helical regions",
+      "description": "Ratio of helical regions in each entry of UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_helical_regions_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
+      "source": [
+        {
+          "label": "'Structure' section from UniProt",
+          "url": "https://www.uniprot.org/help/helix",
+          "version": "release 2022_01",
+          "updated": "2022-03-03"
+        }
+      ]
+    },
+    "protein_beta_strand_regions_uniprot": {
+      "label": "Ratio of beta strand",
+      "description": "Ratio of beta strand regions in each entry of UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_beta_strand_regions_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
+      "source": [
+        {
+          "label": "'Structure' section from UniProt",
+          "url": "https://www.uniprot.org/help/strand",
+          "version": "release 2022_01",
+          "updated": "2022-03-03"
+        }
+      ]
+    },
     "protein_number_of_transmembrane_domains_uniprot": {
       "label": "# of transmembrane domains",
       "description": "Number of transmembrane domains. A group of molecules forming a family, such as channels, may have the same number of domains in Topology section from UniProt",
@@ -477,36 +507,6 @@
           "url": "https://www.uniprot.org/help/structure_section",
           "version": "release 2022_01",
           "updated": "2022-03-03"
-        }
-      ]
-    },
-    "structure_number_of_alpha_helices_pdb": {
-      "label": "# of alpha-helices",
-      "description": "Number of 'Helix' entities counted in each entry of PDB",
-      "api": "https://togodx.dbcls.jp/human/breakdown/structure_number_of_alpha_helices_pdb",
-      "dataset": "pdb",
-      "datamodel": "distribution",
-      "source": [
-        {
-          "label": "'Helix' entities counted in each entry of PDB",
-          "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
-          "version": null,
-          "updated": "2022-05-18"
-        }
-      ]
-    },
-    "structure_number_of_beta_sheets_pdb": {
-      "label": "# of beta-sheets",
-      "description": "Number of 'Sheet' entities counted in each entry of PDB",
-      "api": "https://togodx.dbcls.jp/human/breakdown/structure_number_of_beta_sheets_pdb",
-      "dataset": "pdb",
-      "datamodel": "distribution",
-      "source": [
-        {
-          "label": "'Sheet' entities counted in each entry of PDB",
-          "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
-          "version": null,
-          "updated": "2022-05-18"
         }
       ]
     },
