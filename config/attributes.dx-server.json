@@ -372,8 +372,8 @@
       ]
     },
         "protein_helical_regions_uniprot": {
-      "label": "Ratio of helical regions",
-      "description": "Ratio of helical regions in each entry of UniProt",
+      "label": "Rate of helical regions",
+      "description": "Rate of helical regions in each entry of UniProt",
       "api": "https://togodx.dbcls.jp/human/breakdown/protein_helical_regions_uniprot",
       "dataset": "uniprot",
       "datamodel": "distribution",
@@ -387,8 +387,8 @@
       ]
     },
     "protein_beta_strand_regions_uniprot": {
-      "label": "Ratio of beta strand",
-      "description": "Ratio of beta strand regions in each entry of UniProt",
+      "label": "Rate of beta strand",
+      "description": "Rate of beta strand regions in each entry of UniProt",
       "api": "https://togodx.dbcls.jp/human/breakdown/protein_beta_strand_regions_uniprot",
       "dataset": "uniprot",
       "datamodel": "distribution",
