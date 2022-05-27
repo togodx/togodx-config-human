@@ -40,8 +40,8 @@
       "label": "Structure",
       "attributes": [
         "structure_data_existence_uniprot",
-        "structure_number_of_alpha_helices_pdb",
-        "structure_number_of_beta_sheets_pdb",
+        "structure_helical_regions_uniprot",
+        "structure_beta_strand_regions_uniprot",
         "structure_number_of_peptides_pdb",
         "structure_analysis_methods_pdb"
       ]
@@ -371,36 +371,6 @@
         }
       ]
     },
-        "protein_helical_regions_uniprot": {
-      "label": "Rate of helical regions",
-      "description": "Rate of helical regions in each entry of UniProt",
-      "api": "https://togodx.dbcls.jp/human/breakdown/protein_helical_regions_uniprot",
-      "dataset": "uniprot",
-      "datamodel": "distribution",
-      "source": [
-        {
-          "label": "'Structure' section from UniProt",
-          "url": "https://www.uniprot.org/help/helix",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
-        }
-      ]
-    },
-    "protein_beta_strand_regions_uniprot": {
-      "label": "Rate of beta strand",
-      "description": "Rate of beta strand regions in each entry of UniProt",
-      "api": "https://togodx.dbcls.jp/human/breakdown/protein_beta_strand_regions_uniprot",
-      "dataset": "uniprot",
-      "datamodel": "distribution",
-      "source": [
-        {
-          "label": "'Structure' section from UniProt",
-          "url": "https://www.uniprot.org/help/strand",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
-        }
-      ]
-    },
     "protein_number_of_transmembrane_domains_uniprot": {
       "label": "# of transmembrane domains",
       "description": "Number of transmembrane domains. A group of molecules forming a family, such as channels, may have the same number of domains in Topology section from UniProt",
@@ -505,6 +475,36 @@
         {
           "label": "Structure from Uniprot",
           "url": "https://www.uniprot.org/help/structure_section",
+          "version": "release 2022_01",
+          "updated": "2022-03-03"
+        }
+      ]
+    },
+    "structure_helical_regions_uniprot": {
+      "label": "Rate of helical regions",
+      "description": "Rate of helical regions in each entry of UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_helical_regions_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
+      "source": [
+        {
+          "label": "'Structure' section from UniProt",
+          "url": "https://www.uniprot.org/help/helix",
+          "version": "release 2022_01",
+          "updated": "2022-03-03"
+        }
+      ]
+    },
+    "structure_beta_strand_regions_uniprot": {
+      "label": "Rate of beta strand",
+      "description": "Rate of beta strand regions in each entry of UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_beta_strand_regions_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
+      "source": [
+        {
+          "label": "'Structure' section from UniProt",
+          "url": "https://www.uniprot.org/help/strand",
           "version": "release 2022_01",
           "updated": "2022-03-03"
         }
