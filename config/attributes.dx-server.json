@@ -648,7 +648,7 @@
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
           "version": "CHEMBL30",
-          "updated": "2022-03-10"
+          "updated": "2022-02-22"
         }
       ]
     },
@@ -680,7 +680,7 @@
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
           "version": "CHEMBL30",
-          "updated": "2022-03-10"
+          "updated": "2022-02-22"
         }
       ]
     },
@@ -696,7 +696,7 @@
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
           "version": "CHEMBL30",
-          "updated": "2022-03-10"
+          "updated": "2022-02-22"
         }
       ]
     },
@@ -709,9 +709,9 @@
       "datamodel": "classification",
       "source": [
         {
-          "label": "",
-          "url": "",
-          "version": "",
+          "label": "PubChem",
+          "url": "http://ftp.ncbi.nlm.nih.gov/pubchem/RDF/",
+          "version": "Ver:2022-04-18",
           "updated": "2022-04-18"
         }
       ]
@@ -725,10 +725,10 @@
       "datamodel": "classification",
       "source": [
         {
-          "label": "",
-          "url": "",
-          "version": "",
-          "updated": "2022-03-10"
+          "label": "ChEMBL-RDF",
+          "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
+          "version": "CHEMBL30",
+          "updated": "2022-02-22"
         }
       ]
     },
