@@ -111,7 +111,7 @@
         {
           "label": "Ensembl",
           "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
-          "version": "Human release 106",
+          "version": "human release 106",
           "updated": "2022-04-12"
         }
       ]
@@ -127,7 +127,7 @@
         {
           "label": "Ensembl",
           "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
-          "version": "Human release 106",
+          "version": "human release 106",
           "updated": "2022-04-12"
         }
       ]
@@ -175,7 +175,7 @@
         {
           "label": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
           "url": "https://doi.org/10.6084/m9.figshare.4028700.v3",
-          "version": null,
+          "version": "N/A",
           "updated": "2021-03-12"
         }
       ]
@@ -191,7 +191,7 @@
         {
           "label": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
           "url": "https://doi.org/10.6084/m9.figshare.4028700.v3",
-          "version": null,
+          "version": "N/A",
           "updated": "2021-03-12"
         }
       ]
@@ -205,10 +205,10 @@
       "datamodel": "classification",
       "source": [
         {
-          "label": "Supplementary Table 1 of A systematic survey of human tissue-specific gene expression and splicing reveals new opportunities for therapeutic target identification and evaluation; R. Y. Yang et al.; bioRxiv 311563",
+          "label": "GTEx",
           "url": "https://doi.org/10.1101/311563",
-          "version": null,
-          "updated": "2021-03-29"
+          "version": "V6",
+          "updated": "2018-04-30"
         }
       ]
     },
@@ -223,8 +223,8 @@
         {
           "label": "GTEx",
           "url": "https://gtexportal.org/home/datasets",
-          "version": null,
-          "updated": "2021-03-29"
+          "version": "V8",
+          "updated": "2019-08-26"
         }
       ]
     },
@@ -237,10 +237,10 @@
       "datamodel": "classification",
       "source": [
         {
-          "label": "HPA TSV",
+          "label": "HPA (Data from the Human Protein Atlas in tab-separated format)",
           "url": "https://www.proteinatlas.org/about/download",
-          "version": null,
-          "updated": "2021-07-28"
+          "version": "V20",
+          "updated": "2020-11-19"
         }
       ]
     },
@@ -253,10 +253,10 @@
       "datamodel": "classification",
       "source": [
         {
-          "label": "HPA TSV",
+          "label": "HPA (Data from the Human Protein Atlas in tab-separated format)",
           "url": "https://www.proteinatlas.org/about/download",
-          "version": null,
-          "updated": "2021-07-28"
+          "version": "V20",
+          "updated": "2020-11-19"
         }
       ]
     },
@@ -520,7 +520,7 @@
         {
           "label": "Entity from PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
-          "version": null,
+          "version": "N/A",
           "updated": "2022-05-18"
         }
       ]
@@ -536,7 +536,7 @@
         {
           "label": "Experimental method from PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
-          "version": null,
+          "version": "N/A",
           "updated": "2022-05-18"
         }
       ]
@@ -648,7 +648,7 @@
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
           "version": "CHEMBL30",
-          "updated": "2022-02-22"
+          "updated": "2022-03-10"
         }
       ]
     },
@@ -680,7 +680,7 @@
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
           "version": "CHEMBL30",
-          "updated": "2022-02-22"
+          "updated": "2022-03-10"
         }
       ]
     },
@@ -696,7 +696,7 @@
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
           "version": "CHEMBL30",
-          "updated": "2022-02-22"
+          "updated": "2022-03-10"
         }
       ]
     },
@@ -728,7 +728,7 @@
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
           "version": "CHEMBL30",
-          "updated": "2022-02-22"
+          "updated": "2022-03-10"
         }
       ]
     },
@@ -742,8 +742,8 @@
         {
           "label": "GlyCosmos",
           "url": "https://glycosmos.org/data",
-          "version": null,
-          "updated": "N/A"
+          "version": "v1.7.0",
+          "updated": "2021-08-09"
         }
       ]
     },
@@ -758,8 +758,8 @@
         {
           "label": "GlyCosmos",
           "url": "https://glycosmos.org/data",
-          "version": null,
-          "updated": "N/A"
+          "version": "v1.7.0",
+          "updated": "2021-08-09"
         }
       ]
     },
@@ -774,8 +774,8 @@
         {
           "label": "GlyCosmos",
           "url": "https://glycosmos.org/data",
-          "version": null,
-          "updated": "N/A"
+          "version": "v1.7.0",
+          "updated": "2021-08-09"
         }
       ]
     },
@@ -806,7 +806,7 @@
         {
           "label": "Medical Subject Headings (MeSH)",
           "url": "https://www.nlm.nih.gov/mesh/meshhome.html",
-          "version": null,
+          "version": "N/A",
           "updated": "2022-05-13"
         }
       ]
@@ -854,7 +854,7 @@
         {
           "label": "Human Phenotype Ontology (HPO)",
           "url": "https://hpo.jax.org/app/browse/term/HP:0000118",
-          "version": null,
+          "version": "N/A",
           "updated": "2021-02-17"
         }
       ]
@@ -870,8 +870,8 @@
         {
           "label": "GWAS Catalog All associations ",
           "url": "https://www.ebi.ac.uk/gwas/docs/file-downloads",
-          "version": null,
-          "updated": "2021-03-25"
+          "version": "N/A",
+          "updated": "2022-05-13"
         }
       ]
     },
@@ -886,8 +886,8 @@
         {
           "label": "ClinVar",
           "url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/clinsig/",
-          "version": null,
-          "updated": "2021-08-05"
+          "version": "N/A",
+          "updated": "2022-05-05"
         }
       ]
     }
