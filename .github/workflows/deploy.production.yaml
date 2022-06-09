@@ -48,5 +48,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "ap-northeast-1"
           FROM_PATH: "./app/build"
-          DEST_PATH: "s3://togodx-production/"
+          DEST_PATH: "s3://togodx-dx-server/"
           OPTIONS: "--delete --acl public-read --exclude 'README.md'"
