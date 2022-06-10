@@ -66,11 +66,11 @@ Explorer画面(トップページ)では、遺伝子・タンパク質・化合�
 - `API` データ取得方法
   - `Attribute keys`で表示される属性情報を取得するために使用しているAPIのURL。
 - `Original data` 元データ
-  - 属性情報の元データの提供元や出典情報。
+  - `TogoDX/Human`に収載されている属性情報の元データの提供元や出典情報。
 - `Version` バージョン
-  - 属性情報の元データのバージョン情報。
+  - `TogoDX/Human`に収載されている属性情報の元データのバージョン情報。
 - `Last updated` 更新日
-  - 属性情報の`TogoDX/Human`におけるデータの更新年月日。
+  - `TogoDX/Human`に収載されている属性情報の元データの更新年月日。
 
 階層分類を持つ属性では細分類ごとの内訳が表示されます。
 
@@ -168,7 +168,7 @@ Explorer画面(トップページ)では、遺伝子・タンパク質・化合�
 - `Condition builder`の`Clear`ボタンをクリックすると検索条件が初期化されます。
 
 ### IDのリンク関係
-- [TogoDX/Humanで使用されている8カテゴリー21データセット間のIDリンク関係の図](https://togodx.github.io/togodx-path/path.html)
+- [TogoDX/Humanで使用されているデータセット間のIDリンク関係の図](https://togodx.github.io/togodx-path/path-simple.html)
 - [IDリンク関係の表](https://github.com/togodx/togodx-path/blob/main/path.tsv)
 
 
