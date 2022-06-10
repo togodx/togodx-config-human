@@ -168,7 +168,7 @@ Explorer画面(トップページ)では、遺伝子・タンパク質・化合�
 - `Condition builder`の`Clear`ボタンをクリックすると検索条件が初期化されます。
 
 ### IDのリンク関係
-- [TogoDX/Humanで使用されている8カテゴリー21データセット間のIDリンク関係の図](https://togodx.github.io/togodx-path/path-simple.html)
+- [TogoDX/Humanで使用されているデータセット間のIDリンク関係の図](https://togodx.github.io/togodx-path/path-simple.html)
 - [IDリンク関係の表](https://github.com/togodx/togodx-path/blob/main/path.tsv)
 
 
