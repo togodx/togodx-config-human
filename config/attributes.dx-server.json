@@ -496,7 +496,7 @@
       ]
     },
     "structure_beta_strand_regions_uniprot": {
-      "label": "Rate of beta strand",
+      "label": "Rate of beta strand regions",
       "description": "Rate of beta strand regions in each entry of UniProt",
       "api": "https://togodx.dbcls.jp/human/breakdown/structure_beta_strand_regions_uniprot",
       "dataset": "uniprot",
