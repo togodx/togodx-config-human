@@ -55,7 +55,7 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
 
 - [使い方の詳細についてはこちら](https://togodx.github.io/togodx-config-human/usage.html)
 - [具体的な利用事例はこちら](https://togodx.github.io/togodx-config-human/examples.html)
-- [データセット間のIDリンク関係](https://togodx.github.io/togodx-path/path-selected.html)
+- [データセット間のIDリンク関係](https://togodx.github.io/togodx-path/path-highlight.html)
 
 # 推奨ブラウザ
 - Google Chrome (最新版)
