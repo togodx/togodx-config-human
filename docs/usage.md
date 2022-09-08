@@ -169,6 +169,6 @@ Explorer画面(トップページ)では、遺伝子・タンパク質・化合�
 
 ### IDのリンク関係
 - [TogoDX/Humanで使用されているデータセット間のIDリンク関係の図](https://togodx.github.io/togodx-path/path-highlight.html)
-- [IDリンク関係の表](https://github.com/togodx/togodx-path/blob/main/path.tsv)
+- [IDリンク関係の表](https://github.com/togodx/togodx-path/blob/main/tsv/dataset-links.tsv)
 
 
