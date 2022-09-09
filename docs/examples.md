@@ -33,7 +33,7 @@
     - [この検索条件を再現](https://togodx.dbcls.jp/human/?dataset=uniprot&annotations=%5B%7B%22attributeId%22%3A%22gene_evolutionary_conservation_homologene%22%7D%2C%7B%22attributeId%22%3A%22gene_high_level_expression_gtex6%22%7D%2C%7B%22attributeId%22%3A%22protein_disease_related_proteins_uniprot%22%7D%5D&filters=%5B%7B%22attributeId%22%3A%22protein_isolation_source_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%22568%22%7D%5D%7D%2C%7B%22attributeId%22%3A%22protein_cellular_component_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%22GO_0005886%22%2C%22path%22%3A%5B%22GO_0110165%22%2C%22GO_0016020%22%5D%7D%5D%7D%2C%7B%22attributeId%22%3A%22structure_data_existence_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%221%22%7D%5D%7D%2C%7B%22attributeId%22%3A%22interaction_chembl_assay_existence_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%221%22%7D%5D%7D%5D)
     - ![Add filter+Map attributes](https://github.com/togodx/togodx-config-human/raw/develop/docs/img/20211001_togodx_example1_02.png)
 
-## Case2: 作成中
-
+## CookBook
+[検索事例集\(2022年9月\)](https://github.com/togodx/togodx-examples/blob/main/examples_Sep_2022.md)
 
 
