@@ -764,7 +764,7 @@
       ]
     },
     "glycan_subsumption_glycosmos": {
-      "label": "Subsumption ",
+      "label": "Subsumption",
       "description": "The relationship between four levels of glycan types registered in GlyCosmos. For details, see <a href=\"https://glycosmos.org/faq\" target=\"_blank\">the Help page of GlyCosmos</a>.",
       "api": "https://togodx.dbcls.jp/human/breakdown/glycan_subsumption_glycosmos",
       "order": "numerical_desc",
