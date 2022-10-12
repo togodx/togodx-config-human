@@ -57,6 +57,13 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
 - [具体的な利用事例はこちら](https://togodx.github.io/togodx-config-human/examples.html)
 - [データセット間のIDリンク関係](https://togodx.github.io/togodx-path/path-highlight.html)
 
+## 更新履歴
+- 2022.06.20 [TogoDX/human v1\.1を公開](http://dbcls.rois.ac.jp/ja/2022/06/20/post1.html)
+    - アプリケーションの操作性向上を目的として様々な技術的な調整を行い、v1.0と比較して約1000倍の高速化を実現
+    - TogoDX/humanで使用されているデータセット間のIDの対応関係を掲載
+    - ”# of alpha-helices”、”# of beta-sheets” のオリジナルデータをPDBからUniProtに変更し、単量体における”Rate of helical regions”、”Rate of beta strand regions”にそれぞれ変更
+- 2021.10.05 [TogoDX/Human (v1.0)を公開](http://dbcls.rois.ac.jp/ja/2021/10/05/post1.html) 
+
 # 推奨ブラウザ
 - Google Chrome (最新版)
 - Mozilla Firefox　(最新版)
