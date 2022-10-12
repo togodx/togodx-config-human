@@ -111,8 +111,8 @@
         {
           "label": "Ensembl",
           "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
-          "version": "human release 106",
-          "updated": "2022-04-12"
+          "version": "human release 107",
+          "updated": "2022-07-12"
         }
       ]
     },
@@ -127,8 +127,8 @@
         {
           "label": "Ensembl",
           "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
-          "version": "human release 106",
-          "updated": "2022-04-12"
+          "version": "human release 107",
+          "updated": "2022-07-12"
         }
       ]
     },
@@ -271,8 +271,8 @@
         {
           "label": "UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -287,8 +287,8 @@
         {
           "label": "Gene ontology cellular component annotation from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -303,8 +303,8 @@
         {
           "label": "Gene ontology biological process annotation from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -319,8 +319,8 @@
         {
           "label": "Gene ontology molecular function annotation from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -335,8 +335,8 @@
         {
           "label": "Function from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -350,8 +350,8 @@
         {
           "label": "Sequences from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -366,8 +366,8 @@
         {
           "label": "Amino acid modifications from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -381,8 +381,8 @@
         {
           "label": "Topology from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -396,8 +396,8 @@
         {
           "label": "Amino acid modifications from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -411,8 +411,8 @@
         {
           "label": "Amino acid modifications from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -427,8 +427,8 @@
         {
           "label": "Pathology & Biotech from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -443,8 +443,8 @@
         {
           "label": "Tissue from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -475,8 +475,8 @@
         {
           "label": "Structure from Uniprot",
           "url": "https://www.uniprot.org/help/structure_section",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -490,8 +490,8 @@
         {
           "label": "'Structure' section from UniProt",
           "url": "https://www.uniprot.org/help/helix",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -505,8 +505,8 @@
         {
           "label": "'Structure' section from UniProt",
           "url": "https://www.uniprot.org/help/strand",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -521,7 +521,7 @@
           "label": "Entity from PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
           "version": "N/A",
-          "updated": "2022-05-18"
+          "updated": "2022-09-28"
         }
       ]
     },
@@ -537,7 +537,7 @@
           "label": "Experimental method from PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
           "version": "N/A",
-          "updated": "2022-05-18"
+          "updated": "2022-09-28"
         }
       ]
     },
@@ -552,7 +552,7 @@
         {
           "label": "Reactome",
           "url": "https://reactome.org/download-data",
-          "version": "71",
+          "version": "76",
           "updated": "2021-03-05"
         }
       ]
@@ -568,7 +568,7 @@
         {
           "label": "Reactome",
           "url": "https://reactome.org/download-data",
-          "version": "71",
+          "version": "76",
           "updated": "2021-03-05"
         }
       ]
@@ -583,8 +583,8 @@
         {
           "label": "Interaction from UniProt",
           "url": "https://www.uniprot.org/help/interaction_section",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -599,8 +599,8 @@
         {
           "label": "Target protein from ChEMBL-RDF 28.0 against all UniProt entries",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -615,8 +615,8 @@
         {
           "label": "Chemical role from ChEBI",
           "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:51086",
-          "version": "Release 209",
-          "updated": "2022-03-10"
+          "version": "Release 213",
+          "updated": "2022-09-09"
         }
       ]
     },
@@ -631,8 +631,8 @@
         {
           "label": "Application type from ChEBI",
           "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33232",
-          "version": "Release 209",
-          "updated": "2022-03-10"
+          "version": "Release 213",
+          "updated": "2022-09-09"
         }
       ]
     },
@@ -647,8 +647,8 @@
         {
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
-          "version": "CHEMBL30",
-          "updated": "2022-03-10"
+          "version": "CHEMBL31",
+          "updated": "2022-08-15"
         }
       ]
     },
@@ -663,8 +663,8 @@
         {
           "label": "Biological role from ChEBI ",
           "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:24432",
-          "version": "Release 209",
-          "updated": "2022-03-10"
+          "version": "Release 213",
+          "updated": "2022-09-09"
         }
       ]
     },
@@ -679,8 +679,8 @@
         {
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
-          "version": "CHEMBL30",
-          "updated": "2022-03-10"
+          "version": "CHEMBL31",
+          "updated": "2022-08-15"
         }
       ]
     },
@@ -695,8 +695,8 @@
         {
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
-          "version": "CHEMBL30",
-          "updated": "2022-03-10"
+          "version": "CHEMBL31",
+          "updated": "2022-08-15"
         }
       ]
     },
@@ -727,8 +727,8 @@
         {
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
-          "version": "CHEMBL30",
-          "updated": "2022-03-10"
+          "version": "CHEMBL31",
+          "updated": "2022-08-15"
         }
       ]
     },
@@ -790,8 +790,8 @@
         {
           "label": "Mondo Disease Ontology (Mondo)",
           "url": "https://mondo.monarchinitiative.org/",
-          "version": "v2022-05-02",
-          "updated": "2022-05-06"
+          "version": "v2022-08-01",
+          "updated": "2022-08-16"
         }
       ]
     },
@@ -807,7 +807,7 @@
           "label": "Medical Subject Headings (MeSH)",
           "url": "https://www.nlm.nih.gov/mesh/meshhome.html",
           "version": "N/A",
-          "updated": "2022-05-13"
+          "updated": "2022-09-20"
         }
       ]
     },
@@ -838,8 +838,8 @@
         {
           "label": "Mondo Disease Ontology (Mondo)",
           "url": "https://mondo.monarchinitiative.org/",
-          "version": "v2022-05-02",
-          "updated": "2022-05-06"
+          "version": "v2022-08-01",
+          "updated": "2022-08-16"
         }
       ]
     },
@@ -871,7 +871,7 @@
           "label": "GWAS Catalog All associations ",
           "url": "https://www.ebi.ac.uk/gwas/docs/file-downloads",
           "version": "N/A",
-          "updated": "2022-05-13"
+          "updated": "2022-09-20"
         }
       ]
     },
@@ -887,7 +887,7 @@
           "label": "ClinVar",
           "url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/clinsig/",
           "version": "N/A",
-          "updated": "2022-05-05"
+          "updated": "2022-09-01"
         }
       ]
     }
