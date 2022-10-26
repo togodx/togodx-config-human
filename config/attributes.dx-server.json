@@ -150,9 +150,8 @@
       "label": "Transcript length",
       "description": "Transcript length (bp) based on Ensembl",
       "api": "https://togodx.dbcls.jp/human/breakdown/transcript_length_ensembl",
-      "order": "numerical_desc",
       "dataset": "ensembl_gene",
-      "datamodel": "classification",
+      "datamodel": "distribution",
       "source": [
         {
           "label": "Ensembl",
@@ -647,7 +646,7 @@
       "datamodel": "classification",
       "source": [
         {
-          "label": "Tissue from UniProt",
+          "label": "Pathway from UniProt",
           "url": "https://www.uniprot.org/",
           "version": "release 2022_03",
           "updated": "2022-08-03"
@@ -678,7 +677,7 @@
       "datamodel": "distribution",
       "source": [
         {
-          "label": "'Structure' section from UniProt",
+          "label": "Structure from Uniprot",
           "url": "https://www.uniprot.org/help/helix",
           "version": "release 2022_03",
           "updated": "2022-08-03"
@@ -693,7 +692,7 @@
       "datamodel": "distribution",
       "source": [
         {
-          "label": "'Structure' section from UniProt",
+          "label": "Structure from Uniprot",
           "url": "https://www.uniprot.org/help/strand",
           "version": "release 2022_03",
           "updated": "2022-08-03"
@@ -708,7 +707,7 @@
       "datamodel": "distribution",
       "source": [
         {
-          "label": "Amino acid modifications from UniProt",
+          "label": "Structure from Uniprot",
           "url": "https://www.uniprot.org/help/strand",
           "version": "release 2022_03",
           "updated": "2022-08-03"
@@ -718,12 +717,12 @@
     "structure_number_of_disulfide_bond_uniprot": {
       "label": "# of disulfide bonds",
       "description": "Number of disulfide bounds from UniProt",
-      "api": "https://togodx.dbcls.jp/human/breakdown/structure_number_of_turn_uniprot",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_number_of_disulfide_bond_uniprot",
       "dataset": "uniprot",
       "datamodel": "distribution",
       "source": [
         {
-          "label": "Amino acid modifications from UniProt",
+          "label": "Structure from Uniprot",
           "url": "https://www.uniprot.org/help/strand",
           "version": "release 2022_03",
           "updated": "2022-08-03"
@@ -738,7 +737,7 @@
       "datamodel": "distribution",
       "source": [
         {
-          "label": "UniProt",
+          "label": "Structure from Uniprot",
           "url": "https://www.uniprot.org/help/strand",
           "version": "release 2022_03",
           "updated": "2022-08-03"
@@ -976,7 +975,7 @@
       "source": [
         {
           "label": "GlyCosmos",
-          "url": "https://glycosmos.org/data",
+          "url": "https://glycosmos.org/release",
           "version": "v1.7.0",
           "updated": "2021-08-09"
         }
@@ -992,7 +991,7 @@
       "source": [
         {
           "label": "GlyCosmos",
-          "url": "https://glycosmos.org/data",
+          "url": "https://glycosmos.org/release",
           "version": "v1.7.0",
           "updated": "2021-08-09"
         }
@@ -1002,13 +1001,13 @@
       "label": "Subsumption",
       "description": "The relationship between four levels of glycan types registered in GlyCosmos. For details, see <a href=\"https://glycosmos.org/faq\" target=\"_blank\">the Help page of GlyCosmos</a>.",
       "api": "https://togodx.dbcls.jp/human/breakdown/glycan_subsumption_glycosmos",
-      "order": "numerical_desc",
+      "order": "id_asc",
       "dataset": "glytoucan",
       "datamodel": "classification",
       "source": [
         {
           "label": "GlyCosmos",
-          "url": "https://glycosmos.org/data",
+          "url": "https://glycosmos.org/release",
           "version": "v1.7.0",
           "updated": "2021-08-09"
         }
