@@ -1172,6 +1172,58 @@
         "uniprot": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_gene,uniprot&ids="
       }
     },
+    "ensembl_transcript": {
+      "label": "Ensembl transcript",
+      "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ensembl_gene.hbs",
+      "target": true,
+      "examples": [
+        "ENST00000374672",
+        "ENST00000411706",
+        "ENST00000420475"
+        "ENST00000493306"
+        "ENST00000497048",
+        "ENST00000610832",
+        "ENST00000259523",
+        "ENST00000377970",
+        "ENST00000517291",
+        "ENST00000520751",
+        "ENST00000524013",
+        "ENST00000621592",
+        "ENST00000641036",
+        "ENST00000641252",
+        "ENST00000651626",
+        "ENST00000652288",
+        "ENST00000325404",
+        "ENST00000259915",
+        "ENST00000441888",
+        "ENST00000461401",
+        "ENST00000471529",
+        "ENST00000512818",
+        "ENST00000513407",
+        "ENST00000606567",
+        "ENST00000638788",
+        "ENSG00000171862"
+      ],
+      "conversion": {
+        "chebi": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot,reactome_reaction,chebi&ids=",
+        "chembl_compound": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot,reactome_reaction,chebi,chembl_compound&ids=",
+        "chembl_target": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot,chembl_target&ids=",
+        "glytoucan": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot,glytoucan&ids=",
+        "hgnc": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,hgnc&ids=",
+        "hp": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen,hp&ids=",
+        "medgen": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen&ids=",
+        "mesh": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen,mesh&ids=",
+        "mondo": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen,mondo&ids=",
+        "nando": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen,mondo,nando&ids=",
+        "ncbigene": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene&ids=",
+        "omim_phenotype": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen,omim_phenotype&ids=",
+        "orphanet": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen,orphanet&ids=",
+        "pdb": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot,pdb&ids=",
+        "pubchem_compound": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot,reactome_reaction,chebi,pubchem_compound&ids=",
+        "togovar": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,togovar&ids=",
+        "uniprot": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot&ids="
+      }
+    },
     "ncbigene": {
       "label": "NCBI gene",
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ncbigene.hbs",
