@@ -124,7 +124,7 @@
       "source": [
         {
           "label": "Ensembl",
-          "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
           "version": "human release 107",
           "updated": "2022-07-12"
         }
@@ -135,12 +135,12 @@
       "description": "Transcript classification annotated in Ensembl",
       "api": "https://togodx.dbcls.jp/human/breakdown/transcript_biotype_ensembl",
       "order": "numerical_desc",
-      "dataset": "ensembl_gene",
+      "dataset": "ensembl_transcript",
       "datamodel": "classification",
       "source": [
         {
           "label": "Ensembl",
-          "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
           "version": "human release 107",
           "updated": "2022-07-12"
         }
@@ -150,12 +150,12 @@
       "label": "Transcript length",
       "description": "Transcript length (bp) based on Ensembl",
       "api": "https://togodx.dbcls.jp/human/breakdown/transcript_length_ensembl",
-      "dataset": "ensembl_gene",
+      "dataset": "ensembl_transcript",
       "datamodel": "distribution",
       "source": [
         {
           "label": "Ensembl",
-          "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
           "version": "human release 107",
           "updated": "2022-07-12"
         }
@@ -171,7 +171,7 @@
       "source": [
         {
           "label": "Ensembl",
-          "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
           "version": "human release 107",
           "updated": "2022-07-12"
         }
@@ -332,14 +332,14 @@
         {
           "label": "GTEx",
           "url": "https://gtexportal.org/home/datasets",
-          "version": "V8",
+          "version": "Release V8",
           "updated": "2019-08-26"
         }
       ]
     },
     "gene_specific_expression_in_tissues_hpa": {
       "label": "Tissue-specific high expression (HPA)",
-      "description": "Tissues in which expression specificity of a gene is evaluated as \"Tissue enriched\", \"Tissue enhanced\", or\"Group enriched\" by Human Protein Atlas",
+      "description": "Tissues in which expression specificity of a gene is evaluated as \"Tissue enriched\", \"Tissue enhanced\", or \"Group enriched\" by Human Protein Atlas",
       "api": "https://togodx.dbcls.jp/human/breakdown/gene_specific_expression_in_tissues_hpa",
       "order": "numerical_desc",
       "dataset": "ensembl_gene",
@@ -355,7 +355,7 @@
     },
     "gene_specific_expression_in_cells_hpa": {
       "label": "Cell type-specific high expression (HPA)",
-      "description": "Cell types in which expression specificity of a gene is evaluated as \"Cell type enriched\", \"Cell type enhanced\", or\"Group enriched\" by Human Protein Atlas",
+      "description": "Cell types in which expression specificity of a gene is evaluated as \"Cell type enriched\", \"Cell type enhanced\", or \"Group enriched\" by Human Protein Atlas",
       "api": "https://togodx.dbcls.jp/human/breakdown/gene_specific_expression_in_cells_hpa",
       "order": "numerical_desc",
       "dataset": "ensembl_gene",
@@ -516,7 +516,7 @@
       "label": "Catalytic activity",
       "description": "Classification by catalytic activity, based on the Enzyme Committee (EC) number",
       "api": "https://togodx.dbcls.jp/human/breakdown/protein_catalytic_activity_uniprot",
-      "order": "numerical_desc",
+      "order": "id_asc",
       "dataset": "uniprot",
       "datamodel": "classification",
       "source": [
@@ -708,7 +708,7 @@
       "source": [
         {
           "label": "Structure from Uniprot",
-          "url": "https://www.uniprot.org/help/strand",
+          "url": "https://www.uniprot.org/",
           "version": "release 2022_03",
           "updated": "2022-08-03"
         }
@@ -723,7 +723,7 @@
       "source": [
         {
           "label": "Structure from Uniprot",
-          "url": "https://www.uniprot.org/help/strand",
+          "url": "https://www.uniprot.org/",
           "version": "release 2022_03",
           "updated": "2022-08-03"
         }
@@ -738,7 +738,7 @@
       "source": [
         {
           "label": "Structure from Uniprot",
-          "url": "https://www.uniprot.org/help/strand",
+          "url": "https://www.uniprot.org/",
           "version": "release 2022_03",
           "updated": "2022-08-03"
         }
@@ -831,10 +831,10 @@
       "datamodel": "classification",
       "source": [
         {
-          "label": "Target protein from ChEMBL-RDF 28.0 against all UniProt entries",
+          "label": "Target protein from ChEMBL-RDF against all UniProt entries",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
-          "version": "release 2022_03",
-          "updated": "2022-08-03"
+          "version": "CHEMBL31",
+          "updated": "2022-08-15"
         }
       ]
     },
