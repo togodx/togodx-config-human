@@ -5,9 +5,15 @@
       "label": "Gene",
       "attributes": [
         "gene_biotype_ensembl",
+        "transcript_biotype_ensembl",
+        "transcript_length_ensembl",
         "gene_chromosome_ensembl",
         "gene_number_of_paralogs_homologene",
+        "gene_ortholog_existence_homologene",
         "gene_evolutionary_conservation_homologene",
+        "gene_biological_process_ncbigene",
+        "gene_cellular_component_ncbigene",
+        "gene_molecular_function_ncbigene",
         "gene_high_level_expression_refex",
         "gene_low_level_expression_refex",
         "gene_high_level_expression_gtex6",
@@ -20,19 +26,24 @@
       "id": "protein",
       "label": "Protein",
       "attributes": [
+        "protein_uniprotkb_section_uniprot",
         "protein_domains_uniprot",
         "protein_cellular_component_uniprot",
         "protein_biological_process_uniprot",
         "protein_molecular_function_uniprot",
+        "protein_isoform_specific_go_existence_nextprot",
         "protein_ligands_uniprot",
         "protein_molecular_mass_uniprot",
         "protein_ptms_uniprot",
+        "protein_catalytic_activity_uniprot",
         "protein_number_of_transmembrane_domains_uniprot",
         "protein_number_of_phosphorylation_sites_uniprot",
         "protein_number_of_glycosylation_sites_uniprot",
         "protein_disease_related_proteins_uniprot",
         "protein_isolation_source_uniprot",
-        "protein_evidence_of_existence_nextprot"
+        "protein_evidence_of_existence_nextprot",
+        "protein_isoform_specific_interaction_existence_nextprot",
+        "protein_pathway_annotation_uniprot"
       ]
     },
     {
@@ -42,6 +53,9 @@
         "structure_data_existence_uniprot",
         "structure_helical_regions_uniprot",
         "structure_beta_strand_regions_uniprot",
+        "structure_number_of_turn_uniprot",
+        "structure_number_of_disulfide_bond_uniprot",
+        "structure_disorder_annotation_uniprot",
         "structure_number_of_peptides_pdb",
         "structure_analysis_methods_pdb"
       ]
@@ -116,6 +130,38 @@
         }
       ]
     },
+    "transcript_biotype_ensembl": {
+      "label": "Transcript biotype",
+      "description": "Transcript classification annotated in Ensembl",
+      "api": "https://togodx.dbcls.jp/human/breakdown/transcript_biotype_ensembl",
+      "order": "numerical_desc",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Ensembl",
+          "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
+          "version": "human release 107",
+          "updated": "2022-07-12"
+        }
+      ]
+    },
+    "transcript_length_ensembl": {
+      "label": "Transcript length",
+      "description": "Transcript length (bp) based on Ensembl",
+      "api": "https://togodx.dbcls.jp/human/breakdown/transcript_length_ensembl",
+      "order": "numerical_desc",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Ensembl",
+          "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
+          "version": "human release 107",
+          "updated": "2022-07-12"
+        }
+      ]
+    },
     "gene_chromosome_ensembl": {
       "label": "Chromosome",
       "description": "Chromosome where a gene is located",
@@ -148,6 +194,22 @@
         }
       ]
     },
+    "gene_ortholog_existence_homologene": {
+      "label": "Ortholog existence",
+      "description": "Ortholog existence for each human gene in other organisms defined by HomoloGene",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_ortholog_existence_homologene",
+      "order": "id_asc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "HomoloGene",
+          "url": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
+          "version": "Release 68",
+          "updated": "2021-03-12"
+        }
+      ]
+    },
     "gene_evolutionary_conservation_homologene": {
       "label": "Evolutionary divergence",
       "description": "Most distant organisms from human that have orthologous genes in HomoloGene",
@@ -161,6 +223,54 @@
           "url": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
           "version": "Release 68",
           "updated": "2021-03-12"
+        }
+      ]
+    },
+    "gene_biological_process_ncbigene": {
+      "label": "Biological process",
+      "description": "Functional annotations (GO terms) derived from the Biological process category of Gene Ontology, which GOA has assigned to each human gene with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_biological_process_ncbigene",
+      "order": "numerical_desc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "NCBI Gene",
+          "url": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/",
+          "version": "N/A",
+          "updated": "2022-05-25"
+        }
+      ]
+    },
+    "gene_cellular_component_ncbigene": {
+      "label": "Cellular component",
+      "description": "Functional annotations (GO terms) derived from the Cellular component category of Gene Ontology, which GOA has assigned to each human gene with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_cellular_component_ncbigene",
+      "order": "numerical_desc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "NCBI Gene",
+          "url": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/",
+          "version": "N/A",
+          "updated": "2022-05-25"
+        }
+      ]
+    },
+    "gene_molecular_function_ncbigene": {
+      "label": "Molecular function",
+      "description": "Functional annotations (GO terms) derived from the Molecular function category of Gene Ontology, which GOA has assigned to each human gene with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_molecular_function_ncbigene",
+      "order": "numerical_desc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "NCBI Gene",
+          "url": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/",
+          "version": "N/A",
+          "updated": "2022-05-25"
         }
       ]
     },
@@ -260,6 +370,22 @@
         }
       ]
     },
+    "protein_uniprotkb_section_uniprot": {
+      "label": "UniProtKB sections",
+      "description": "Protein sections consisting of manually annotated UniProtKB/Swiss-Prot and automatically annotated UniProtKB/TrEMBL",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_uniprotkb_section_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
     "protein_domains_uniprot": {
       "label": "Protein domains",
       "description": "Protein domains from UniProt",
@@ -324,6 +450,22 @@
         }
       ]
     },
+    "protein_isoform_specific_go_existence_nextprot": {
+      "label": "Isoform specific go existence",
+      "description": "GO classification of proteins with isoform-specific GO annotations from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_isoform_specific_go_existence_nextprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Isoform SPECIFIC annotation from neXtProt",
+          "url": "https://www.nextprot.org/",
+          "version": "Release 2021-02-15",
+          "updated": "2021-02-18"
+        }
+      ]
+    },
     "protein_ligands_uniprot": {
       "label": "Ligands",
       "description": "Classification by non-protein molecules which bind/react with proteins in Function section from UniProt",
@@ -365,6 +507,22 @@
       "source": [
         {
           "label": "Amino acid modifications from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
+    "protein_catalytic_activity_uniprot": {
+      "label": "Catalytic activity",
+      "description": "Classification by catalytic activity, based on the Enzyme Committee (EC) number",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_catalytic_activity_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Catalytic activity from UniProt",
           "url": "https://www.uniprot.org/",
           "version": "release 2022_03",
           "updated": "2022-08-03"
@@ -464,6 +622,38 @@
         }
       ]
     },
+    "protein_isoform_specific_interaction_existence_nextprot": {
+      "label": "Isoform specific interaction existence",
+      "description": "Proteins with isoform-specific PPI annotations from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_isoform_specific_interaction_existence_nextprot",
+      "order": "id_asc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Isoform SPECIFIC annotation from neXtProt",
+          "url": "https://www.nextprot.org/",
+          "version": "Release 2021-02-15",
+          "updated": "2021-02-18"
+        }
+      ]
+    },
+    "protein_pathway_annotation_uniprot": {
+      "label": "Pathway annotation",
+      "description": "Classification by reaction, based on Uniprot pathways",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_pathway_annotation_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Tissue from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
     "structure_data_existence_uniprot": {
       "label": "Structure data existence",
       "description": "Uniprot entries having 3D structure data in PDB in Structure section from Uniprot",
@@ -504,6 +694,51 @@
       "source": [
         {
           "label": "'Structure' section from UniProt",
+          "url": "https://www.uniprot.org/help/strand",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
+    "structure_number_of_turn_uniprot": {
+      "label": "# of turn structures",
+      "description": "Number of turn structures from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_number_of_turn_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
+      "source": [
+        {
+          "label": "Amino acid modifications from UniProt",
+          "url": "https://www.uniprot.org/help/strand",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
+    "structure_number_of_disulfide_bond_uniprot": {
+      "label": "# of disulfide bonds",
+      "description": "Number of disulfide bounds from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_number_of_turn_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
+      "source": [
+        {
+          "label": "Amino acid modifications from UniProt",
+          "url": "https://www.uniprot.org/help/strand",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
+    "structure_disorder_annotation_uniprot": {
+      "label": "Rate of disorder regions",
+      "description": "Rate of disorder regions in each entry of UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_disorder_annotation_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
+      "source": [
+        {
+          "label": "UniProt",
           "url": "https://www.uniprot.org/help/strand",
           "version": "release 2022_03",
           "updated": "2022-08-03"
