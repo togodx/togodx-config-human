@@ -5,8 +5,6 @@
       "label": "Gene",
       "attributes": [
         "gene_biotype_ensembl",
-        "transcript_biotype_ensembl",
-        "transcript_length_ensembl",
         "gene_chromosome_ensembl",
         "gene_number_of_paralogs_homologene",
         "gene_ortholog_existence_homologene",
@@ -19,7 +17,9 @@
         "gene_high_level_expression_gtex6",
         "gene_not_expressed_in_tissues_gtex",
         "gene_specific_expression_in_tissues_hpa",
-        "gene_specific_expression_in_cells_hpa"
+        "gene_specific_expression_in_cells_hpa",
+        "transcript_biotype_ensembl",
+        "transcript_length_ensembl"
       ]
     },
     {
@@ -28,8 +28,8 @@
       "attributes": [
         "protein_uniprotkb_section_uniprot",
         "protein_domains_uniprot",
-        "protein_cellular_component_uniprot",
         "protein_biological_process_uniprot",
+        "protein_cellular_component_uniprot",
         "protein_molecular_function_uniprot",
         "protein_isoform_specific_go_existence_nextprot",
         "protein_ligands_uniprot",
@@ -121,37 +121,6 @@
       "order": "numerical_desc",
       "dataset": "ensembl_gene",
       "datamodel": "classification",
-      "source": [
-        {
-          "label": "Ensembl",
-          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
-          "version": "human release 107",
-          "updated": "2022-07-12"
-        }
-      ]
-    },
-    "transcript_biotype_ensembl": {
-      "label": "Transcript biotype",
-      "description": "Transcript classification annotated in Ensembl",
-      "api": "https://togodx.dbcls.jp/human/breakdown/transcript_biotype_ensembl",
-      "order": "numerical_desc",
-      "dataset": "ensembl_transcript",
-      "datamodel": "classification",
-      "source": [
-        {
-          "label": "Ensembl",
-          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
-          "version": "human release 107",
-          "updated": "2022-07-12"
-        }
-      ]
-    },
-    "transcript_length_ensembl": {
-      "label": "Transcript length",
-      "description": "Transcript length (bp) based on Ensembl",
-      "api": "https://togodx.dbcls.jp/human/breakdown/transcript_length_ensembl",
-      "dataset": "ensembl_transcript",
-      "datamodel": "distribution",
       "source": [
         {
           "label": "Ensembl",
@@ -369,6 +338,37 @@
         }
       ]
     },
+    "transcript_biotype_ensembl": {
+      "label": "Transcript biotype",
+      "description": "Transcript classification annotated in Ensembl",
+      "api": "https://togodx.dbcls.jp/human/breakdown/transcript_biotype_ensembl",
+      "order": "numerical_desc",
+      "dataset": "ensembl_transcript",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Ensembl",
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
+          "version": "human release 107",
+          "updated": "2022-07-12"
+        }
+      ]
+    },
+    "transcript_length_ensembl": {
+      "label": "Transcript length",
+      "description": "Transcript length (bp) based on Ensembl",
+      "api": "https://togodx.dbcls.jp/human/breakdown/transcript_length_ensembl",
+      "dataset": "ensembl_transcript",
+      "datamodel": "distribution",
+      "source": [
+        {
+          "label": "Ensembl",
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
+          "version": "human release 107",
+          "updated": "2022-07-12"
+        }
+      ]
+    },
     "protein_uniprotkb_section_uniprot": {
       "label": "UniProtKB sections",
       "description": "Protein sections consisting of manually annotated UniProtKB/Swiss-Prot and automatically annotated UniProtKB/TrEMBL",
@@ -401,22 +401,6 @@
         }
       ]
     },
-    "protein_cellular_component_uniprot": {
-      "label": "Cellular component",
-      "description": "Functional annotations (GO terms) derived from the Cellular component category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
-      "api": "https://togodx.dbcls.jp/human/breakdown/protein_cellular_component_uniprot",
-      "order": "numerical_desc",
-      "dataset": "uniprot",
-      "datamodel": "classification",
-      "source": [
-        {
-          "label": "Gene ontology cellular component annotation from UniProt",
-          "url": "https://www.uniprot.org/",
-          "version": "release 2022_03",
-          "updated": "2022-08-03"
-        }
-      ]
-    },
     "protein_biological_process_uniprot": {
       "label": "Biological process",
       "description": "Functional annotations (GO terms) derived from the Biological process category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
@@ -427,6 +411,22 @@
       "source": [
         {
           "label": "Gene ontology biological process annotation from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
+    "protein_cellular_component_uniprot": {
+      "label": "Cellular component",
+      "description": "Functional annotations (GO terms) derived from the Cellular component category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_cellular_component_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Gene ontology cellular component annotation from UniProt",
           "url": "https://www.uniprot.org/",
           "version": "release 2022_03",
           "updated": "2022-08-03"
