@@ -450,7 +450,7 @@
       ]
     },
     "protein_isoform_specific_go_existence_nextprot": {
-      "label": "Isoform specific go existence",
+      "label": "Isoform specific GO existence",
       "description": "GO classification of proteins with isoform-specific GO annotations from UniProt",
       "api": "https://togodx.dbcls.jp/human/breakdown/protein_isoform_specific_go_existence_nextprot",
       "order": "numerical_desc",
