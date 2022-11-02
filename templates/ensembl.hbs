@@ -1,0 +1,24 @@
+<article data-stanza-database="ensembl">
+  <header>
+    <h1>Ensembl: {{id}}</h1>
+  </header>
+  <section>
+    <togostanza-hash-table
+      data-url="https://integbio.jp/togosite/sparqlist/api/metastanza_ensembl_gene?id={{id}}"
+      data-type="json"
+      format-key="true"
+      columns="[{&quot;id&quot;:&quot;Ensembl ID&quot;,&quot;link&quot;:&quot;Ensembl URL&quot;},{&quot;id&quot;:&quot;Gene symbol&quot;},{&quot;id&quot;:&quot;Description&quot;},{&quot;id&quot;:&quot;Gene type&quot;},{&quot;id&quot;:&quot;Location&quot;},{&quot;id&quot;:&quot;Tissue specificity (GTEx)&quot;,&quot;escape&quot;:false},{&quot;id&quot;:&quot;Tissue specificity (HPA)&quot;,&quot;escape&quot;:false},{&quot;id&quot;:&quot;Cell specificity (HPA)&quot;,&quot;escape&quot;:false},{&quot;id&quot;:&quot;Expression&quot;,&quot;escape&quot;:false}]"
+    />
+  </section>
+  <section>
+    <h2>Transcript table</h2>
+    <togostanza-pagination-table
+      data-url="https://integbio.jp/togosite/sparqlist/api/metastanza_ensembl_transcript?id={{id}}"
+      data-type="json"
+      padding="0"
+      page-size-option="10,20,50,100"
+      page-slider="true"
+      columns="[{&quot;id&quot;:&quot;enst_id&quot;,&quot;label&quot;:&quot;Ensembl Transcript ID&quot;,&quot;link&quot;:&quot;enst_url&quot;},{&quot;id&quot;:&quot;label&quot;,&quot;label&quot;:&quot;Name&quot;},{&quot;id&quot;:&quot;type&quot;,&quot;label&quot;:&quot;Biotype&quot;},{&quot;id&quot;:&quot;bp&quot;,&quot;label&quot;:&quot;bp&quot;},{&quot;id&quot;:&quot;exon_count&quot;,&quot;label&quot;:&quot;# of Exons&quot;},{&quot;id&quot;:&quot;uniprot_id&quot;,&quot;label&quot;:&quot;Uniprot&quot;,&quot;escape&quot;:false}]"
+      />
+  </section>
+</article>

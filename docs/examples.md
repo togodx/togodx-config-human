@@ -10,7 +10,7 @@
     - `Protein` / `Cellular component` / `cellular anatomical entity` / `membrane` / `plasma membrane`
     - `Structure` / `Structure data existence` / `Proteins with structure data`
     - `Interaction` / `ChEMBL assay existence` / `Conf-score 9: Direct single protein target assigned` 
-- [この検索条件の再現](https://togodx.dbcls.jp/human/?dataset=uniprot&annotations=%5B%5D&filters=%5B%7B%22attribute%22%3A%22protein_isolation_source_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%22568%22%7D%5D%7D%2C%7B%22attribute%22%3A%22protein_cellular_component_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%22GO_0005886%22%2C%22path%22%3A%5B%22GO_0110165%22%2C%22GO_0016020%22%5D%7D%5D%7D%2C%7B%22attribute%22%3A%22structure_data_existence_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%221%22%7D%5D%7D%2C%7B%22attribute%22%3A%22interaction_chembl_assay_existence_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%221%22%7D%5D%7D%5D)
+- [この検索条件の再現](https://togodx.dbcls.jp/human/?dataset=uniprot&annotations=%5B%5D&filters=%5B%7B%22attributeId%22%3A%22protein_isolation_source_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%22568%22%7D%5D%7D%2C%7B%22attributeId%22%3A%22protein_cellular_component_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%22GO_0005886%22%2C%22ancestors%22%3A%5B%22GO_0110165%22%2C%22GO_0016020%22%5D%7D%5D%7D%2C%7B%22attributeId%22%3A%22structure_data_existence_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%221%22%7D%5D%7D%2C%7B%22attributeId%22%3A%22interaction_chembl_assay_existence_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%221%22%7D%5D%7D%5D)
 
 ### 検索条件の解説
 - `Protein` / `Tissues w/expression reported` では、タンパク質配列が解析されたクローンが単離された組織を検索できます。
@@ -30,10 +30,10 @@
     - 例1:　ヒト遺伝子が保存されている最も遠縁の生物別に分類することができる`Gene` / `Evolutionary divergence` を利用します。
     - 例2: [GTEx(V6)](https://gtexportal.org/home/releaseInfoPage)で測定された49組織中で、組織特異的に高発現する遺伝子を組織別に分類することができる`Gene` / `Tissue-specific high expression (GTEx)` を利用します。
     - 例3:　UniProtの各エントリーに付与されているタンパク質と関連する疾患別の分類 `Protein` / `Disease-related proteins` を利用します。
-    - [この検索条件を再現](https://togodx.dbcls.jp/human/?dataset=uniprot&annotations=%5B%7B%22attribute%22%3A%22gene_evolutionary_conservation_homologene%22%7D%2C%7B%22attribute%22%3A%22gene_high_level_expression_gtex6%22%7D%2C%7B%22attribute%22%3A%22protein_disease_related_proteins_uniprot%22%7D%5D&filters=%5B%7B%22attribute%22%3A%22protein_isolation_source_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%22568%22%7D%5D%7D%2C%7B%22attribute%22%3A%22protein_cellular_component_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%22GO_0005886%22%2C%22path%22%3A%5B%22GO_0110165%22%2C%22GO_0016020%22%5D%7D%5D%7D%2C%7B%22attribute%22%3A%22structure_data_existence_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%221%22%7D%5D%7D%2C%7B%22attribute%22%3A%22interaction_chembl_assay_existence_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%221%22%7D%5D%7D%5D)
+    - [この検索条件を再現](https://togodx.dbcls.jp/human/?dataset=uniprot&annotations=%5B%7B%22attributeId%22%3A%22gene_evolutionary_conservation_homologene%22%7D%2C%7B%22attributeId%22%3A%22gene_high_level_expression_gtex6%22%7D%2C%7B%22attributeId%22%3A%22protein_disease_related_proteins_uniprot%22%7D%5D&filters=%5B%7B%22attributeId%22%3A%22protein_isolation_source_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%22568%22%7D%5D%7D%2C%7B%22attributeId%22%3A%22protein_cellular_component_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%22GO_0005886%22%2C%22ancestors%22%3A%5B%22GO_0110165%22%2C%22GO_0016020%22%5D%7D%5D%7D%2C%7B%22attributeId%22%3A%22structure_data_existence_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%221%22%7D%5D%7D%2C%7B%22attributeId%22%3A%22interaction_chembl_assay_existence_uniprot%22%2C%22nodes%22%3A%5B%7B%22node%22%3A%221%22%7D%5D%7D%5D)
     - ![Add filter+Map attributes](https://github.com/togodx/togodx-config-human/raw/develop/docs/img/20211001_togodx_example1_02.png)
 
-## Case2: 作成中
-
+## CookBook
+[検索事例集\(2022年9月\)](https://github.com/togodx/togodx-examples/blob/main/examples_Sep_2022.md)
 
 

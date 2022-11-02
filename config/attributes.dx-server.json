@@ -7,32 +7,43 @@
         "gene_biotype_ensembl",
         "gene_chromosome_ensembl",
         "gene_number_of_paralogs_homologene",
+        "gene_ortholog_existence_homologene",
         "gene_evolutionary_conservation_homologene",
+        "gene_biological_process_ncbigene",
+        "gene_cellular_component_ncbigene",
+        "gene_molecular_function_ncbigene",
         "gene_high_level_expression_refex",
         "gene_low_level_expression_refex",
         "gene_high_level_expression_gtex6",
         "gene_not_expressed_in_tissues_gtex",
         "gene_specific_expression_in_tissues_hpa",
-        "gene_specific_expression_in_cells_hpa"
+        "gene_specific_expression_in_cells_hpa",
+        "transcript_biotype_ensembl",
+        "transcript_length_ensembl"
       ]
     },
     {
       "id": "protein",
       "label": "Protein",
       "attributes": [
+        "protein_uniprotkb_section_uniprot",
         "protein_domains_uniprot",
-        "protein_cellular_component_uniprot",
         "protein_biological_process_uniprot",
+        "protein_cellular_component_uniprot",
         "protein_molecular_function_uniprot",
+        "protein_isoform_specific_go_existence_nextprot",
         "protein_ligands_uniprot",
         "protein_molecular_mass_uniprot",
         "protein_ptms_uniprot",
+        "protein_catalytic_activity_uniprot",
         "protein_number_of_transmembrane_domains_uniprot",
         "protein_number_of_phosphorylation_sites_uniprot",
         "protein_number_of_glycosylation_sites_uniprot",
         "protein_disease_related_proteins_uniprot",
         "protein_isolation_source_uniprot",
-        "protein_evidence_of_existence_nextprot"
+        "protein_evidence_of_existence_nextprot",
+        "protein_isoform_specific_interaction_existence_nextprot",
+        "protein_pathway_annotation_uniprot"
       ]
     },
     {
@@ -42,6 +53,9 @@
         "structure_data_existence_uniprot",
         "structure_helical_regions_uniprot",
         "structure_beta_strand_regions_uniprot",
+        "structure_number_of_turn_uniprot",
+        "structure_number_of_disulfide_bond_uniprot",
+        "structure_disorder_annotation_uniprot",
         "structure_number_of_peptides_pdb",
         "structure_analysis_methods_pdb"
       ]
@@ -110,9 +124,9 @@
       "source": [
         {
           "label": "Ensembl",
-          "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
-          "version": "human release 106",
-          "updated": "2022-04-12"
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
+          "version": "human release 107",
+          "updated": "2022-07-12"
         }
       ]
     },
@@ -126,9 +140,9 @@
       "source": [
         {
           "label": "Ensembl",
-          "url": "https://www.ensembl.info/2022/04/12/ensembl-106-has-been-released/",
-          "version": "human release 106",
-          "updated": "2022-04-12"
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
+          "version": "human release 107",
+          "updated": "2022-07-12"
         }
       ]
     },
@@ -136,6 +150,22 @@
       "label": "# of paralogs",
       "description": "Number of duplicated genes (paralogs) in each human gene calculated based on HomoloGene",
       "api": "https://togodx.dbcls.jp/human/breakdown/gene_number_of_paralogs_homologene",
+      "order": "id_asc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "HomoloGene",
+          "url": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
+          "version": "Release 68",
+          "updated": "2021-03-12"
+        }
+      ]
+    },
+    "gene_ortholog_existence_homologene": {
+      "label": "Ortholog existence",
+      "description": "Ortholog existence for each human gene in other organisms defined by HomoloGene",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_ortholog_existence_homologene",
       "order": "id_asc",
       "dataset": "ncbigene",
       "datamodel": "classification",
@@ -161,6 +191,54 @@
           "url": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
           "version": "Release 68",
           "updated": "2021-03-12"
+        }
+      ]
+    },
+    "gene_biological_process_ncbigene": {
+      "label": "Biological process",
+      "description": "Functional annotations (GO terms) derived from the Biological process category of Gene Ontology, which GOA has assigned to each human gene with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_biological_process_ncbigene",
+      "order": "numerical_desc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "NCBI Gene",
+          "url": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/",
+          "version": "N/A",
+          "updated": "2022-05-25"
+        }
+      ]
+    },
+    "gene_cellular_component_ncbigene": {
+      "label": "Cellular component",
+      "description": "Functional annotations (GO terms) derived from the Cellular component category of Gene Ontology, which GOA has assigned to each human gene with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_cellular_component_ncbigene",
+      "order": "numerical_desc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "NCBI Gene",
+          "url": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/",
+          "version": "N/A",
+          "updated": "2022-05-25"
+        }
+      ]
+    },
+    "gene_molecular_function_ncbigene": {
+      "label": "Molecular function",
+      "description": "Functional annotations (GO terms) derived from the Molecular function category of Gene Ontology, which GOA has assigned to each human gene with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_molecular_function_ncbigene",
+      "order": "numerical_desc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "NCBI Gene",
+          "url": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/",
+          "version": "N/A",
+          "updated": "2022-05-25"
         }
       ]
     },
@@ -223,14 +301,14 @@
         {
           "label": "GTEx",
           "url": "https://gtexportal.org/home/datasets",
-          "version": "V8",
+          "version": "Release V8",
           "updated": "2019-08-26"
         }
       ]
     },
     "gene_specific_expression_in_tissues_hpa": {
       "label": "Tissue-specific high expression (HPA)",
-      "description": "Tissues in which expression specificity of a gene is evaluated as \"Tissue enriched\", \"Tissue enhanced\", or\"Group enriched\" by Human Protein Atlas",
+      "description": "Tissues in which expression specificity of a gene is evaluated as \"Tissue enriched\", \"Tissue enhanced\", or \"Group enriched\" by Human Protein Atlas",
       "api": "https://togodx.dbcls.jp/human/breakdown/gene_specific_expression_in_tissues_hpa",
       "order": "numerical_desc",
       "dataset": "ensembl_gene",
@@ -246,7 +324,7 @@
     },
     "gene_specific_expression_in_cells_hpa": {
       "label": "Cell type-specific high expression (HPA)",
-      "description": "Cell types in which expression specificity of a gene is evaluated as \"Cell type enriched\", \"Cell type enhanced\", or\"Group enriched\" by Human Protein Atlas",
+      "description": "Cell types in which expression specificity of a gene is evaluated as \"Cell type enriched\", \"Cell type enhanced\", or \"Group enriched\" by Human Protein Atlas",
       "api": "https://togodx.dbcls.jp/human/breakdown/gene_specific_expression_in_cells_hpa",
       "order": "numerical_desc",
       "dataset": "ensembl_gene",
@@ -257,6 +335,53 @@
           "url": "https://www.proteinatlas.org/about/download",
           "version": "V20",
           "updated": "2020-11-19"
+        }
+      ]
+    },
+    "transcript_biotype_ensembl": {
+      "label": "Transcript biotype",
+      "description": "Transcript classification annotated in Ensembl",
+      "api": "https://togodx.dbcls.jp/human/breakdown/transcript_biotype_ensembl",
+      "order": "numerical_desc",
+      "dataset": "ensembl_transcript",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Ensembl",
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
+          "version": "human release 107",
+          "updated": "2022-07-12"
+        }
+      ]
+    },
+    "transcript_length_ensembl": {
+      "label": "Transcript length",
+      "description": "Transcript length (bp) based on Ensembl",
+      "api": "https://togodx.dbcls.jp/human/breakdown/transcript_length_ensembl",
+      "dataset": "ensembl_transcript",
+      "datamodel": "distribution",
+      "source": [
+        {
+          "label": "Ensembl",
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
+          "version": "human release 107",
+          "updated": "2022-07-12"
+        }
+      ]
+    },
+    "protein_uniprotkb_section_uniprot": {
+      "label": "UniProtKB sections",
+      "description": "Protein sections consisting of manually annotated UniProtKB/Swiss-Prot and automatically annotated UniProtKB/TrEMBL",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_uniprotkb_section_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -271,24 +396,8 @@
         {
           "label": "UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
-        }
-      ]
-    },
-    "protein_cellular_component_uniprot": {
-      "label": "Cellular component",
-      "description": "Functional annotations (GO terms) derived from the Cellular component category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
-      "api": "https://togodx.dbcls.jp/human/breakdown/protein_cellular_component_uniprot",
-      "order": "numerical_desc",
-      "dataset": "uniprot",
-      "datamodel": "classification",
-      "source": [
-        {
-          "label": "Gene ontology cellular component annotation from UniProt",
-          "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -303,8 +412,24 @@
         {
           "label": "Gene ontology biological process annotation from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
+    "protein_cellular_component_uniprot": {
+      "label": "Cellular component",
+      "description": "Functional annotations (GO terms) derived from the Cellular component category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_cellular_component_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Gene ontology cellular component annotation from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -319,8 +444,24 @@
         {
           "label": "Gene ontology molecular function annotation from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
+    "protein_isoform_specific_go_existence_nextprot": {
+      "label": "Isoform specific go existence",
+      "description": "GO classification of proteins with isoform-specific GO annotations from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_isoform_specific_go_existence_nextprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Isoform SPECIFIC annotation from neXtProt",
+          "url": "https://www.nextprot.org/",
+          "version": "Release 2021-02-15",
+          "updated": "2021-02-18"
         }
       ]
     },
@@ -335,8 +476,8 @@
         {
           "label": "Function from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -350,8 +491,8 @@
         {
           "label": "Sequences from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -366,8 +507,24 @@
         {
           "label": "Amino acid modifications from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
+    "protein_catalytic_activity_uniprot": {
+      "label": "Catalytic activity",
+      "description": "Classification by catalytic activity, based on the Enzyme Committee (EC) number",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_catalytic_activity_uniprot",
+      "order": "id_asc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Catalytic activity from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -381,8 +538,8 @@
         {
           "label": "Topology from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -396,8 +553,8 @@
         {
           "label": "Amino acid modifications from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -411,8 +568,8 @@
         {
           "label": "Amino acid modifications from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -427,8 +584,8 @@
         {
           "label": "Pathology & Biotech from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -443,8 +600,8 @@
         {
           "label": "Tissue from UniProt",
           "url": "https://www.uniprot.org/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -464,6 +621,38 @@
         }
       ]
     },
+    "protein_isoform_specific_interaction_existence_nextprot": {
+      "label": "Isoform specific interaction existence",
+      "description": "Proteins with isoform-specific PPI annotations from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_isoform_specific_interaction_existence_nextprot",
+      "order": "id_asc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Isoform SPECIFIC annotation from neXtProt",
+          "url": "https://www.nextprot.org/",
+          "version": "Release 2021-02-15",
+          "updated": "2021-02-18"
+        }
+      ]
+    },
+    "protein_pathway_annotation_uniprot": {
+      "label": "Pathway annotation",
+      "description": "Classification by reaction, based on Uniprot pathways",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_pathway_annotation_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Pathway from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
     "structure_data_existence_uniprot": {
       "label": "Structure data existence",
       "description": "Uniprot entries having 3D structure data in PDB in Structure section from Uniprot",
@@ -475,8 +664,8 @@
         {
           "label": "Structure from Uniprot",
           "url": "https://www.uniprot.org/help/structure_section",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -488,10 +677,10 @@
       "datamodel": "distribution",
       "source": [
         {
-          "label": "'Structure' section from UniProt",
+          "label": "Structure from Uniprot",
           "url": "https://www.uniprot.org/help/helix",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -503,10 +692,55 @@
       "datamodel": "distribution",
       "source": [
         {
-          "label": "'Structure' section from UniProt",
+          "label": "Structure from Uniprot",
           "url": "https://www.uniprot.org/help/strand",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
+    "structure_number_of_turn_uniprot": {
+      "label": "# of turn structures",
+      "description": "Number of turn structures from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_number_of_turn_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
+      "source": [
+        {
+          "label": "Structure from Uniprot",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
+    "structure_number_of_disulfide_bond_uniprot": {
+      "label": "# of disulfide bonds",
+      "description": "Number of disulfide bounds from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_number_of_disulfide_bond_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
+      "source": [
+        {
+          "label": "Structure from Uniprot",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
+        }
+      ]
+    },
+    "structure_disorder_annotation_uniprot": {
+      "label": "Rate of disorder regions",
+      "description": "Rate of disorder regions in each entry of UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_disorder_annotation_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
+      "source": [
+        {
+          "label": "Structure from Uniprot",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -521,7 +755,7 @@
           "label": "Entity from PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
           "version": "N/A",
-          "updated": "2022-05-18"
+          "updated": "2022-09-28"
         }
       ]
     },
@@ -537,7 +771,7 @@
           "label": "Experimental method from PDB",
           "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
           "version": "N/A",
-          "updated": "2022-05-18"
+          "updated": "2022-09-28"
         }
       ]
     },
@@ -552,7 +786,7 @@
         {
           "label": "Reactome",
           "url": "https://reactome.org/download-data",
-          "version": "71",
+          "version": "76",
           "updated": "2021-03-05"
         }
       ]
@@ -568,7 +802,7 @@
         {
           "label": "Reactome",
           "url": "https://reactome.org/download-data",
-          "version": "71",
+          "version": "76",
           "updated": "2021-03-05"
         }
       ]
@@ -583,8 +817,8 @@
         {
           "label": "Interaction from UniProt",
           "url": "https://www.uniprot.org/help/interaction_section",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "release 2022_03",
+          "updated": "2022-08-03"
         }
       ]
     },
@@ -597,10 +831,10 @@
       "datamodel": "classification",
       "source": [
         {
-          "label": "Target protein from ChEMBL-RDF 28.0 against all UniProt entries",
+          "label": "Target protein from ChEMBL-RDF against all UniProt entries",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
-          "version": "release 2022_01",
-          "updated": "2022-03-03"
+          "version": "CHEMBL31",
+          "updated": "2022-08-15"
         }
       ]
     },
@@ -615,8 +849,8 @@
         {
           "label": "Chemical role from ChEBI",
           "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:51086",
-          "version": "Release 209",
-          "updated": "2022-03-10"
+          "version": "Release 213",
+          "updated": "2022-09-09"
         }
       ]
     },
@@ -631,8 +865,8 @@
         {
           "label": "Application type from ChEBI",
           "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33232",
-          "version": "Release 209",
-          "updated": "2022-03-10"
+          "version": "Release 213",
+          "updated": "2022-09-09"
         }
       ]
     },
@@ -647,8 +881,8 @@
         {
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
-          "version": "CHEMBL30",
-          "updated": "2022-03-10"
+          "version": "CHEMBL31",
+          "updated": "2022-08-15"
         }
       ]
     },
@@ -663,8 +897,8 @@
         {
           "label": "Biological role from ChEBI ",
           "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:24432",
-          "version": "Release 209",
-          "updated": "2022-03-10"
+          "version": "Release 213",
+          "updated": "2022-09-09"
         }
       ]
     },
@@ -679,8 +913,8 @@
         {
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
-          "version": "CHEMBL30",
-          "updated": "2022-03-10"
+          "version": "CHEMBL31",
+          "updated": "2022-08-15"
         }
       ]
     },
@@ -695,8 +929,8 @@
         {
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
-          "version": "CHEMBL30",
-          "updated": "2022-03-10"
+          "version": "CHEMBL31",
+          "updated": "2022-08-15"
         }
       ]
     },
@@ -727,8 +961,8 @@
         {
           "label": "ChEMBL-RDF",
           "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
-          "version": "CHEMBL30",
-          "updated": "2022-03-10"
+          "version": "CHEMBL31",
+          "updated": "2022-08-15"
         }
       ]
     },
@@ -741,7 +975,7 @@
       "source": [
         {
           "label": "GlyCosmos",
-          "url": "https://glycosmos.org/data",
+          "url": "https://glycosmos.org/release",
           "version": "v1.7.0",
           "updated": "2021-08-09"
         }
@@ -757,23 +991,23 @@
       "source": [
         {
           "label": "GlyCosmos",
-          "url": "https://glycosmos.org/data",
+          "url": "https://glycosmos.org/release",
           "version": "v1.7.0",
           "updated": "2021-08-09"
         }
       ]
     },
     "glycan_subsumption_glycosmos": {
-      "label": "Subsumption ",
+      "label": "Subsumption",
       "description": "The relationship between four levels of glycan types registered in GlyCosmos. For details, see <a href=\"https://glycosmos.org/faq\" target=\"_blank\">the Help page of GlyCosmos</a>.",
       "api": "https://togodx.dbcls.jp/human/breakdown/glycan_subsumption_glycosmos",
-      "order": "numerical_desc",
+      "order": "id_asc",
       "dataset": "glytoucan",
       "datamodel": "classification",
       "source": [
         {
           "label": "GlyCosmos",
-          "url": "https://glycosmos.org/data",
+          "url": "https://glycosmos.org/release",
           "version": "v1.7.0",
           "updated": "2021-08-09"
         }
@@ -790,8 +1024,8 @@
         {
           "label": "Mondo Disease Ontology (Mondo)",
           "url": "https://mondo.monarchinitiative.org/",
-          "version": "v2022-05-02",
-          "updated": "2022-05-06"
+          "version": "v2022-08-01",
+          "updated": "2022-08-16"
         }
       ]
     },
@@ -807,7 +1041,7 @@
           "label": "Medical Subject Headings (MeSH)",
           "url": "https://www.nlm.nih.gov/mesh/meshhome.html",
           "version": "N/A",
-          "updated": "2022-05-13"
+          "updated": "2022-09-20"
         }
       ]
     },
@@ -838,8 +1072,8 @@
         {
           "label": "Mondo Disease Ontology (Mondo)",
           "url": "https://mondo.monarchinitiative.org/",
-          "version": "v2022-05-02",
-          "updated": "2022-05-06"
+          "version": "v2022-08-01",
+          "updated": "2022-08-16"
         }
       ]
     },
@@ -871,7 +1105,7 @@
           "label": "GWAS Catalog All associations ",
           "url": "https://www.ebi.ac.uk/gwas/docs/file-downloads",
           "version": "N/A",
-          "updated": "2022-05-13"
+          "updated": "2022-09-20"
         }
       ]
     },
@@ -887,7 +1121,7 @@
           "label": "ClinVar",
           "url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/clinsig/",
           "version": "N/A",
-          "updated": "2022-05-05"
+          "updated": "2022-09-01"
         }
       ]
     }
@@ -935,6 +1169,58 @@
         "pubchem_compound": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_gene,uniprot,reactome_reaction,chebi,pubchem_compound&ids=",
         "togovar": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_gene,togovar&ids=",
         "uniprot": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_gene,uniprot&ids="
+      }
+    },
+    "ensembl_transcript": {
+      "label": "Ensembl transcript",
+      "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ensembl_gene.hbs",
+      "target": true,
+      "examples": [
+        "ENST00000374672",
+        "ENST00000411706",
+        "ENST00000420475",
+        "ENST00000493306",
+        "ENST00000497048",
+        "ENST00000610832",
+        "ENST00000259523",
+        "ENST00000377970",
+        "ENST00000517291",
+        "ENST00000520751",
+        "ENST00000524013",
+        "ENST00000621592",
+        "ENST00000641036",
+        "ENST00000641252",
+        "ENST00000651626",
+        "ENST00000652288",
+        "ENST00000325404",
+        "ENST00000259915",
+        "ENST00000441888",
+        "ENST00000461401",
+        "ENST00000471529",
+        "ENST00000512818",
+        "ENST00000513407",
+        "ENST00000606567",
+        "ENST00000638788",
+        "ENSG00000171862"
+      ],
+      "conversion": {
+        "chebi": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot,reactome_reaction,chebi&ids=",
+        "chembl_compound": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot,reactome_reaction,chebi,chembl_compound&ids=",
+        "chembl_target": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot,chembl_target&ids=",
+        "glytoucan": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot,glytoucan&ids=",
+        "hgnc": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,hgnc&ids=",
+        "hp": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen,hp&ids=",
+        "medgen": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen&ids=",
+        "mesh": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen,mesh&ids=",
+        "mondo": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen,mondo&ids=",
+        "nando": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen,mondo,nando&ids=",
+        "ncbigene": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene&ids=",
+        "omim_phenotype": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen,omim_phenotype&ids=",
+        "orphanet": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,ncbigene,medgen,orphanet&ids=",
+        "pdb": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot,pdb&ids=",
+        "pubchem_compound": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot,reactome_reaction,chebi,pubchem_compound&ids=",
+        "togovar": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,togovar&ids=",
+        "uniprot": "https://api.togoid.dbcls.jp/convert?format=json&route=ensembl_transcript,uniprot&ids="
       }
     },
     "ncbigene": {
