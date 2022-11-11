@@ -58,6 +58,37 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
 - [データセット間のIDリンク関係](https://togodx.github.io/togodx-path/path-highlight.html)
 
 ## 更新履歴
+- 2022.11.11 [新規Attribute追加およびデータ更新](https://dbcls.rois.ac.jp/ja/2022/11/11/post1.html) (v2022-11)
+    - 14種類の属性(Attribute)を追加
+        - Gene
+            - Ortholog existence
+            - Biological process
+            - Cellular component
+            - Molecular function
+            - Transcript biotype
+            - Transcript length
+        - Protein
+            - UniProtKB sections
+            - Isoform specific GO existence
+            - Catalytic activity
+            - Isoform specific interaction existence
+            - Pathway annotation
+        - Structure
+            - \# of turn structures
+            - \# of disulfide bonds
+            - Rate of disorder regions 
+    - 探索の起点となるID(target dataset)として “Ensembl transcript” を追加
+    - データ更新
+        - Ensembl (human release 107)
+        - UniProt (release 2022_03)
+        - PDB (2022-09-28 updated)
+        - Reactome (76)
+        - ChEMBL (CHEMBL31)
+        - ChEBI (Release 213)
+        - Mondo Disease Ontology (v2022-08-01)
+        - MeSH (2022-09-20 updated)
+        - GWAS Catalog All associations (2022-09-20 updated)
+        - ClinVar (2022-09-01 updated)     
 - 2022.06.20 [TogoDX/human v1\.1を公開](http://dbcls.rois.ac.jp/ja/2022/06/20/post1.html)
     - アプリケーションの操作性向上を目的として様々な技術的な調整を行い、v1.0と比較して約1000倍の高速化を実現
     - TogoDX/humanで使用されているデータセット間のIDの対応関係を掲載
