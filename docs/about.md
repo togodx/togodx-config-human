@@ -58,6 +58,19 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
 - [データセット間のIDリンク関係](https://togodx.github.io/togodx-path/path-highlight-2022-11.html)
 
 ## 更新履歴
+- 2023.01.11 [データ更新](https://dbcls.rois.ac.jp/ja/2023/01/11/post1.html) (v2023-01)
+  - データ更新
+    - Ensembl (human release 108)
+    - UniProt (release 2022_05)
+    - PDB (2022-12-14 updated)
+    - neXtProt (Release 2022-08-18)
+    - PubChem (Ver:2022-12-15)
+    - ChEBI (Release 220)
+    - Mondo Disease Ontology (v2022-12-01)
+    - MeSH (2022-12-16 updated)
+    - HPO (2022-12-15 updated)
+    - GWAS Catalog All associations (2022-12-16 updated)
+    - ClinVar (2022-12-01 updated)
 - 2022.11.11 [新規Attribute追加およびデータ更新](https://dbcls.rois.ac.jp/ja/2022/11/11/post1.html) (v2022-11)
     - 14種類の属性(Attribute)を追加
         - Gene
