@@ -3426,10 +3426,10 @@
       "target": true,
       "examples": [
         "0010679",
-        "0016830",
-        "0016971",
-        "0001347",
-        "0009678"
+        "0011925",
+        "0000355",
+        "0009678",
+        "0016830"
       ],
       "conversion": {
         "chebi": "https://api.togoid.dbcls.jp/convert?format=json&route=mondo,chebi&ids=",
@@ -3456,10 +3456,10 @@
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/mesh.hbs",
       "target": true,
       "examples": [
-        "D020389",
-        "D020388",
-        "D049288",
-        "D020391"
+        "D013584",
+        "D018234",
+        "D018232",
+        "D002813"
       ],
       "conversion": {
         "chebi": "https://api.togoid.dbcls.jp/convert?format=json&route=mesh,chebi&ids=",
@@ -3488,9 +3488,9 @@
       "examples": [
         "2200856",
         "2200857",
-        "2200858",
-        "2200859",
-        "2200860"
+        "2200860",
+        "2200861",
+        "2200862"
       ],
       "conversion": {
         "chebi": "https://api.togoid.dbcls.jp/convert?format=json&route=nando,medgen,mondo,mesh,chembl_compound,chebi&ids=",
@@ -3517,11 +3517,10 @@
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/hp.hbs",
       "target": true,
       "examples": [
-        "0000643",
-        "0000717",
-        "0000739",
-        "0000863",
-        "0001321"
+        "0012570",
+        "0012218",
+        "0006779",
+        "0006765"
       ],
       "conversion": {
         "chebi": "https://api.togoid.dbcls.jp/convert?format=json&route=hp,medgen,mondo,mesh,chembl_compound,chebi&ids=",
