@@ -3394,11 +3394,16 @@
       "template": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/glytoucan.hbs",
       "target": true,
       "examples": [
-        "G00035MO",
-        "G29011JC",
-        "G20030CU",
-        "G00033MO",
-        "G39213VZ"
+        "G00049MO",
+        "G00056MO",
+        "G99053DY",
+        "G01534TU",
+        "G19749DC",
+        "G11647UD",
+        "G17126MK",
+        "G17173XA",
+        "G64904FE",
+        "G58670TY"
       ],
       "conversion": {
         "chebi": "https://api.togoid.dbcls.jp/convert?format=json&route=glytoucan,pubchem_compound,chebi&ids=",
