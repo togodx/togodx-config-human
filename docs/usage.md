@@ -40,6 +40,7 @@ Explorer画面(トップページ)では、遺伝子・タンパク質・化合�
   - `Clear`ボタンを押すと、`Add filters`、`Map attributes`の選択が初期化されます。
 - `Select target dataset` データセットの選択
   - 最終的な結果をどのデータセットのIDに対応させて表示するかを指定します。
+  - [IDのリンク関係](#idのリンク関係)で示す経路でID変換を行っています。
 - `Map your IDs` IDリストのマッピング
   - 利用者の持つIDリストを`Attribute keys`の各属性にマッピングします。
   - データセットを`Select target dataset`で変更すると、入力可能なIDの例がグレーで表示されます。
