@@ -17,6 +17,8 @@
 
 ---
 ## 動画マニュアル
+- "TogoDX/human を使ってヒトのデータベースを統合的に探索、俯瞰、抽出する", 2021/12/10, TogoTV, [DOI: 10.7875/togotv.2021.079](https://doi.org/10.7875/togotv.2021.079))
+
 [!['TogoDX/human を使ってヒトのデータベースを統合的に探索、俯瞰、抽出する'](https://user-images.githubusercontent.com/2275313/219278446-ef000d1a-892e-4f84-af76-b97e323bb439.png)](https://doi.org/10.7875/togotv.2021.079)
 
 ## 画面構成
