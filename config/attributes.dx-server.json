@@ -1054,6 +1054,7 @@
       "order": "numerical_desc",
       "dataset": "mondo",
       "datamodel": "classification",
+      "datasettype": "ontology",
       "hierarchy": true,
       "dag": true,
       "source": [
@@ -1072,6 +1073,7 @@
       "order": "numerical_desc",
       "dataset": "mesh",
       "datamodel": "classification",
+      "datasettype": "ontology",
       "hierarchy": true,
       "dag": true,
       "source": [
@@ -1090,6 +1092,7 @@
       "order": "numerical_desc",
       "dataset": "nando",
       "datamodel": "classification",
+      "datasettype": "ontology",
       "hierarchy": true,
       "source": [
         {
