@@ -919,8 +919,8 @@
       ]
     },
     "compound_drug_development_phase_chembl": {
-      "label": "Drug development phase",
-      "description": "Classification based on the drug's development phase (research stage, phase I-III, and post-launch) from ChEMBL",
+      "label": "Max drug development phase",
+      "description": "Classification based on the max development phase (research stage, phase I-III, and post-launch) of drugs from ChEMBL",
       "api": "https://togodx.dbcls.jp/human/breakdown/compound_drug_development_phase_chembl",
       "order": "numerical_desc",
       "dataset": "chembl_compound",
