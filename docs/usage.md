@@ -17,7 +17,9 @@
 
 ---
 ## 動画マニュアル
-[TogoDX/human を使ってヒトのデータベースを統合的に探索、俯瞰、抽出する](https://doi.org/10.7875/togotv.2021.079)
+- "TogoDX/human を使ってヒトのデータベースを統合的に探索、俯瞰、抽出する", 2021/12/10, TogoTV, [DOI: 10.7875/togotv.2021.079](https://doi.org/10.7875/togotv.2021.079))
+
+[!['TogoDX/human を使ってヒトのデータベースを統合的に探索、俯瞰、抽出する'](https://user-images.githubusercontent.com/2275313/219278446-ef000d1a-892e-4f84-af76-b97e323bb439.png)](https://doi.org/10.7875/togotv.2021.079)
 
 ## 画面構成
 
@@ -40,6 +42,7 @@ Explorer画面(トップページ)では、遺伝子・タンパク質・化合�
   - `Clear`ボタンを押すと、`Add filters`、`Map attributes`の選択が初期化されます。
 - `Select target dataset` データセットの選択
   - 最終的な結果をどのデータセットのIDに対応させて表示するかを指定します。
+  - [IDのリンク関係](#idのリンク関係)で示す経路でID変換を行っています。
 - `Map your IDs` IDリストのマッピング
   - 利用者の持つIDリストを`Attribute keys`の各属性にマッピングします。
   - データセットを`Select target dataset`で変更すると、入力可能なIDの例がグレーで表示されます。
@@ -168,6 +171,8 @@ Explorer画面(トップページ)では、遺伝子・タンパク質・化合�
 - `Condition builder`の`Clear`ボタンをクリックすると検索条件が初期化されます。
 
 ### IDのリンク関係
+![ID relations](https://github.com/togodx/togodx-path/blob/main/images/path-highlight-2022-11.png)
+
 - [TogoDX/Humanで使用されているデータセット間のIDリンク関係の図](https://togodx.github.io/togodx-path/path-highlight-2022-11.html)
 - [IDリンク関係の表](https://github.com/togodx/togodx-path/blob/main/tsv/dataset-links-2022-11.tsv)
 

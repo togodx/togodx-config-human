@@ -34,6 +34,6 @@
     - ![Add filter+Map attributes](https://github.com/togodx/togodx-config-human/raw/develop/docs/img/20211001_togodx_example1_02.png)
 
 ## CookBook
-[検索事例集\(2022年9月\)](https://github.com/togodx/togodx-examples/blob/main/examples_Sep_2022.md)
+[検索事例集\(2023年1月\)](https://github.com/togodx/togodx-examples/blob/main/examples.md)
 
 

@@ -24,7 +24,17 @@ jobs:
 
       - name: "Copy config.production.json"
         run: |
-          cp -f ./config/config.production.json ./app/build/config.json
+          cp -f ./config/config.production.json ./app/source/js/config.json
+
+      - name: "Install Node & build vite.js app"
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - run: |
+          cd ./app
+          npm ci
+          npm run build
 
       - name: "Commit & Push changes to main"
         uses: actions-js/push@master
