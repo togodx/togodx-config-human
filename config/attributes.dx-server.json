@@ -1,1154 +1,1127 @@
 {
   "categories": [
     {
-      "id": "atc",
-      "label": "ATC",
+      "id": "gene",
+      "label": "Gene",
       "attributes": [
-        "atc"
+        "gene_biotype_ensembl",
+        "gene_chromosome_ensembl",
+        "gene_number_of_paralogs_homologene",
+        "gene_ortholog_existence_homologene",
+        "gene_evolutionary_conservation_homologene",
+        "gene_biological_process_ncbigene",
+        "gene_cellular_component_ncbigene",
+        "gene_molecular_function_ncbigene",
+        "gene_high_level_expression_refex",
+        "gene_low_level_expression_refex",
+        "gene_high_level_expression_gtex6",
+        "gene_not_expressed_in_tissues_gtex",
+        "gene_specific_expression_in_tissues_hpa",
+        "gene_specific_expression_in_cells_hpa",
+        "transcript_biotype_ensembl",
+        "transcript_length_ensembl"
       ]
     },
     {
-      "id": "caloha",
-      "label": "caloha",
+      "id": "protein",
+      "label": "Protein",
       "attributes": [
-        "caloha"
+        "protein_uniprotkb_section_uniprot",
+        "protein_domains_uniprot",
+        "protein_biological_process_uniprot",
+        "protein_cellular_component_uniprot",
+        "protein_molecular_function_uniprot",
+        "protein_isoform_specific_go_existence_nextprot",
+        "protein_ligands_uniprot",
+        "protein_molecular_mass_uniprot",
+        "protein_ptms_uniprot",
+        "protein_catalytic_activity_uniprot",
+        "protein_number_of_transmembrane_domains_uniprot",
+        "protein_number_of_phosphorylation_sites_uniprot",
+        "protein_number_of_glycosylation_sites_uniprot",
+        "protein_disease_related_proteins_uniprot",
+        "protein_isolation_source_uniprot",
+        "protein_evidence_of_existence_nextprot",
+        "protein_isoform_specific_interaction_existence_nextprot",
+        "protein_pathway_annotation_uniprot"
       ]
     },
     {
-      "id": "chebi",
-      "label": "ChEBI",
+      "id": "structure",
+      "label": "Structure",
       "attributes": [
-        "chebi"
+        "structure_data_existence_uniprot",
+        "structure_helical_regions_uniprot",
+        "structure_beta_strand_regions_uniprot",
+        "structure_number_of_turns_uniprot",
+        "structure_number_of_disulfide_bonds_uniprot",
+        "structure_disorder_annotation_uniprot",
+        "structure_number_of_peptides_pdb",
+        "structure_analysis_methods_pdb"
       ]
     },
     {
-      "id": "chembl",
-      "label": "ChEMBL",
+      "id": "interaction",
+      "label": "Interaction",
       "attributes": [
-        "chembl"
+        "interaction_proteins_in_pathway_reactome",
+        "interaction_compounds_in_pathway_reactome",
+        "interaction_number_of_interacting_proteins_uniprot",
+        "interaction_chembl_assay_existence_uniprot"
       ]
     },
     {
-      "id": "chip-atlas",
-      "label": "ChIP-Atlas",
+      "id": "compound",
+      "label": "Compound",
       "attributes": [
-        "chip_atlas"
+        "compound_chemical_role_chebi",
+        "compound_application_type_chebi",
+        "compound_action_type_chembl",
+        "compound_biological_role_chebi",
+        "compound_drug_indication_mesh_chembl",
+        "compound_drug_development_phase_chembl",
+        "compound_atc_classification_pubchem",
+        "compound_atc_classification_chembl"
       ]
     },
     {
-      "id": "chip-atlas gene cross reference",
-      "label": "ChIP-Atlas gene cross reference",
+      "id": "glycan",
+      "label": "Glycan",
       "attributes": [
-        "chip_atlas_ncbigene_ensembl"
+        "glycan_mass_glycosmos",
+        "glycan_tissue_glycosmos",
+        "glycan_subsumption_glycosmos"
       ]
     },
     {
-      "id": "clinvar",
-      "label": "ClinVar",
+      "id": "disease",
+      "label": "Disease",
       "attributes": [
-        "clinvar"
+        "disease_diseases_mondo",
+        "disease_diseases_mesh",
+        "disease_diseases_nando",
+        "disease_related_dbs_mondo",
+        "disease_phenotypic_abnormality_hpo"
       ]
     },
     {
-      "id": "dbcatalog",
-      "label": "dbcatalog",
+      "id": "variant",
+      "label": "Variant",
       "attributes": [
-        "dbcatalog"
-      ]
-    },
-    {
-      "id": "efo",
-      "label": "EFO",
-      "attributes": [
-        "efo"
-      ]
-    },
-    {
-      "id": "ensembl",
-      "label": "Ensembl",
-      "attributes": [
-        "ensembl"
-      ]
-    },
-    {
-      "id": "go",
-      "label": "GO",
-      "attributes": [
-        "go"
-      ]
-    },
-    {
-      "id": "gtex v6>v8？",
-      "label": "GTEx v6>v8？",
-      "attributes": [
-        "refex_tissue_specific_genes_gtex_v6"
-      ]
-    },
-    {
-      "id": "gtex v6 refex sample",
-      "label": "GTEx v6 refex sample",
-      "attributes": [
-        "refexsample_gtex_v6"
-      ]
-    },
-    {
-      "id": "gwas catalog",
-      "label": "GWAS Catalog",
-      "attributes": [
-        "gwas"
-      ]
-    },
-    {
-      "id": "hgnc symbol report",
-      "label": "HGNC symbol report",
-      "attributes": [
-        "hgnc"
-      ]
-    },
-    {
-      "id": "homo_sapiens.gene_info",
-      "label": "Homo_sapiens.gene_info",
-      "attributes": [
-        "homo_sapiens_gene_info"
-      ]
-    },
-    {
-      "id": "homologene data",
-      "label": "HomoloGene Data",
-      "attributes": [
-        "homologene_data"
-      ]
-    },
-    {
-      "id": "homologene ontology",
-      "label": "HomoloGene Ontology",
-      "attributes": [
-        "homologene_ontology"
-      ]
-    },
-    {
-      "id": "hop",
-      "label": "hOP",
-      "attributes": [
-        "hop"
-      ]
-    },
-    {
-      "id": "hpa_cell",
-      "label": "hpa_cell",
-      "attributes": [
-        "hpa_cell_specificity"
-      ]
-    },
-    {
-      "id": "hpa_tissue",
-      "label": "hpa_tissue",
-      "attributes": [
-        "hpa_tissue_specificity"
-      ]
-    },
-    {
-      "id": "hpo",
-      "label": "HPO",
-      "attributes": [
-        "hpo"
-      ]
-    },
-    {
-      "id": "medgen",
-      "label": "MEDGEN",
-      "attributes": [
-        "medgen"
-      ]
-    },
-    {
-      "id": "mesh",
-      "label": "MESH",
-      "attributes": [
-        "mesh"
-      ]
-    },
-    {
-      "id": "mondo",
-      "label": "MONDO",
-      "attributes": [
-        "mondo"
-      ]
-    },
-    {
-      "id": "nando",
-      "label": "NANDO",
-      "attributes": [
-        "nando"
-      ]
-    },
-    {
-      "id": "nextprot",
-      "label": "neXtProt",
-      "attributes": [
-        "nextprot"
-      ]
-    },
-    {
-      "id": "pubcasefinder",
-      "label": "PubcaseFinder",
-      "attributes": [
-        "pubcasefinder"
-      ]
-    },
-    {
-      "id": "pubchem",
-      "label": "PubChem",
-      "attributes": [
-        "pubchem"
-      ]
-    },
-    {
-      "id": "reactome",
-      "label": "Reactome",
-      "attributes": [
-        "reactome"
-      ]
-    },
-    {
-      "id": "refex gtex v8",
-      "label": "RefEx GTEx v8",
-      "attributes": [
-        "refex_gtex_v8_summary"
-      ]
-    },
-    {
-      "id": "refex ontology additional terms",
-      "label": "RefEx Ontology additional terms",
-      "attributes": [
-        "refexo_add"
-      ]
-    },
-    {
-      "id": "refex ontology modified version",
-      "label": "RefEx Ontology modified version",
-      "attributes": [
-        "refexo"
-      ]
-    },
-    {
-      "id": "refex sample gtex v8",
-      "label": "RefEx sample GTEx v8",
-      "attributes": [
-        "refexsample_gtex_v8_summary"
-      ]
-    },
-    {
-      "id": "refex tissue classifications for gtex v6",
-      "label": "RefEx tissue classifications for GTEx v6",
-      "attributes": [
-        "refexo_tissue_classifications"
-      ]
-    },
-    {
-      "id": "refex ver1 gene cross reference",
-      "label": "RefEx ver1 gene cross reference",
-      "attributes": [
-        "refex_id_relation_human"
-      ]
-    },
-    {
-      "id": "refex ver1 genechip",
-      "label": "RefEx ver1 GeneChip",
-      "attributes": [
-        "refex_tissue_specific_genechip_human_GSE7307"
-      ]
-    },
-    {
-      "id": "refex ver1 rna-seq",
-      "label": "RefEx ver1 RNA-seq",
-      "attributes": [
-        "refex_tissue_specific_rnaseq_human_PRJEB2445"
-      ]
-    },
-    {
-      "id": "rhea",
-      "label": "Rhea",
-      "attributes": [
-        "rhea"
-      ]
-    },
-    {
-      "id": "ro",
-      "label": "RO",
-      "attributes": [
-        "ro"
-      ]
-    },
-    {
-      "id": "sequence ontology",
-      "label": "Sequence Ontology",
-      "attributes": [
-        "so"
-      ]
-    },
-    {
-      "id": "tfclass",
-      "label": "TFClass",
-      "attributes": [
-        "tfclass"
-      ]
-    },
-    {
-      "id": "togovar variant position and allele",
-      "label": "TogoVar Variant Position and Allele",
-      "attributes": [
-        "variation"
-      ]
-    },
-    {
-      "id": "togovar variant vep annotation",
-      "label": "TogoVar Variant VEP annotation",
-      "attributes": [
-        "variation_annotation_clinvar"
-      ]
-    },
-    {
-      "id": "uberon",
-      "label": "UBERON",
-      "attributes": [
-        "uberon"
-      ]
-    },
-    {
-      "id": "uniprot",
-      "label": "UniProt",
-      "attributes": [
-        "uniprot"
-      ]
-    },
-    {
-      "id": "uniprot keywords",
-      "label": "UniProt keywords",
-      "attributes": [
-        "uniprot_keywords"
-      ]
-    },
-    {
-      "id": "uniprot tissues",
-      "label": "UniProt tissues",
-      "attributes": [
-        "uniprot_tissues"
-      ]
-    },
-    {
-      "id": "uniprot pathways",
-      "label": "UniProt pathways",
-      "attributes": [
-        "uniprot_pathway"
-      ]
-    },
-    {
-      "id": "wwpdb",
-      "label": "wwPDB",
-      "attributes": [
-        "pdbj"
+        "variant_gwas_togovar",
+        "variant_clinical_significance_togovar"
       ]
     }
   ],
   "attributes": {
-    "atc": {
-      "label": "2022-11-07",
-      "description": "2022AB",
-      "api": "https://togodx.dbcls.jp/human/breakdown/atc",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_biotype_ensembl": {
+      "label": "Gene biotype",
+      "description": "Gene classification annotated in Ensembl",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_biotype_ensembl",
+      "order": "numerical_desc",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-05-02",
-          "url": "2022AA",
-          "version": "http://rdf.integbio.jp/dataset/togosite/atc",
-          "updated": ""
+          "label": "Ensembl",
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
+          "version": "human release 109",
+          "updated": "2023-02-15"
         }
       ]
     },
-    "caloha": {
-      "label": "2021-07-27",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/caloha",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_chromosome_ensembl": {
+      "label": "Chromosome",
+      "description": "Chromosome where a gene is located",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_chromosome_ensembl",
+      "order": "id_asc",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-07-27",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/caloha",
-          "updated": "https://github.com/calipho-sib/controlled-vocabulary/blob/master/caloha.obo"
+          "label": "Ensembl",
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
+          "version": "human release 109",
+          "updated": "2023-02-15"
         }
       ]
     },
-    "chebi": {
-      "label": "2023-03-01",
-      "description": "Release 219",
-      "api": "https://togodx.dbcls.jp/human/breakdown/chebi",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_number_of_paralogs_homologene": {
+      "label": "# of paralogs",
+      "description": "Number of duplicated genes (paralogs) in each human gene calculated based on HomoloGene",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_number_of_paralogs_homologene",
+      "order": "id_asc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-09-09",
-          "url": "Release 213",
-          "version": "http://rdf.integbio.jp/dataset/togosite/chebi",
-          "updated": "ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl.gz"
+          "label": "HomoloGene",
+          "url": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
+          "version": "Release 68",
+          "updated": "2021-03-12"
         }
       ]
     },
-    "chembl": {
-      "label": "2023-01-26",
-      "description": "CHEMBL32",
-      "api": "https://togodx.dbcls.jp/human/breakdown/chembl",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_ortholog_existence_homologene": {
+      "label": "Ortholog existence",
+      "description": "Ortholog existence for each human gene in other organisms defined by HomoloGene",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_ortholog_existence_homologene",
+      "order": "id_asc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-08-15",
-          "url": "CHEMBL31",
-          "version": "http://rdf.integbio.jp/dataset/togosite/chembl",
-          "updated": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/latest/"
+          "label": "HomoloGene",
+          "url": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
+          "version": "Release 68",
+          "updated": "2021-03-12"
         }
       ]
     },
-    "chip_atlas": {
-      "label": "2021-09-14",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/chip_atlas",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_evolutionary_conservation_homologene": {
+      "label": "Evolutionary divergence",
+      "description": "Most distant organisms from human that have orthologous genes in HomoloGene",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_evolutionary_conservation_homologene",
+      "order": "id_asc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-09-14",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/chip_atlas",
-          "updated": "https://orth.dbcls.jp/rdf/chip_atlas_target_gene.ttl 他"
+          "label": "HomoloGene",
+          "url": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
+          "version": "Release 68",
+          "updated": "2021-03-12"
         }
       ]
     },
-    "chip_atlas_ncbigene_ensembl": {
-      "label": "2021-03-19",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/chip_atlas_ncbigene_ensembl",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_biological_process_ncbigene": {
+      "label": "Biological process",
+      "description": "Functional annotations (GO terms) derived from the Biological process category of Gene Ontology, which GOA has assigned to each human gene with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_biological_process_ncbigene",
+      "order": "numerical_desc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-03-19",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/chip_atlas_ncbigene_ensembl",
-          "updated": "https://github.com/hchiba1/togosite/blob/main/create_rdf/ncbigene-ensembl.ttl"
+          "label": "NCBI Gene",
+          "url": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/",
+          "version": "N/A",
+          "updated": "2022-05-25"
         }
       ]
     },
-    "clinvar": {
-      "label": "2023-03-06",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/clinvar",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_cellular_component_ncbigene": {
+      "label": "Cellular component",
+      "description": "Functional annotations (GO terms) derived from the Cellular component category of Gene Ontology, which GOA has assigned to each human gene with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_cellular_component_ncbigene",
+      "order": "numerical_desc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-09-01",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/clinvar",
-          "updated": "https://togovar.biosciencedbc.jp/public/virtuoso/clinvar/latest/"
+          "label": "NCBI Gene",
+          "url": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/",
+          "version": "N/A",
+          "updated": "2022-05-25"
         }
       ]
     },
-    "dbcatalog": {
-      "label": "2023-02-07",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/dbcatalog",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_molecular_function_ncbigene": {
+      "label": "Molecular function",
+      "description": "Functional annotations (GO terms) derived from the Molecular function category of Gene Ontology, which GOA has assigned to each human gene with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_molecular_function_ncbigene",
+      "order": "numerical_desc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-08-24",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/dbcatalog/main",
-          "updated": "https://integbio.jp/rdf/download/dbcatalog/2021-06-30/all/dbcatalog.tar.gz"
+          "label": "NCBI Gene",
+          "url": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/",
+          "version": "N/A",
+          "updated": "2022-05-25"
         }
       ]
     },
-    "efo": {
-      "label": "2023-03-15",
-      "description": "3.52.0",
-      "api": "https://togodx.dbcls.jp/human/breakdown/efo",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_high_level_expression_refex": {
+      "label": "Tissue-specific high expression (RefEx GeneChip)",
+      "description": "Tissues in which a gene was tissue-specific highly expressed in 34 tissues of RefEx(GeneChip microarray)",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_high_level_expression_refex",
+      "order": "numerical_desc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-02-25",
-          "url": "3.39.0",
-          "version": "http://rdf.integbio.jp/dataset/togosite/efo",
-          "updated": "http://www.ebi.ac.uk/efo/efo.owl"
+          "label": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
+          "url": "https://doi.org/10.6084/m9.figshare.4028700.v3",
+          "version": "N/A",
+          "updated": "2021-03-12"
         }
       ]
     },
-    "ensembl": {
-      "label": "2023-02-15",
-      "description": "109",
-      "api": "https://togodx.dbcls.jp/human/breakdown/ensembl",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_low_level_expression_refex": {
+      "label": "Tissue-specific low expression (RefEx GeneChip)",
+      "description": "Tissues in which a gene was tissue-specific lowly expressed in 34 tissues of RefEx(GeneChip microarray)",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_low_level_expression_refex",
+      "order": "numerical_desc",
+      "dataset": "ncbigene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-07-12",
-          "url": "107",
-          "version": "http://rdf.integbio.jp/dataset/togosite/ensembl",
-          "updated": "ftp://ftp.ensembl.org/pub/current_rdf/"
+          "label": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
+          "url": "https://doi.org/10.6084/m9.figshare.4028700.v3",
+          "version": "N/A",
+          "updated": "2021-03-12"
         }
       ]
     },
-    "go": {
-      "label": "2023-03-06",
-      "description": "2023-03-06",
-      "api": "https://togodx.dbcls.jp/human/breakdown/go",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_high_level_expression_gtex6": {
+      "label": "Tissue-specific high expression (GTEx)",
+      "description": "Tissues in which a gene is tissue-specific highly expressed in 49 tissues of GTEx V6",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_high_level_expression_gtex6",
+      "order": "numerical_desc",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-09-19",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/go",
-          "updated": "http://purl.obolibrary.org/obo/go.owl"
+          "label": "GTEx",
+          "url": "https://doi.org/10.1101/311563",
+          "version": "V6",
+          "updated": "2018-04-30"
         }
       ]
     },
-    "refex_tissue_specific_genes_gtex_v6": {
-      "label": "2021-06-10",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/refex_tissue_specific_genes_gtex_v6",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_not_expressed_in_tissues_gtex": {
+      "label": "No expression in tissues (GTEx)",
+      "description": "Tissues in which expression of a gene is not detected in 53 tissues of GTEx V8",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_not_expressed_in_tissues_gtex",
+      "order": "numerical_desc",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-06-10",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/refex_tissue_specific_genes_gtex_v6",
-          "updated": "https://orth.dbcls.jp/rdf/tissue_specific_genes_gtex_v6.ttl"
+          "label": "GTEx",
+          "url": "https://gtexportal.org/home/datasets",
+          "version": "Release V8",
+          "updated": "2019-08-26"
         }
       ]
     },
-    "refexsample_gtex_v6": {
-      "label": "2021-07-05",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/refexsample_gtex_v6",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_specific_expression_in_tissues_hpa": {
+      "label": "Tissue-specific high expression (HPA)",
+      "description": "Tissues in which expression specificity of a gene is evaluated as \"Tissue enriched\", \"Tissue enhanced\", or \"Group enriched\" by Human Protein Atlas",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_specific_expression_in_tissues_hpa",
+      "order": "numerical_desc",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-07-05",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/refex_tissue_specific_genes_gtex_v6_refexsample",
-          "updated": "https://drive.google.com/file/d/1QQTVVLdJbQAkxXaDlJpwPqBZf0RIAn1P/view?usp=sharing_eil_dm&ts=60e29c42"
+          "label": "HPA (Data from the Human Protein Atlas in tab-separated format)",
+          "url": "https://www.proteinatlas.org/about/download",
+          "version": "V20",
+          "updated": "2021-07-27"
         }
       ]
     },
-    "gwas": {
-      "label": "2023-03-29",
-      "description": "2023-03-29",
-      "api": "https://togodx.dbcls.jp/human/breakdown/gwas",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "gene_specific_expression_in_cells_hpa": {
+      "label": "Cell type-specific high expression (HPA)",
+      "description": "Cell types in which expression specificity of a gene is evaluated as \"Cell type enriched\", \"Cell type enhanced\", or \"Group enriched\" by Human Protein Atlas",
+      "api": "https://togodx.dbcls.jp/human/breakdown/gene_specific_expression_in_cells_hpa",
+      "order": "numerical_desc",
+      "dataset": "ensembl_gene",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-09-20",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/gwas-catalog",
-          "updated": "https://togovar.biosciencedbc.jp/public/virtuoso/gwas-catalog/latest/"
+          "label": "HPA (Data from the Human Protein Atlas in tab-separated format)",
+          "url": "https://www.proteinatlas.org/about/download",
+          "version": "V20",
+          "updated": "2021-07-27"
         }
       ]
     },
-    "hgnc": {
-      "label": "2023-03-29",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/hgnc",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "transcript_biotype_ensembl": {
+      "label": "Transcript biotype",
+      "description": "Transcript classification annotated in Ensembl",
+      "api": "https://togodx.dbcls.jp/human/breakdown/transcript_biotype_ensembl",
+      "order": "numerical_desc",
+      "dataset": "ensembl_transcript",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-09-20",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/hgnc",
-          "updated": "https://togovar.biosciencedbc.jp/public/virtuoso/hgnc/latest/hgnc_complete_set.ttl"
+          "label": "Ensembl",
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
+          "version": "human release 109",
+          "updated": "2023-02-15"
         }
       ]
     },
-    "homo_sapiens_gene_info": {
-      "label": "2022-05-25",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/homo_sapiens_gene_info",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "transcript_length_ensembl": {
+      "label": "Transcript length",
+      "description": "Transcript length (bp) based on Ensembl",
+      "api": "https://togodx.dbcls.jp/human/breakdown/transcript_length_ensembl",
+      "dataset": "ensembl_transcript",
+      "datamodel": "distribution",
       "source": [
         {
-          "label": "2022-05-25",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/homo_sapiens_gene_info",
-          "updated": ""
+          "label": "Ensembl",
+          "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
+          "version": "human release 109",
+          "updated": "2023-02-15"
         }
       ]
     },
-    "homologene_data": {
-      "label": "2021-03-12",
-      "description": "Release 68",
-      "api": "https://togodx.dbcls.jp/human/breakdown/homologene_data",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_uniprotkb_section_uniprot": {
+      "label": "UniProtKB sections",
+      "description": "Protein sections consisting of manually annotated UniProtKB/Swiss-Prot and automatically annotated UniProtKB/TrEMBL",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_uniprotkb_section_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-03-12",
-          "url": "Release 68",
-          "version": "http://rdf.integbio.jp/dataset/togosite/homologene/data",
-          "updated": "https://orth.dbcls.jp/rdf/homologene.ttl"
+          "label": "UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "homologene_ontology": {
-      "label": "2021-03-12",
-      "description": "Release 68",
-      "api": "https://togodx.dbcls.jp/human/breakdown/homologene_ontology",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_domains_uniprot": {
+      "label": "Protein domains",
+      "description": "Protein domains from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_domains_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-03-12",
-          "url": "Release 68",
-          "version": "http://rdf.integbio.jp/dataset/togosite/homologene/ontology",
-          "updated": "https://raw.githubusercontent.com/hchiba1/homologene-rdf/master/created_rdf/homologene_branchtime.ttl"
+          "label": "UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "hop": {
-      "label": "2021-03-17",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/hop",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_biological_process_uniprot": {
+      "label": "Biological process",
+      "description": "Functional annotations (GO terms) derived from the Biological process category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_biological_process_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-03-17",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/hop",
-          "updated": "https://github.com/hchiba1/hop-rdf/blob/main/created_rdf/hop2.ttl"
+          "label": "Gene ontology biological process annotation from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "hpa_cell_specificity": {
-      "label": "2021-07-27",
-      "description": "V20",
-      "api": "https://togodx.dbcls.jp/human/breakdown/hpa_cell_specificity",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_cellular_component_uniprot": {
+      "label": "Cellular component",
+      "description": "Functional annotations (GO terms) derived from the Cellular component category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_cellular_component_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-07-27",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/hpa_cell_specificity",
-          "updated": "https://www.proteinatlas.org/about/download"
+          "label": "Gene ontology cellular component annotation from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "hpa_tissue_specificity": {
-      "label": "2021-07-27",
-      "description": "V20",
-      "api": "https://togodx.dbcls.jp/human/breakdown/hpa_tissue_specificity",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_molecular_function_uniprot": {
+      "label": "Molecular function",
+      "description": "Functional annotations (GO terms) derived from the Molecular function category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_molecular_function_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-07-27",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/hpa_tissue_specificity",
-          "updated": "https://www.proteinatlas.org/about/download"
+          "label": "Gene ontology molecular function annotation from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "hpo": {
-      "label": "2023-01-27",
-      "description": "2023-01-27",
-      "api": "https://togodx.dbcls.jp/human/breakdown/hpo",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_isoform_specific_go_existence_nextprot": {
+      "label": "Isoform specific go existence",
+      "description": "GO classification of proteins with isoform-specific GO annotations from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_isoform_specific_go_existence_nextprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-02-17",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/hpo",
-          "updated": ""
+          "label": "Isoform SPECIFIC annotation from neXtProt",
+          "url": "https://www.nextprot.org/",
+          "version": "Release 2022-08-18",
+          "updated": "2022-08-18"
         }
       ]
     },
-    "medgen": {
-      "label": "2023-03-14",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/medgen",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_ligands_uniprot": {
+      "label": "Ligands",
+      "description": "Classification by non-protein molecules which bind/react with proteins in Function section from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_ligands_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-09-20",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/medgen",
-          "updated": "https://togovar.biosciencedbc.jp/public/virtuoso/medgen/latest/"
+          "label": "Function from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "mesh": {
-      "label": "2023-03-07",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/mesh",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_molecular_mass_uniprot": {
+      "label": "Molecular mass",
+      "description": "Molecular weight of the protein including information from multiple isoforms in Sequences section from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_molecular_mass_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "source": [
         {
-          "label": "2022-09-20",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/mesh",
-          "updated": "https://togovar.biosciencedbc.jp/public/virtuoso/mesh/latest/mesh.nt.gz"
+          "label": "Sequences from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "mondo": {
-      "label": "2023-03-01",
-      "description": "v2023-03-01",
-      "api": "https://togodx.dbcls.jp/human/breakdown/mondo",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_ptms_uniprot": {
+      "label": "PTMs",
+      "description": "Classification by types of post-translational modifications, including S-S bonds (disulfide bonds) in Amino acid modifications section from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_ptms_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-08-16",
-          "url": "v2022-08-01",
-          "version": "http://rdf.integbio.jp/dataset/togosite/mondo",
-          "updated": "https://togovar.biosciencedbc.jp/public/virtuoso/mondo/latest/mondo.owl"
+          "label": "Amino acid modifications from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "nando": {
-      "label": "2021-07-23",
-      "description": "1.0.0",
-      "api": "https://togodx.dbcls.jp/human/breakdown/nando",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_catalytic_activity_uniprot": {
+      "label": "Catalytic activity",
+      "description": "Classification by catalytic activity, based on the Enzyme Committee (EC) number",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_catalytic_activity_uniprot",
+      "order": "id_asc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-08-05",
-          "url": "1.01",
-          "version": "http://rdf.integbio.jp/dataset/togosite/nando",
-          "updated": "http://nanbyodata.jp/ontology/nando.ttl"
+          "label": "Catalytic activity from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "nextprot": {
-      "label": "2022-08-18",
-      "description": "Release 2022-08-18",
-      "api": "https://togodx.dbcls.jp/human/breakdown/nextprot",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_number_of_transmembrane_domains_uniprot": {
+      "label": "# of transmembrane domains",
+      "description": "Number of transmembrane domains. A group of molecules forming a family, such as channels, may have the same number of domains in Topology section from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_number_of_transmembrane_domains_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "source": [
         {
-          "label": "2021-02-18",
-          "url": "Release 2021-02-15",
-          "version": "http://rdf.integbio.jp/dataset/togosite/nextprot",
-          "updated": "https://download.nextprot.org/pub/current_release/rdf/ttl/"
+          "label": "Topology from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "pubcasefinder": {
-      "label": "2021-05-18",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/pubcasefinder",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_number_of_phosphorylation_sites_uniprot": {
+      "label": "# of phosphorylation sites",
+      "description": "Number of phosphorylation at Ser/Thr/Tyr, which may create an activation state for the protein and acts like a switch in Amino acid modifications section from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_number_of_phosphorylation_sites_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "source": [
         {
-          "label": "2021-05-18",
-          "url": "1.3",
-          "version": "http://rdf.integbio.jp/dataset/togosite/pubcasefinder",
-          "updated": "https://integbio.jp/rdf/download/pubcasefinder/2021-05-18/all/pubcasefinder.tar.gz"
+          "label": "Amino acid modifications from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "pubchem": {
-      "label": "2023-02-09",
-      "description": "1.8.0 beta",
-      "api": "https://togodx.dbcls.jp/human/breakdown/pubchem",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_number_of_glycosylation_sites_uniprot": {
+      "label": "# of glycosylation sites",
+      "description": "Number of glycosylation sites, including N-linked,O-linked and others in Amino acid modifications section from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_number_of_glycosylation_sites_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "source": [
         {
-          "label": "2022-09-14",
-          "url": "Ver:2022-09-14",
-          "version": "http://rdf.integbio.jp/dataset/togosite/pubchem",
-          "updated": ""
+          "label": "Amino acid modifications from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "reactome": {
-      "label": "2021-03-05",
-      "description": "71",
-      "api": "https://togodx.dbcls.jp/human/breakdown/reactome",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_disease_related_proteins_uniprot": {
+      "label": "Disease-related proteins",
+      "description": "Disease-related proteins in Pathology & Biotech section from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_disease_related_proteins_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-03-05",
-          "url": "71",
-          "version": "http://rdf.integbio.jp/dataset/togosite/reactome",
-          "updated": "ftp://ftp.ebi.ac.uk/pub/databases/RDF/reactome/"
+          "label": "Pathology & Biotech from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "refex_gtex_v8_summary": {
-      "label": "2021-03-29",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/refex_gtex_v8_summary",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_isolation_source_uniprot": {
+      "label": "Tissues w/expression reported",
+      "description": "Classification based on the name of the tissue from which the clone was isolated in the reference describing the protein sequence in Tissue section from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_isolation_source_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-03-29",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/refex_gtex_v8_summary",
-          "updated": "https://orth.dbcls.jp/rdf/210329_gtex_v8_sum.ttl"
+          "label": "Tissue from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "refexo_add": {
-      "label": "2021-03-12",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/refexo_add",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_evidence_of_existence_nextprot": {
+      "label": "Evidence of existence",
+      "description": "Classification by the basis of protein expression, such as whether it has been identified as a protein or transcript in Expression section from neXtProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_evidence_of_existence_nextprot",
+      "order": "id_asc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-03-12",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/refexo_add",
-          "updated": "https://raw.githubusercontent.com/hchiba1/refex-add-rdf/main/created_rdf/refexo-add.ttl"
+          "label": "Expression from neXtProt",
+          "url": "https://www.nextprot.org/",
+          "version": "Release 2022-08-18",
+          "updated": "2022-08-18"
         }
       ]
     },
-    "refexo": {
-      "label": "2021-03-12",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/refexo",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_isoform_specific_interaction_existence_nextprot": {
+      "label": "Isoform specific interaction existence",
+      "description": "Proteins with isoform-specific PPI annotations from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_isoform_specific_interaction_existence_nextprot",
+      "order": "id_asc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-03-12",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/refexo",
-          "updated": "https://raw.githubusercontent.com/hchiba1/refex-add-rdf/main/created_rdf/refexo_v0.06.ttl"
+          "label": "Isoform SPECIFIC annotation from neXtProt",
+          "url": "https://www.nextprot.org/",
+          "version": "Release 2022-08-18",
+          "updated": "2022-08-18"
         }
       ]
     },
-    "refexsample_gtex_v8_summary": {
-      "label": "2021-05-13",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/refexsample_gtex_v8_summary",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "protein_pathway_annotation_uniprot": {
+      "label": "Pathway annotation",
+      "description": "Classification by reaction, based on Uniprot pathways",
+      "api": "https://togodx.dbcls.jp/human/breakdown/protein_pathway_annotation_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-05-13",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/refexsample_gtex_v8_summary",
-          "updated": "https://orth.dbcls.jp/rdf/210513_refexsample_gtex_v8_sum.ttl"
+          "label": "Pathway from UniProt",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "refexo_tissue_classifications": {
-      "label": "2021-05-12",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/refexo_tissue_classifications",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "structure_data_existence_uniprot": {
+      "label": "Structure data existence",
+      "description": "Uniprot entries having 3D structure data in PDB in Structure section from Uniprot",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_data_existence_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-05-12",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/refexo_tissue_classifications",
-          "updated": "https://orth.dbcls.jp/rdf/refexo_tissue_classifications.ttl"
+          "label": "Structure from Uniprot",
+          "url": "https://www.uniprot.org/help/structure_section",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "refex_id_relation_human": {
-      "label": "2021-03-12",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/refex_id_relation_human",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "structure_helical_regions_uniprot": {
+      "label": "Rate of helical regions",
+      "description": "Rate of helical regions in each entry of UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_helical_regions_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "source": [
         {
-          "label": "2021-03-12",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/refex_id_relation_human",
-          "updated": "https://raw.githubusercontent.com/hchiba1/refex-add-rdf/main/created_rdf/RefEx_ID_Relation_human.ttl"
+          "label": "Structure from Uniprot",
+          "url": "https://www.uniprot.org/help/helix",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "refex_tissue_specific_genechip_human_GSE7307": {
-      "label": "2021-03-12",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/refex_tissue_specific_genechip_human_GSE7307",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "structure_beta_strand_regions_uniprot": {
+      "label": "Rate of beta strand regions",
+      "description": "Rate of beta strand regions in each entry of UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_beta_strand_regions_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "source": [
         {
-          "label": "2021-03-12",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/refex_tissue_specific_genechip_human_GSE7307",
-          "updated": "https://raw.githubusercontent.com/hchiba1/refex-add-rdf/main/created_rdf/RefEx_tissue_specific_genechip_human_GSE7307.ttl"
+          "label": "Structure from Uniprot",
+          "url": "https://www.uniprot.org/help/strand",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "refex_tissue_specific_rnaseq_human_PRJEB2445": {
-      "label": "2021-03-12",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/refex_tissue_specific_rnaseq_human_PRJEB2445",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "structure_number_of_turns_uniprot": {
+      "label": "# of turn structures",
+      "description": "Number of turn structures from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_number_of_turns_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "source": [
         {
-          "label": "2021-03-12",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/refex_tissue_specific_rnaseq_human_PRJEB2445",
-          "updated": "https://raw.githubusercontent.com/hchiba1/refex-add-rdf/main/created_rdf/RefEx_tissue_specific_RNAseq_human_PRJEB2445.ttl"
+          "label": "Structure from Uniprot",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "rhea": {
-      "label": "2023-03-01",
-      "description": "release 126",
-      "api": "https://togodx.dbcls.jp/human/breakdown/rhea",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "structure_number_of_disulfide_bonds_uniprot": {
+      "label": "# of disulfide bonds",
+      "description": "Number of disulfide bounds from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_number_of_disulfide_bonds_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "source": [
         {
-          "label": "2022-08-03",
-          "url": "release 123",
-          "version": "http://rdf.integbio.jp/dataset/togosite/rhea",
-          "updated": "ftp://ftp.ebi.ac.uk/pub/databases/rhea/rdf/rhea.rdf.gz"
+          "label": "Structure from Uniprot",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "ro": {
-      "label": "2023-02-22",
-      "description": "2023-02-22",
-      "api": "https://togodx.dbcls.jp/human/breakdown/ro",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "structure_disorder_annotation_uniprot": {
+      "label": "Rate of disorder regions",
+      "description": "Rate of disorder regions in each entry of UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_disorder_annotation_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "source": [
         {
-          "label": "2022-09-07",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/ro",
-          "updated": "http://purl.obolibrary.org/obo/ro.owl"
+          "label": "Structure from Uniprot",
+          "url": "https://www.uniprot.org/",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "so": {
-      "label": "2023-02-17",
-      "description": "2023-02-17",
-      "api": "https://togodx.dbcls.jp/human/breakdown/so",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "structure_number_of_peptides_pdb": {
+      "label": "# of peptides in a PDB entry",
+      "description": "The number of peptides in a PDB entry",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_number_of_peptides_pdb",
+      "dataset": "pdb",
+      "datamodel": "distribution",
       "source": [
         {
-          "label": "2021-03-15",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/so",
-          "updated": "https://github.com/The-Sequence-Ontology/SO-Ontologies/archive/refs/tags/v3.1.zip"
+          "label": "Entity from PDB",
+          "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
+          "version": "N/A",
+          "updated": "2023-03-15"
         }
       ]
     },
-    "tfclass": {
-      "label": "2017-09-14",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/tfclass",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "structure_analysis_methods_pdb": {
+      "label": "Analysis methods",
+      "description": "Classification by the method used to determine the three-dimensional structure in Experimental method section from PDB",
+      "api": "https://togodx.dbcls.jp/human/breakdown/structure_analysis_methods_pdb",
+      "order": "numerical_desc",
+      "dataset": "pdb",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-09-14",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/tfclass",
-          "updated": "http://tfclass.bioinf.med.uni-goettingen.de/suppl/tfclass.ttl.gz"
+          "label": "Experimental method from PDB",
+          "url": "https://data.pdbj.org/pdbjplus/data/pdb/rdf/",
+          "version": "N/A",
+          "updated": "2023-03-15"
         }
       ]
     },
-    "variation": {
-      "label": "2022-11-01",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/variation",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "interaction_proteins_in_pathway_reactome": {
+      "label": "Proteins in pathway",
+      "description": "Proteins participating as components classified by pathway (reaction) from Reactome",
+      "api": "https://togodx.dbcls.jp/human/breakdown/interaction_proteins_in_pathway_reactome",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-12-07",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/variation",
-          "updated": "https://togovar.biosciencedbc.jp/public/virtuoso/variant/v3/"
+          "label": "Reactome",
+          "url": "https://reactome.org/download-data",
+          "version": "76",
+          "updated": "2021-03-05"
         }
       ]
     },
-    "variation_annotation_clinvar": {
-      "label": "2022-11-01",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/variation_annotation_clinvar",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "interaction_compounds_in_pathway_reactome": {
+      "label": "Compounds in pathway",
+      "description": "Compounds participating as components classified by pathway (reaction) from Reactome",
+      "api": "https://togodx.dbcls.jp/human/breakdown/interaction_compounds_in_pathway_reactome",
+      "order": "numerical_desc",
+      "dataset": "chebi",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2021-12-13",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/variation/annotation/clinvar",
-          "updated": "https://togovar.biosciencedbc.jp/public/virtuoso/variant_condition/clinvar/v3/"
+          "label": "Reactome",
+          "url": "https://reactome.org/download-data",
+          "version": "71",
+          "updated": "2021-03-05"
         }
       ]
     },
-    "uberon": {
-      "label": "2023-03-15",
-      "description": "2023-03-15",
-      "api": "https://togodx.dbcls.jp/human/breakdown/uberon",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "interaction_number_of_interacting_proteins_uniprot": {
+      "label": "# of interacting proteins",
+      "description": "Classification of uniprot proteins by the number of target proteins they interact with in Interaction section from UniProt",
+      "api": "https://togodx.dbcls.jp/human/breakdown/interaction_number_of_interacting_proteins_uniprot",
+      "dataset": "uniprot",
+      "datamodel": "distribution",
       "source": [
         {
-          "label": "2022-08-19",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/uberon",
-          "updated": "http://purl.obolibrary.org/obo/uberon.owl"
+          "label": "Interaction from UniProt",
+          "url": "https://www.uniprot.org/help/interaction_section",
+          "version": "release 2023_01",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "uniprot": {
-      "label": "2023-03-01",
-      "description": "release 2023_01",
-      "api": "https://togodx.dbcls.jp/human/breakdown/uniprot",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "interaction_chembl_assay_existence_uniprot": {
+      "label": "ChEMBL assay existence",
+      "description": "Uniprot entries classified according to the presence or absence of a method to detect direct protein-compound interactions (ChEMBL assay)",
+      "api": "https://togodx.dbcls.jp/human/breakdown/interaction_chembl_assay_existence_uniprot",
+      "order": "numerical_desc",
+      "dataset": "uniprot",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-08-03",
-          "url": "release 2022_03",
-          "version": "http://rdf.integbio.jp/dataset/togosite/uniprot",
-          "updated": "https://www.uniprot.org/uniprot/?query=organism:9606&format=rdf&compress=yes"
+          "label": "Target protein from ChEMBL-RDF against all UniProt entries",
+          "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
+          "version": "CHEMBL32",
+          "updated": "2023-01-26"
         }
       ]
     },
-    "uniprot_keywords": {
-      "label": "2023-03-01",
-      "description": "release 2023_01",
-      "api": "https://togodx.dbcls.jp/human/breakdown/uniprot_keywords",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "compound_chemical_role_chebi": {
+      "label": "Chemical role",
+      "description": "Classification based on the chemical roles, such as antioxidant or environmental contaminant from ChEBI",
+      "api": "https://togodx.dbcls.jp/human/breakdown/compound_chemical_role_chebi",
+      "order": "numerical_desc",
+      "dataset": "chebi",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-03-03",
-          "url": "release 2022_01",
-          "version": "http://rdf.integbio.jp/dataset/togosite/uniprot/keywords",
-          "updated": "ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/rdf/keywords.rdf.xz"
+          "label": "Chemical role from ChEBI",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:51086",
+          "version": "Release 219",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "uniprot_tissues": {
-      "label": "2023-03-01",
-      "description": "release 2023_01",
-      "api": "https://togodx.dbcls.jp/human/breakdown/uniprot_tissues",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "compound_application_type_chebi": {
+      "label": "Application type",
+      "description": "Classification based on the application types, such as pharmaceutical or pesticide from ChEBI",
+      "api": "https://togodx.dbcls.jp/human/breakdown/compound_application_type_chebi",
+      "order": "numerical_desc",
+      "dataset": "chebi",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-03-03",
-          "url": "release 2022_01",
-          "version": "http://rdf.integbio.jp/dataset/togosite/uniprot/tissues",
-          "updated": "ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/rdf/tissues.rdf.xz"
+          "label": "Application type from ChEBI",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33232",
+          "version": "Release 219",
+          "updated": "2023-03-01"
         }
       ]
     },
-    "uniprot_pathway": {
-      "label": "2023-03-01",
-      "description": "release 2023_01",
-      "api": "https://togodx.dbcls.jp/human/breakdown/uniprot_pathway",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "compound_action_type_chembl": {
+      "label": "Action type",
+      "description": "Classification based on the mechanism of action, such as an inhibitor or an antagonist from ChEMBL",
+      "api": "https://togodx.dbcls.jp/human/breakdown/compound_action_type_chembl",
+      "order": "numerical_desc",
+      "dataset": "chembl_compound",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-10-12",
-          "url": "release 2022_04",
-          "version": "http://rdf.integbio.jp/dataset/togosite/uniprot/pathways",
-          "updated": "ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/rdf/pathways.rdf.xz"
+          "label": "ChEMBL-RDF",
+          "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
+          "version": "CHEMBL32",
+          "updated": "2023-01-26"
         }
       ]
     },
-    "pdbj": {
-      "label": "2023-03-15",
-      "description": "",
-      "api": "https://togodx.dbcls.jp/human/breakdown/pdbj",
-      "order": null,
-      "dataset": null,
-      "datamodel": null,
+    "compound_biological_role_chebi": {
+      "label": "Biological role",
+      "description": "Classification based on the biological roles, such as inhibitor or antimicrobial agent from ChEBI",
+      "api": "https://togodx.dbcls.jp/human/breakdown/compound_biological_role_chebi",
+      "order": "numerical_desc",
+      "dataset": "chebi",
+      "datamodel": "classification",
       "source": [
         {
-          "label": "2022-09-28",
-          "url": "",
-          "version": "http://rdf.integbio.jp/dataset/togosite/pdbj",
-          "updated": "ftp://ftp.pdbj.org/RDF"
+          "label": "Biological role from ChEBI ",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:24432",
+          "version": "Release 219",
+          "updated": "2023-03-01"
+        }
+      ]
+    },
+    "compound_drug_indication_mesh_chembl": {
+      "label": "Drug indication",
+      "description": "Classification of diseases for which drugs are indicated, based on hierarchical data using MeSH, a life science thesaurus from ChEMBL",
+      "api": "https://togodx.dbcls.jp/human/breakdown/compound_drug_indication_mesh_chembl",
+      "order": "numerical_desc",
+      "dataset": "chembl_compound",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "ChEMBL-RDF",
+          "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
+          "version": "CHEMBL32",
+          "updated": "2023-01-26"
+        }
+      ]
+    },
+    "compound_drug_development_phase_chembl": {
+      "label": "Max drug development phase",
+      "description": "Classification based on the <a href=\"https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/chembl-drug-data-questions#what-is-max-phase\" target=\"_blank\" rel=\"noopener\">max development phase</a> (research stage, phase I-III, and post-launch) of drugs from ChEMBL",
+      "api": "https://togodx.dbcls.jp/human/breakdown/compound_drug_development_phase_chembl",
+      "order": "numerical_desc",
+      "dataset": "chembl_compound",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "ChEMBL-RDF",
+          "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
+          "version": "CHEMBL32",
+          "updated": "2023-01-26"
+        }
+      ]
+    },
+    "compound_atc_classification_pubchem": {
+      "label": "PubChem ATC classification",
+      "description": "Classification of a medicine (in PubChem) according to its medicinal properties (WHO ATC Code)",
+      "api": "https://togodx.dbcls.jp/human/breakdown/compound_atc_classification_pubchem",
+      "order": "numerical_desc",
+      "dataset": "pubchem_compound",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "PubChem",
+          "url": "http://ftp.ncbi.nlm.nih.gov/pubchem/RDF/",
+          "version": "1.8.0 beta",
+          "updated": "2023-02-09"
+        }
+      ]
+    },
+    "compound_atc_classification_chembl": {
+      "label": "ChEMBL ATC classification",
+      "description": "Classification of a medicine (in ChEMBL) according to its medicinal properties (WHO ATC Code)",
+      "api": "https://togodx.dbcls.jp/human/breakdown/compound_atc_classification_chembl",
+      "order": "numerical_desc",
+      "dataset": "chembl_compound",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "ChEMBL-RDF",
+          "url": "http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBL-RDF/",
+          "version": "CHEMBL32",
+          "updated": "2023-01-26"
+        }
+      ]
+    },
+    "glycan_mass_glycosmos": {
+      "label": "Molecular mass of glycans",
+      "description": "Molecular weight of glycans from GlyCosmos",
+      "api": "https://togodx.dbcls.jp/human/breakdown/glycan_mass_glycosmos",
+      "dataset": "glytoucan",
+      "datamodel": "distribution",
+      "source": [
+        {
+          "label": "GlyCosmos",
+          "url": "https://glycosmos.org/release",
+          "version": "v3.2.1",
+          "updated": "2023-04-24"
+        }
+      ]
+    },
+    "glycan_tissue_glycosmos": {
+      "label": "Tissues",
+      "description": "Tissues where glycans are expressed",
+      "api": "https://togodx.dbcls.jp/human/breakdown/glycan_tissue_glycosmos",
+      "order": "numerical_desc",
+      "dataset": "glytoucan",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "GlyCosmos",
+          "url": "https://glycosmos.org/release",
+          "version": "v3.2.1",
+          "updated": "2023-04-24"
+        }
+      ]
+    },
+    "glycan_subsumption_glycosmos": {
+      "label": "Subsumption",
+      "description": "The relationship between four levels of glycan types registered in GlyCosmos. For details, see <a href=\"https://glycosmos.org/faq\" target=\"_blank\">the Help page of GlyCosmos</a>.",
+      "api": "https://togodx.dbcls.jp/human/breakdown/glycan_subsumption_glycosmos",
+      "order": "id_asc",
+      "dataset": "glytoucan",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "GlyCosmos",
+          "url": "https://glycosmos.org/release",
+          "version": "v3.2.1",
+          "updated": "2023-04-24"
+        }
+      ]
+    },
+    "disease_diseases_mondo": {
+      "label": "Diseases in Mondo",
+      "description": "Subcategories in the Disease or disorder category in the Mondo Disease Ontology (Mondo)",
+      "api": "https://togodx.dbcls.jp/human/breakdown/disease_diseases_mondo",
+      "order": "numerical_desc",
+      "dataset": "mondo",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Mondo Disease Ontology (Mondo)",
+          "url": "https://mondo.monarchinitiative.org/",
+          "version": "v2023-03-01",
+          "updated": "2023-03-01"
+        }
+      ]
+    },
+    "disease_diseases_mesh": {
+      "label": "Diseases in MeSH",
+      "description": "Subcategories in the Disease category in Medical Subject Headings (MeSH)",
+      "api": "https://togodx.dbcls.jp/human/breakdown/disease_diseases_mesh",
+      "order": "numerical_desc",
+      "dataset": "mesh",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Medical Subject Headings (MeSH)",
+          "url": "https://www.nlm.nih.gov/mesh/meshhome.html",
+          "version": "N/A",
+          "updated": "2023-03-07"
+        }
+      ]
+    },
+    "disease_diseases_nando": {
+      "label": "Diseases in NANDO",
+      "description": "Japanese rare and intractable disease categories in the Nanbyo Disease Ontology (NANDO)",
+      "api": "https://togodx.dbcls.jp/human/breakdown/disease_diseases_nando",
+      "order": "numerical_desc",
+      "dataset": "nando",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Nanbyo Disease Ontology (NANDO)",
+          "url": "http://nanbyodata.jp/ontology/nando",
+          "version": "1.0.0",
+          "updated": "2021-07-23"
+        }
+      ]
+    },
+    "disease_related_dbs_mondo": {
+      "label": "Cross referenced disease DBs in Mondo",
+      "description": "Number of entries linked to Mondo in each of approx. 70 disease related databases from database cross reference in Mondo",
+      "api": "https://togodx.dbcls.jp/human/breakdown/disease_related_dbs_mondo",
+      "order": "numerical_desc",
+      "dataset": "mondo",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Mondo Disease Ontology (Mondo)",
+          "url": "https://mondo.monarchinitiative.org/",
+          "version": "v2023-03-01",
+          "updated": "2023-03-01"
+        }
+      ]
+    },
+    "disease_phenotypic_abnormality_hpo": {
+      "label": "Phenotypic abnormality",
+      "description": "Classification the subcategories of the Phenotypic abnormality categories of the Human Phenotype Ontology (HPO)",
+      "api": "https://togodx.dbcls.jp/human/breakdown/disease_phenotypic_abnormality_hpo",
+      "order": "numerical_desc",
+      "dataset": "hp",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Human Phenotype Ontology (HPO)",
+          "url": "https://hpo.jax.org/app/browse/term/HP:0000118",
+          "version": "2023-01-27",
+          "updated": "2023-01-27"
+        }
+      ]
+    },
+    "variant_gwas_togovar": {
+      "label": "GWAS",
+      "description": "Classification of statistically significant variants in genome-wide association studies (GWAS) based on associated traits. Obtained from GWAS catalog via TogoVar",
+      "api": "https://togodx.dbcls.jp/human/breakdown/variant_gwas_togovar",
+      "order": "numerical_desc",
+      "dataset": "togovar",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "GWAS Catalog All associations ",
+          "url": "https://www.ebi.ac.uk/gwas/docs/file-downloads",
+          "version": "2023-03-29",
+          "updated": "2023-03-29"
+        }
+      ]
+    },
+    "variant_clinical_significance_togovar": {
+      "label": "Clinical significance",
+      "description": "Classification of variants according to their clinical significance, such as whether they are the cause of the disease or not. Obtained from ClinVar via TogoVar",
+      "api": "https://togodx.dbcls.jp/human/breakdown/variant_clinical_significance_togovar",
+      "order": "numerical_desc",
+      "dataset": "togovar",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "ClinVar",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/clinsig/",
+          "version": "N/A",
+          "updated": "2023-03-06"
         }
       ]
     }
