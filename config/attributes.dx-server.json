@@ -101,7 +101,8 @@
         "disease_diseases_mesh",
         "disease_diseases_nando",
         "disease_related_dbs_mondo",
-        "disease_phenotypic_abnormality_hpo"
+        "disease_phenotypic_abnormality_hpo",
+        "disease_inheritance_hpo"
       ]
     },
     {
@@ -1015,7 +1016,7 @@
     },
     "disease_diseases_mondo": {
       "label": "Diseases in Mondo",
-      "description": "Subcategories in the Disease or disorder category in the Mondo Disease Ontology (Mondo)",
+      "description": "Subcategories in the Disease or disorder category in Mondo Disease Ontology (Mondo)",
       "api": "https://togodx.dbcls.jp/human/breakdown/disease_diseases_mondo",
       "order": "numerical_desc",
       "dataset": "mondo",
@@ -1047,7 +1048,7 @@
     },
     "disease_diseases_nando": {
       "label": "Diseases in NANDO",
-      "description": "Japanese rare and intractable disease categories in the Nanbyo Disease Ontology (NANDO)",
+      "description": "Japanese rare and intractable disease categories in Nanbyo Disease Ontology (NANDO)",
       "api": "https://togodx.dbcls.jp/human/breakdown/disease_diseases_nando",
       "order": "numerical_desc",
       "dataset": "nando",
@@ -1079,8 +1080,24 @@
     },
     "disease_phenotypic_abnormality_hpo": {
       "label": "Phenotypic abnormality",
-      "description": "Classification the subcategories of the Phenotypic abnormality categories of the Human Phenotype Ontology (HPO)",
+      "description": "Subcategories of the Phenotypic abnormality category in Human Phenotype Ontology (HPO)",
       "api": "https://togodx.dbcls.jp/human/breakdown/disease_phenotypic_abnormality_hpo",
+      "order": "numerical_desc",
+      "dataset": "hp",
+      "datamodel": "classification",
+      "source": [
+        {
+          "label": "Human Phenotype Ontology (HPO)",
+          "url": "https://hpo.jax.org/app/browse/term/HP:0000005",
+          "version": "2023-01-27",
+          "updated": "2023-01-27"
+        }
+      ]
+    },
+    "disease_inheritance_hpo": {
+      "label": "Mode of inheritance",
+      "description": "Classification of the Mode of inheritance in Human Phenotype Ontology (HPO)",
+      "api": "https://togodx.dbcls.jp/human/breakdown/disease_inheritance_hpo",
       "order": "numerical_desc",
       "dataset": "hp",
       "datamodel": "classification",
