@@ -1099,7 +1099,7 @@
       "description": "Classification of the Mode of inheritance in Human Phenotype Ontology (HPO)",
       "api": "https://togodx.dbcls.jp/human/breakdown/disease_inheritance_hpo",
       "order": "numerical_desc",
-      "dataset": "hp",
+      "dataset": "mondo",
       "datamodel": "classification",
       "source": [
         {
