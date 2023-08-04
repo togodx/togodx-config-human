@@ -1,5 +1,6 @@
 {
   "TEMPLATES": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/config/templates.json",
   "BACKEND": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/config/backend.dx-server.json",
-  "ATTRIBUTES": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/config/attributes.dx-server.json"
+  "ATTRIBUTES": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/config/attributes.dx-server.json",
+  "PRESET": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/config/preset.json"
 }
