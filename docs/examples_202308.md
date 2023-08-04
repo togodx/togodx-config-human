@@ -12,7 +12,7 @@
 - ACE2およびTMPRSS2が、肺や小腸を構成する細胞の細胞膜表面で高発現することを手がかりに、類似した発現状況を示す遺伝子・タンパク質を標的とする医薬品(候補)がどのぐらい開発されているのかについて網羅的に調べてみます。
 
 ### 探索条件とその意図
-- この検索条件の再現
+- [この検索条件を再現するための設定ファイル](https://github.com/togodx/togodx-config-human/blob/develop/docs/togodx-preset_example_case1.json)
 #### Select target dataset
 - `UniProt`
     - 最終的に出力したいのはタンパク質のIDリストなので、タンパク質DBである`UniProt`を選択 
