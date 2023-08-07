@@ -1,7 +1,7 @@
 [
   {
     "label": "Default set",
-    "description": "This set contains sample attributes for all categories including Gene, Proteins, Structure, Interaction, Compound, Glycan, Disease and Variant.",
+    "description": "This set contains selected attributes from all categories including Gene, Proteins, Structure, Interaction, Compound, Glycan, Disease and Variant.",
     "attributeSet": [
       "gene_biotype_ensembl",
       "gene_chromosome_ensembl",
