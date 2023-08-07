@@ -58,10 +58,6 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
 - [データセット間のIDリンク関係](https://togodx.github.io/togodx-path/path-highlight-2022-11.html)
 
 ## 更新履歴
-- 2023.08.07
-    - UI更新
-    - 属性(Attribute)追加
-    - データ更新 
 - 2023.01.11 [データ更新](https://dbcls.rois.ac.jp/ja/2023/01/11/post1.html) (v2023-01)
   - データ更新
     - Ensembl (human release 108)
