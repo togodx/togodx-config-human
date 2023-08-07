@@ -1,7 +1,7 @@
 [
   {
     "label": "Default set",
-    "description": "Display sample attributes for all categories including Gene, Proteins, Structure, Interaction, Compound, Glycan, Disease and Variant.",
+    "description": "This set contains sample attributes for all categories including Gene, Proteins, Structure, Interaction, Compound, Glycan, Disease and Variant.",
     "attributeSet": [
       "gene_biotype_ensembl",
       "gene_chromosome_ensembl",
@@ -30,8 +30,8 @@
     ]
   },
   {
-    "label": "Selected set for genes & diseases",
-    "description": "Display attributes for Gene, Protein and Disease categolies.",
+    "label": "Featured set for genes & diseases",
+    "description": "This set contains attributes of categories that are specialized to explore the relationship between genes, proteins and diseases.",
     "attributeSet": [
       "gene_biotype_ensembl",
       "gene_chromosome_ensembl",
@@ -55,7 +55,7 @@
   },
   {
     "label": "All set",
-    "description": "Display all attributes.",
+    "description": "This set contains all attributes in TogoDX/Human.",
     "attributeSet": [
       "gene_biotype_ensembl",
       "gene_chromosome_ensembl",
