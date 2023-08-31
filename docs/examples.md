@@ -16,7 +16,7 @@
 #### Select target dataset
 - `UniProt`
     - 最終的に出力したいのはタンパク質のIDリストなので、タンパク質DBである`UniProt`を選択 
-#### Add filters
+#### Filtering
 
 - `Gene` / `Tissue-specific high expression (HPA)` / `Lung`
     - [The Human Protein Atlas project(HPA)](https://www.proteinatlas.org/) (ヒトの細胞、組織、臓器に存在するすべてのヒトタンパク質を様々なオミックス技術を統合してマッピングするプロジェクト)で得られた37組織中で、「Lung(肺)」に高発現が認められた遺伝子(236個)
@@ -29,7 +29,7 @@
 - `Compound` / `Drug indication` / `Infections`
     - ChEMBLの化合物に対して、MeSH(Medical Subject Headings)シソーラスを用いた薬剤適応疾患の分類の中で、「Infections(感染)」に対する適応が認められている化合物(2,041個)
 
-#### Map attributes
+#### Projection
 - `Structure` / `Structure data existence` 
     - UniProtの各エントリーに付与されている、PDBにおけるタンパク質立体構造データの有無を区別して検索できます。同じタンパク質でも異なる条件で立体構造を取得されている場合があります。
 - `Compound` / `Max drug development phase` 
@@ -72,36 +72,37 @@
 
 #### Select target dataset
 - `Ensembl gene`
-    - 遺伝子ごとに情報をまとめたリストを作成したいので、遺伝子DBである`Ensembl gene`を選択
+  - 遺伝子ごとに情報をまとめたリストを作成したいので、遺伝子DBである`Ensembl gene`を選択
+
 #### Filtering
-* `Protein` / `Disease-related proteins`
-  * Retinitis pigmentosa（網膜色素変性症）
-  * Congenital stationary night blindness（先天停止性夜盲）
-  * Cone-rod dystrophy（錐体桿体ジストロフィー）
-  * Leber congenital amaurosis（レーバー先天黒内障
-* `Gene` / `Tissue-specific high expression (HPA)`
-  * Retina（網膜）
-* `Gene` / `Ortholog existence`
-  * Zebrafish (Danio rerio)
-      * ゼブラフィッシュを網膜疾患のモデル生物と想定して、オーソログが存在することを条件として指定
+- `Protein` / `Disease-related proteins`
+  - Retinitis pigmentosa（網膜色素変性症）
+  - Congenital stationary night blindness（先天停止性夜盲）
+  - Cone-rod dystrophy（錐体桿体ジストロフィー）
+  - Leber congenital amaurosis（レーバー先天黒内障
+- `Gene` / `Tissue-specific high expression (HPA)`
+  - Retina（網膜）
+- `Gene` / `Ortholog existence`
+  - Zebrafish (Danio rerio)
+    - ゼブラフィッシュを網膜疾患のモデル生物と想定して、オーソログが存在することを条件として指定
 
 #### Projection
-* `Compound` / `Max drug development phase`
-    * 関連する化合物を抽出する
-* `Disease` / `Phenotypic abnormality`
-    * 関連する表現型を抽出する
+- `Compound` / `Max drug development phase`
+  - 関連する化合物を抽出する
+- `Disease` / `Phenotypic abnormality`
+  - 関連する表現型を抽出する
 
 ### 結果とその考察
 #### 結果
-* 指定した疾患に関連するヒト遺伝子で、ゼブラフィッシュにもオーソログが存在する42の遺伝子が得られた。
+- 指定した疾患に関連するヒト遺伝子で、ゼブラフィッシュにもオーソログが存在する42の遺伝子が得られた。
 
 #### 得られたリストの解釈例
-* 結果として得られた遺伝子群が持つ表現型の解釈
-    * Resultを押すと結果が一覧されるが、その上部でヒット率のヒスとグラムが表示される。その中でも、”Abnormality of the eye”のヒット率が群を抜いており、抽出された遺伝子群の表現型として、目に何かしらの異常を及ぼす事が示唆される。
+- 結果として得られた遺伝子群が持つ表現型の解釈
+  - Resultを押すと結果が一覧されるが、その上部でヒット率のヒスとグラムが表示される。その中でも、”Abnormality of the eye”のヒット率が群を抜いており、抽出された遺伝子群の表現型として、目に何かしらの異常を及ぼす事が示唆される。
 ![]()
 
-* 結果として得られた遺伝子群と関連するタンパク質と相互作用する可能性のある化合物の解釈
-   * 結果として得られる化合物は935あるが、このうち、第IV相試験(製造販売後臨床試験)に達している化合物は46件である。関連する遺伝子が多くまた表現型も多様なため、得られた化合物が疾患に対して有効かはどうかを判定することは難しいが、少なくともCHEMBL91 (Miconazole) については、上記参考文献の実験でも網膜色素変性症に対し神経保護剤として有効であるという結果が出ている。
+- 結果として得られた遺伝子群と関連するタンパク質と相互作用する可能性のある化合物の解釈
+  - 結果として得られる化合物は935あるが、このうち、第IV相試験(製造販売後臨床試験)に達している化合物は46件である。関連する遺伝子が多くまた表現型も多様なため、得られた化合物が疾患に対して有効かはどうかを判定することは難しいが、少なくともCHEMBL91 (Miconazole) については、上記参考文献の実験でも網膜色素変性症に対し神経保護剤として有効であるという結果が出ている。
 
 
 ---
@@ -113,7 +114,7 @@
 ### 探索条件とその意図
 #### Select target dataset
 - `ChEMBL compound`
-    - Map your IDsに入れるIDのデータベースを選択する
+  - Map your IDsに入れるIDのデータベースを選択する
 
 #### Map your IDｓ
 - Fluoxetine hydrochloride (ChEMBL: CHEMBL1201082)」フルオキセチンをMapする
@@ -121,14 +122,15 @@
 #### Filtering
 Mapされた結果から、興味のあるカテゴリーを選択してFilteringを行う
 - `Disease` / `Phenotypic abnormality`/`Abnormality of the nervous system`
-    - フルオキセチンが関連する表現型を選択する
+  - フルオキセチンが関連する表現型を選択する
 - `Disease` / `Disease in Mondo`/`Human disease`
-    - フルオキセチンが関連する疾患名を選択する
+  - フルオキセチンが関連する疾患名を選択する
 - `Gene` / `Gene biotype`/`protein cording`
-    - フルオキセチンが関連んする遺伝子を選択する
+  - フルオキセチンが関連んする遺伝子を選択する
+
 #### Projection
 - `protein`/`Disease-related proteins`
-    - 複数Mapされているので、比率を見るためにProjectionを利用する
+  - 複数Mapされているので、比率を見るためにProjectionを利用する
 - [この検索条件の再現]
 
 ### 結果とその考察
@@ -136,11 +138,11 @@ Mapされた結果から、興味のあるカテゴリーを選択してFilterin
 フルオキセチンをキーとして、関連する疾患(4)、表現型(5)、遺伝子(16）、たんぱく質（16）の情報が得られた。
 
 #### 得られたリストの解釈例
-* 結果として得られた関連疾患及び表現型について
-    * フルオキセチンに関連する表現型はすべて「Abnormality of the nervous system」でHitする。その結果、フルオキセチンが神経伝達の異常に対して何かしらの作用をもたらすことがわかる。関連疾患としては「抑うつ症状」が見られる疾患を抽出しているため、フルオキセチンが「抑うつ症状」に作用をもたらすと考えられる。
+- 結果として得られた関連疾患及び表現型について
+  - フルオキセチンに関連する表現型はすべて「Abnormality of the nervous system」でHitする。その結果、フルオキセチンが神経伝達の異常に対して何かしらの作用をもたらすことがわかる。関連疾患としては「抑うつ症状」が見られる疾患を抽出しているため、フルオキセチンが「抑うつ症状」に作用をもたらすと考えられる。
 
-* 結果として得られた関連遺伝子を考察する
-    * 遺伝学的研究により、うつ症状と関連する可能性のある遺伝子や遺伝子変異がいくつか特定されており、これらの遺伝子は、脳内の神経伝達物質の調節や神経回路の機能に関与していることが多い。特にセロトニン、ドーパミン、ノルアドレナリンなどの神経伝達物質に関連する遺伝子がうつ症状と関連していることが示唆されている。結果として得られた遺伝子リストの中には、SLC6A4遺伝子（セロトニントランスポーター遺伝子）、HTR1A遺伝子（セロトニン1A 受容体(または5-HT 1A受容体)）等、「抑うつ症状」に深く関わると思われる遺伝子が含まれている。 
-    * MDD, PMDDの論文の中で、「選択的セロトニン再取り込み阻害薬（SSRI）」の利用を推奨しており、フルオキセチンはSSRIの一つである。MDD及びPMDDの特徴的な症状の一つとして「抑うつ症状」が含まれており、抑うつ症状の発生にセロトニンが大きく関与するため、SSRIを用いる事で症状の軽減が期待できる。MDDもPMDDも精神障害であり「抑うつ症状」がその特徴の一つとなっている。そのため、フルオキセチンは「抑うつ症状の改善」に対して、効果が見られたものと考察できる。
+- 結果として得られた関連遺伝子を考察する
+  - 遺伝学的研究により、うつ症状と関連する可能性のある遺伝子や遺伝子変異がいくつか特定されており、これらの遺伝子は、脳内の神経伝達物質の調節や神経回路の機能に関与していることが多い。特にセロトニン、ドーパミン、ノルアドレナリンなどの神経伝達物質に関連する遺伝子がうつ症状と関連していることが示唆されている。結果として得られた遺伝子リストの中には、SLC6A4遺伝子（セロトニントランスポーター遺伝子）、HTR1A遺伝子（セロトニン1A 受容体(または5-HT 1A受容体)）等、「抑うつ症状」に深く関わると思われる遺伝子が含まれている。 
+  - MDD, PMDDの論文の中で、「選択的セロトニン再取り込み阻害薬（SSRI）」の利用を推奨しており、フルオキセチンはSSRIの一つである。MDD及びPMDDの特徴的な症状の一つとして「抑うつ症状」が含まれており、抑うつ症状の発生にセロトニンが大きく関与するため、SSRIを用いる事で症状の軽減が期待できる。MDDもPMDDも精神障害であり「抑うつ症状」がその特徴の一つとなっている。そのため、フルオキセチンは「抑うつ症状の改善」に対して、効果が見られたものと考察できる。
 
 
