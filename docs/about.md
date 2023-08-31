@@ -58,15 +58,32 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
 - [データセット間のIDリンク関係](https://togodx.github.io/togodx-path/path-highlight-2022-11.html)
 
 ## 更新履歴
-- 2023.08.07
-    - UI更新・追加
-        - 表示するAttributeの選択機能
-            - presetの新設
-        - 深い階層のTermを検索可能なオントロジーブラウザ
-        - Filterを組み合わせた探索結果をプレビューできる機能
-        - JSONファイルによる探索条件の保存・共有機能
-    - 属性(Attribute)追加
-    - データ更新
+- 2023.09.01 [TogoDX/Human v1\.2を公開]()
+  - UI更新・追加 (v1.2)
+    - 表示するAttributeを取捨選択できる機能およびPresetの新設
+    - 深い階層のTermを検索可能なオントロジーブラウザ
+    - Filterを組み合わせた探索結果をプレビューできる機能
+    - JSONファイルによる探索条件の保存・共有機能
+  - 属性(Attribute)追加(v2023-09)
+      - Disease
+        - Mode of inheritance
+  - データ更新(v2023-09)
+    - ATC (2022AB) 
+    - ChEBI (Release 219)
+    - ChEMBL (CHEMBL32)
+    - ClinVar (2023-03-06 updated)
+    - Ensembl (human release 109)
+    - GWAS Catalog (2023-03-29  updated)
+    - HPO (2023-01-27)
+    - MEDGEN (2023-03-14)
+    - MeSH (2023-03-07 updated)
+    - Mondo Disease Ontology (v2023-03-01)
+    - NANDO (1.0.0)
+    - PubChem (1.8.0 beta)
+    - Rhea (release 126)
+    - UBERON (2023-03-15)
+    - UniProt (release 2023_01)
+    - PDB (2023-03-15 updated) 
 - 2023.01.11 [データ更新](https://dbcls.rois.ac.jp/ja/2023/01/11/post1.html) (v2023-01)
   - データ更新
     - Ensembl (human release 108)
@@ -111,9 +128,9 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
         - MeSH (2022-09-20 updated)
         - GWAS Catalog All associations (2022-09-20 updated)
         - ClinVar (2022-09-01 updated)     
-- 2022.06.20 [TogoDX/human v1\.1を公開](http://dbcls.rois.ac.jp/ja/2022/06/20/post1.html)
+- 2022.06.20 [TogoDX/Human v1\.1を公開](http://dbcls.rois.ac.jp/ja/2022/06/20/post1.html)
     - アプリケーションの操作性向上を目的として様々な技術的な調整を行い、v1.0と比較して約1000倍の高速化を実現
-    - TogoDX/humanで使用されているデータセット間のIDの対応関係を掲載
+    - TogoDX/Humanで使用されているデータセット間のIDの対応関係を掲載
     - ”# of alpha-helices”、”# of beta-sheets” のオリジナルデータをPDBからUniProtに変更し、単量体における”Rate of helical regions”、”Rate of beta strand regions”にそれぞれ変更
 - 2021.10.05 [TogoDX/Human (v1.0)を公開](http://dbcls.rois.ac.jp/ja/2021/10/05/post1.html) 
 
