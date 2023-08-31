@@ -68,7 +68,7 @@
 網膜色素変性症は指定難病の一つで治療方法も確立していないが、研究アプローチとしてモデル生物（ゼブラフィッシュ）を用いた薬剤候補スクリーニング実験が考えられる([参考文献](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8425951/))。ここでは、網膜色素変性症およびそれに関連する表現型に着目した場合のデータ探索を行う。
 
 ### 探索条件とその意図
-- この検索条件の再現
+- [この検索条件を再現するための設定ファイル](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/togodx-preset_example_case2.json)
 
 #### Select target dataset
 - `Ensembl gene`
@@ -109,9 +109,13 @@
 ## Case 3: ドラッグリポジショニングの例からその薬剤の適応疾患について類似性等を比較する
 ##### 更新履歴
  - 2023-07-25作成
+  
 ### 目的・背景
 「Fluoxetine hydrochloride (ChEMBL: CHEMBL1201082)」フルオキセチンは、当初 "Major Depressive Disorder (MDD)"用の薬として利用されていたが、その後　”premenstrual syndrome(PMS), Premenstrual dysphoric disorder (PMDD)"にも適用されるようになった。なお、現在も両方の疾患の治療薬としても用いられている。TogoDXにおいて、フルオキセチンについて網羅的に探索し、どうしてリポジショニングが可能だったのかを考察する。
+
 ### 探索条件とその意図
+- [この検索条件を再現するための設定ファイル](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/togodx-preset_example_case3.json)
+
 #### Select target dataset
 - `ChEMBL compound`
   - Map your IDsに入れるIDのデータベースを選択する
@@ -123,19 +127,18 @@
 Mapされた結果から、興味のあるカテゴリーを選択してFilteringを行う
 - `Disease` / `Phenotypic abnormality`/`Abnormality of the nervous system`
   - フルオキセチンが関連する表現型を選択する
-- `Disease` / `Disease in Mondo`/`Human disease`
+- `Disease` / `Disease in Mondo`/`human disease`
   - フルオキセチンが関連する疾患名を選択する
-- `Gene` / `Gene biotype`/`protein cording`
-  - フルオキセチンが関連んする遺伝子を選択する
+- `Gene` / `Gene biotype`/`protein coding`
+  - フルオキセチンが関連する遺伝子を選択する
 
 #### Projection
 - `protein`/`Disease-related proteins`
   - 複数Mapされているので、比率を見るためにProjectionを利用する
-- [この検索条件の再現]
 
 ### 結果とその考察
 #### 結果
-フルオキセチンをキーとして、関連する疾患(4)、表現型(5)、遺伝子(16）、たんぱく質（16）の情報が得られた。
+フルオキセチンをキーとして、関連する疾患(4)、表現型(5)、遺伝子(16）、タンパク質（16）の情報が得られた。
 
 #### 得られたリストの解釈例
 - 結果として得られた関連疾患及び表現型について
