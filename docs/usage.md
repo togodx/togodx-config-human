@@ -85,7 +85,7 @@
 - `Condition builder`の`Clear`ボタンをクリックすると検索条件が初期化されます。
 
 ### IDのリンク関係
-![ID relations](https://raw.githubusercontent.com/togodx/togodx-path/main/figures/path-highlight-2022-11.png)
+![ID relations](https://raw.githubusercontent.com/togodx/togodx-path/main/figures/path-highlight-2023-09.png)
 
 - [TogoDX/Humanで使用されているデータセット間のIDリンク関係の図](https://togodx.github.io/togodx-path/path-highlight-2022-11.html)
 - [IDリンク関係の表](https://github.com/togodx/togodx-path/blob/main/tsv/dataset-links-2023-07.tsv)
