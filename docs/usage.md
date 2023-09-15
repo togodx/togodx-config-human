@@ -6,7 +6,7 @@
 - ![Figure1](https://raw.githubusercontent.com/togodx/togodx-path/main/figures/path-highlight-2023-09.png)
 - 図1. TogoDX/Humanに含まれるデータセットおよびAttributeの関係図
   - 大きな丸は対象となるデータセットを表しており、それらの間にID変換のためのリンクが張られている。 四角形はAttributeを示しており、繋がっているデータセットのIDをキーとしている。8種類の色は、データセットもしくはAttributeが属するカテゴリーを表している。 この図は、多様なAttributeがキーとなっているID間のリンクを通じて、統合されていることを示している。
-  - [TogoDX/Humanで使用されているデータセット間のIDリンク関係の図](https://togodx.github.io/togodx-path/path-highlight-2022-11.html)
+  - [TogoDX/Humanで使用されているデータセット間のIDリンク関係の図](https://togodx.github.io/togodx-path/index-2023-07.html)
  
 
 ## トップページの構成とAttributeの操作
