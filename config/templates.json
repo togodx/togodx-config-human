@@ -10,7 +10,7 @@
     "ensembl_gene": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ensembl.hbs",
     "ensembl_transcript": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ensembl.hbs",
     "glytoucan": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/glytoucan.hbs",
-    "hp": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/hp.hbs",
+    "hp_phenotype": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/hp.hbs",
     "mesh": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/mesh.hbs",
     "mondo": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/mondo.hbs",
     "nando": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/nando.hbs",
