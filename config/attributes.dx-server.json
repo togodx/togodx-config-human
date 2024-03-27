@@ -787,8 +787,8 @@
         {
           "label": "Reactome",
           "url": "https://reactome.org/download-data",
-          "version": "N/A",
-          "updated": "2023-12--04"
+          "version": "V87",
+          "updated": "2023-12-04"
         }
       ]
     },
@@ -803,8 +803,8 @@
         {
           "label": "Reactome",
           "url": "https://reactome.org/download-data",
-          "version": "N/A",
-          "updated": "2023-12--04"
+          "version": "V87",
+          "updated": "2023-12-04"
         }
       ]
     },
