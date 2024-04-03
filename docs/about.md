@@ -58,6 +58,21 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
 - [データセット間のIDリンク関係](https://togodx.github.io/togodx-path/path-highlight-2022-11.html)
 
 ## 更新履歴
+- 2024.04.3 データ更新
+  - データ更新
+    - Ensembl (human release 111)
+    - UniProt (release 2024_01)
+    - PDB (2023-10-20 updated)
+    - neXtProt (Release 2023-09-11)
+    - ChEMBL (CHEMBL33)
+    - PubChem (Ver:2024-02-20)
+    - ChEBI (Release 231)
+    - GlyCosmos (v3.4.0)
+    - Mondo Disease Ontology (v2024-03-04)
+    - MeSH (2023-12-19 updated)
+    - HPO (2024-02-08 updated)
+    - GWAS Catalog All associations (2023-05-09 updated)
+    - ClinVar (2024-02-07 updated)
 - 2023.09.01 [TogoDX/Human v1\.2を公開]()
   - UI更新・追加 (v1.2)
     - 表示するAttributeを取捨選択できる機能およびPresetの新設
