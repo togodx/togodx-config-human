@@ -3,9 +3,10 @@
 - DBCLSではこれまでに、様々な生命科学データを統一されたフォーマット（RDF形式）で集約したポータルサイト、[RDF Portal](https://rdfportal.org/)の構築を行ってきました。これを利用することで、これまで個別に公開されていた遺伝子、タンパク質、立体構造、相互作用、化合物、糖鎖、疾患、バリアントを含む8つのカテゴリーに関わる20のデータベースから、65のAttributeを収集しました（2023年8月現在）。
 - 収集した各Attributeは遺伝子IDや化合物IDといったそれぞれ個別のデータセットIDで整理されており、これらのデータの統合探索を実現するために、システム内では随時データセット間でID変換を行っています。
 - ID変換に用いられるデータセット間のリンクは、生命科学のデータセット間のIDの関係を収録したID変換サービス、[TogoID](https://togoid.dbcls.jp/)のデータに基づいて構築されており、各データセットペアにおいて適切な変換経路を設定しています(図1)。
-- ![Figure1](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20230802_fig1.png)
+- ![Figure1](https://raw.githubusercontent.com/togodx/togodx-path/main/figures/path-highlight-2023-09.png)
 - 図1. TogoDX/Humanに含まれるデータセットおよびAttributeの関係図
   - 大きな丸は対象となるデータセットを表しており、それらの間にID変換のためのリンクが張られている。 四角形はAttributeを示しており、繋がっているデータセットのIDをキーとしている。8種類の色は、データセットもしくはAttributeが属するカテゴリーを表している。 この図は、多様なAttributeがキーとなっているID間のリンクを通じて、統合されていることを示している。
+  - [TogoDX/Humanで使用されているデータセット間のIDリンク関係の図](https://togodx.github.io/togodx-path/index-2023-07.html)
  
 
 ## トップページの構成とAttributeの操作
@@ -84,10 +85,8 @@
 - 上部にある`TogoDX`のロゴをクリックすることでも、初期設定に戻ります。
 - `Condition builder`の`Clear`ボタンをクリックすると検索条件が初期化されます。
 
-### IDのリンク関係
-![ID relations](https://raw.githubusercontent.com/togodx/togodx-path/main/figures/path-highlight-2022-11.png)
 
-- [TogoDX/Humanで使用されているデータセット間のIDリンク関係の図](https://togodx.github.io/togodx-path/path-highlight-2022-11.html)
-- [IDリンク関係の表](https://github.com/togodx/togodx-path/blob/main/tsv/dataset-links-2023-07.tsv)
+
+
 
 
