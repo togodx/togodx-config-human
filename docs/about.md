@@ -58,7 +58,7 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
 - [データセット間のIDリンク関係](https://togodx.github.io/togodx-path/path-highlight-2022-11.html)
 
 ## 更新履歴
-- 2024.04.3 データ更新
+- 2024.04.03 データ更新
   - データ更新
     - Ensembl (human release 111)
     - UniProt (release 2024_01)
