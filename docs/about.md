@@ -59,7 +59,7 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
 
 ## 更新履歴
 - 2024.04.3 データ更新
-  - データ更新
+  - データ更新(v2024-04)
     - Ensembl (human release 111)
     - UniProt (release 2024_01)
     - PDB (2023-10-20 updated)
