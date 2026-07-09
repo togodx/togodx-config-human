@@ -5,19 +5,19 @@
     "https://togostanza.github.io/metastanza/pagination-table.js"
   ],
   "templates": {
-    "chebi": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/chebi.hbs",
-    "chembl_compound": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/chembl_compound.hbs",
-    "ensembl_gene": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ensembl.hbs",
-    "ensembl_transcript": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ensembl.hbs",
-    "glytoucan": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/glytoucan.hbs",
-    "hp_phenotype": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/hp.hbs",
-    "mesh": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/mesh.hbs",
-    "mondo": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/mondo.hbs",
-    "nando": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/nando.hbs",
-    "ncbigene": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/ncbigene.hbs",
-    "pdb": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/pdb.hbs",
-    "pubchem_compound": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/pubchem_compound.hbs",
-    "togovar": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/togovar.hbs",
-    "uniprot": "https://raw.githubusercontent.com/togodx/togodx-config-human/develop/templates/uniprot.hbs"
+    "chebi": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/chebi.hbs",
+    "chembl_compound": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/chembl_compound.hbs",
+    "ensembl_gene": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/ensembl.hbs",
+    "ensembl_transcript": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/ensembl.hbs",
+    "glytoucan": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/glytoucan.hbs",
+    "hp_phenotype": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/hp.hbs",
+    "mesh": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/mesh.hbs",
+    "mondo": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/mondo.hbs",
+    "nando": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/nando.hbs",
+    "ncbigene": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/ncbigene.hbs",
+    "pdb": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/pdb.hbs",
+    "pubchem_compound": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/pubchem_compound.hbs",
+    "togovar": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/togovar.hbs",
+    "uniprot": "https://cdn.jsdelivr.net/gh/togodx/togodx-config-human@HEAD/templates/uniprot.hbs"
   }
 }
