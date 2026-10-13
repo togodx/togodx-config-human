@@ -1,92 +1,89 @@
-# TogoDX/Humanの使い方
-## 統合データ探索の原理
-- DBCLSではこれまでに、様々な生命科学データを統一されたフォーマット（RDF形式）で集約したポータルサイト、[RDF Portal](https://rdfportal.org/)の構築を行ってきました。これを利用することで、これまで個別に公開されていた遺伝子、タンパク質、立体構造、相互作用、化合物、糖鎖、疾患、バリアントを含む8つのカテゴリーに関わる20のデータベースから、65のAttributeを収集しました（2023年8月現在）。
-- 収集した各Attributeは遺伝子IDや化合物IDといったそれぞれ個別のデータセットIDで整理されており、これらのデータの統合探索を実現するために、システム内では随時データセット間でID変換を行っています。
-- ID変換に用いられるデータセット間のリンクは、生命科学のデータセット間のIDの関係を収録したID変換サービス、[TogoID](https://togoid.dbcls.jp/)のデータに基づいて構築されており、各データセットペアにおいて適切な変換経路を設定しています(図1)。
+English | [日本語](usage_ja.md)
+
+# How to use TogoDX/Human
+## Principle of integrated data exploration
+- DBCLS has been building [RDF Portal](https://rdfportal.org/), a portal site that brings together a variety of life science data in a unified format (RDF). Using it, we collected 65 attributes from 20 databases, which had so far been published separately, covering 8 categories: genes, proteins, 3D structures, interactions, compounds, glycans, diseases and variants (as of August 2023).
+- Each collected attribute is organized by the IDs of its own dataset, such as gene IDs or compound IDs. To enable the integrated exploration of these data, the system converts IDs between datasets whenever necessary.
+- The links between datasets used for ID conversion are built on the data of [TogoID](https://togoid.dbcls.jp/), an ID conversion service that stores the relations between IDs of life science datasets, and an appropriate conversion route is set for each pair of datasets (Figure 1).
 - ![Figure1](https://raw.githubusercontent.com/togodx/togodx-path/main/figures/path-highlight-2023-09.png)
-- 図1. TogoDX/Humanに含まれるデータセットおよびAttributeの関係図
-  - 大きな丸は対象となるデータセットを表しており、それらの間にID変換のためのリンクが張られている。 四角形はAttributeを示しており、繋がっているデータセットのIDをキーとしている。8種類の色は、データセットもしくはAttributeが属するカテゴリーを表している。 この図は、多様なAttributeがキーとなっているID間のリンクを通じて、統合されていることを示している。
-  - [TogoDX/Humanで使用されているデータセット間のIDリンク関係の図](https://togodx.github.io/togodx-path/index-2023-07.html)
+- Figure 1. Relations between the datasets and attributes included in TogoDX/Human
+  - Large circles represent the target datasets, and the links for ID conversion are drawn between them. Rectangles represent attributes, which are keyed by the IDs of the dataset they are connected to. The eight colors represent the category that a dataset or attribute belongs to. This figure shows that the diverse attributes are integrated through the links between the IDs that serve as their keys.
+  - [Diagram of the ID link relations between the datasets used in TogoDX/Human](https://togodx.github.io/togodx-path/index-2023-07.html)
  
 
-## トップページの構成とAttributeの操作
+## Layout of the top page and working with attributes
 - ![Figure2](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20230802_fig2.png)
-  - 図2.　TogoDX/Humanのトップページから俯瞰できる各Attributeの分布や内訳
-- Explorer画面(トップページ)では、遺伝子発現パターン、タンパク質の局在などの特徴あるアノテーションを`"Attribute"`として表現しています(図2)。
-- 初期状態ではあらかじめ選択された代表的なAttributeのみが表示されていますが、カテゴリー毎にAttributeを追加したり、Attributeのプリセットを選択することでユーザーに即したAttributeをカスタマイズして表示することが可能になっており、カスタマイズした情報はブラウザに記憶されます(図2A)。
-- 各Attributeは、項目の構成（内訳）の100%積み上げグラフで表現されており、ユーザーは全データを俯瞰しながら興味あるAttributeを用いてデータを絞り込んだり、データセット全体のうちアノテーションされていない割合を把握することができます。
-  - Attributeは展開表示することが可能となっており、階層分類の場合はカラムブラウザが表示され、下位階層での分布を確認することができ(図2B)、連続値分布の場合はヒストグラム表示による直感的な分布の確認が可能です(図2C)。
+  - Figure 2. Distribution and breakdown of each attribute, as overviewed from the top page of TogoDX/Human
+- On the Explorer screen (top page), characteristic annotations such as gene expression patterns and protein localization are represented as `"Attributes"` (Figure 2).
+- In the initial state only a preselected set of representative attributes is displayed, but you can customize the displayed attributes to suit your needs by adding attributes per category or by selecting an attribute preset. The customization is remembered by your browser (Figure 2A).
+- Each attribute is shown as a 100% stacked chart of the composition (breakdown) of its items, so that you can narrow down the data with the attributes you are interested in while getting an overview of all the data, and see what proportion of the whole dataset is not annotated.
+  - Attributes can be expanded. For a hierarchical classification, a column browser is displayed in which you can check the distribution in the lower levels (Figure 2B); for a distribution of continuous values, a histogram lets you check the distribution intuitively (Figure 2C).
 
-## 絞り込みによるデータ探索とその結果の取得
-- 対象とするデータセットを `"Select target dataset"` から選択します(図2D)。
-   - 選択したデータセットを軸としたIDリンクを用いて、データ探索が行われます。
-- `"Filtering"` では、各Attributeの分類や値を選択することでデータの絞り込み条件を設定でき、条件を満たすデータセットのIDリストを取得することができます(図2E)。
-   - カラムブラウザからは下位階層を絞り込み条件に追加することができます(図2B)。
-   - ヒストグラムからは範囲を選択することで、絞り込み条件に追加することができます(図2C)。
- - `"Projection"` では、Filteringで絞り込まれたデータセットIDに対し、興味のあるAttribute階層をマッピングすることで、IDリストにおける分布を調べることができます(図2F)。
-    - これによって新たな発見やデータ解釈の可能性を高めることができます。
- - FilteringやProjectionの操作を行うと、画面下方に条件を満たすデータセットIDのプレビューの表が現れ、条件を追加するごとに随時カラムが追加されます。
- - 表上部の矢印アイコン、もしくは`"View results"`をクリックすることでResults画面に切り替わります(図2G)。
+## Exploring data by narrowing down, and obtaining the results
+- Select the dataset you want to target from `"Select target dataset"` (Figure 2D).
+   - The data exploration is carried out using the ID links centered on the selected dataset.
+- In `"Filtering"`, you can set the conditions for narrowing down the data by selecting the classifications or values of each attribute, and obtain the list of IDs of the dataset that satisfy the conditions (Figure 2E).
+   - From the column browser, you can add lower levels to the narrowing-down conditions (Figure 2B).
+   - From the histogram, you can add a range to the narrowing-down conditions by selecting it (Figure 2C).
+ - In `"Projection"`, you can examine the distribution within the ID list by mapping the attribute hierarchies you are interested in onto the dataset IDs narrowed down by Filtering (Figure 2F).
+    - This increases the chances of new discoveries and of new interpretations of the data.
+ - When you perform Filtering or Projection, a preview table of the dataset IDs that satisfy the conditions appears at the bottom of the screen, and a column is added each time you add a condition.
+ - Clicking the arrow icon at the top of the table, or `"View results"`, switches to the Results screen (Figure 2G).
 - ![Figure3](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20230802_fig3.png)
-  - 図3.　`"Filtering"`および`"Projection"`機能を用いた絞り込みによるデータ探索結果の例
-- `"Results"` 画面では、絞り込み条件に合致する対象データセットIDの一覧と、Filteringに用いたAttribute情報およびProjectionで指定したAttributeの内訳を表として閲覧できます(図3)。
-- 表の上部には、検索結果の内訳のグラフが表示され、視覚的に分布状況を知ることができます(図3A)。
-    - 各内訳の総数における絞り込み条件を満たすIDの数、その割合(%)、絞り込み条件を満たすIDの実数に表示を切り替えることで、分布や偏りを評価することができます。
-- 各セルに表示されるデータセットIDをクリックすることで、そのIDに関連する詳細なアノテーション情報を確認できます(図3B)。
-- 探索結果はTSVファイルとしてダウンロードすることができるので、[JupyterLab](https://jupyterlab.readthedocs.io/)や[Google Colaboratory](https://colab.research.google.com/) などの解析環境を利用し、さらに詳細なデータ解析を行うことができます(図3C)。
-- TogoDX/Humanの検索条件はJSON形式ファイルとして入出力可能で、他のユーザーと共有して再現することができます。
+  - Figure 3. Example of the results of a data exploration narrowed down with the `"Filtering"` and `"Projection"` functions
+- On the `"Results"` screen, you can view as a table the list of target dataset IDs that match the narrowing-down conditions, together with the information on the attributes used for Filtering and the breakdown of the attributes specified for Projection (Figure 3).
+- Above the table, charts of the breakdown of the search results are displayed, so that you can see the distribution visually (Figure 3A).
+    - You can evaluate the distribution and bias by switching the display between the number of IDs satisfying the conditions out of the total of each item, its percentage (%), and the actual number of IDs satisfying the conditions.
+- Clicking a dataset ID shown in a cell lets you check the detailed annotation information related to that ID (Figure 3B).
+- The exploration results can be downloaded as a TSV file, so that you can carry out more detailed data analysis in analysis environments such as [JupyterLab](https://jupyterlab.readthedocs.io/) or [Google Colaboratory](https://colab.research.google.com/) (Figure 3C).
+- Search conditions in TogoDX/Human can be exported and imported as a JSON file, and shared with other users to reproduce the search.
 
-### 〈この操作によるデータ探索の例〉
-#### 「類似した発現状況を示す遺伝子・タンパク質を標的とする医薬品の開発状況を調べる」
-- 複雑な検索条件をひとつのアプリケーションで実現できるのがTogoDX/Humanの特長の一つです。
-- この例では、以下の条件を満たすヒトのタンパク質の一覧を取得します。
-   - ① 肺または腸で組織特異的に高い遺伝子発現が確認
-   - ② タンパク質として細胞膜表面に局在
-   - ③ 何らかのタンパク質と化合物の直接の相互作用を検出する方法のデータが存在
-   - ④ 「感染」に対する薬効がある化合物に関わる
-- ①〜④ の検索条件を各Attributeから探してfiltering条件として追加するだけで、すべての条件を満たす97個のタンパク質のIDリストが得られます(図3)。
-- 続いて、Projection機能を使って、絞り込みで得られたタンパク質群が他のAttributeや階層の一部分においてどのような分布を示すかを調べることができます。
-- この例では、以下の条件に基づく分類 を行っています。
-  - ⑤ [PDB](https://www.wwpdb.org/)におけるタンパク質立体構造データの有無
-  - ⑥ [ChEMBL](https://www.ebi.ac.uk/chembl/)におけるすべての適応症における化合物の最高の開発段階（研究段階、第1-3相、上市後）
+### 〈Example of a data exploration with these operations〉
+#### "Investigate the development status of drugs targeting genes/proteins that show a similar expression pattern"
+- One of the features of TogoDX/Human is that complex search conditions can be realized within a single application.
+- In this example, we obtain the list of human proteins that satisfy the following conditions.
+   - ① Tissue-specific high gene expression has been observed in the lung or intestine
+   - ② As a protein, it is localized on the plasma membrane
+   - ③ Data exist from a method that detects a direct interaction between the protein and some compound
+   - ④ It is related to a compound that is effective against "infections"
+- Simply by finding the search conditions ①–④ in the attributes and adding them as filtering conditions, you obtain an ID list of the 97 proteins that satisfy all the conditions (Figure 3).
+- Next, with the Projection function you can examine how the group of proteins obtained by narrowing down is distributed in other attributes or in parts of their hierarchies.
+- In this example, the proteins are classified by the following conditions.
+  - ⑤ Whether protein 3D structure data exist in [PDB](https://www.wwpdb.org/)
+  - ⑥ The maximum development phase of the compound across all indications in [ChEMBL](https://www.ebi.ac.uk/chembl/) (research stage, Phase 1–3, post-marketing)
 
-## IDマッピングによるデータ俯瞰
+## Overviewing data by ID mapping
 - ![Figure4](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20230802_fig4.png)
-  - 図4.　IDマッピングによるデータ俯瞰の例
-- `"Map your IDs"` では、ユーザーの持つIDリストを入力することで各Attributeに対して簡易的なエンリッチメント解析を行うことが可能です。
-- IDリストをテキストエリアに入力しSubmitする(図4A)と、各AttributeごとにID変換が行われ、それぞれの内訳に対応するIDの数とp値が計算されます(図4B)。
-- 対応するIDを含む内訳にはピンが表示され、また該当するIDが含まれない内訳はグレーアウトされ、分布や偏りを視覚的に確認することができます。また、絞り込みのためのFilterの一つとして利用することも可能です。
+  - Figure 4. Example of overviewing data by ID mapping
+- With `"Map your IDs"`, you can perform a simple enrichment analysis against each attribute by entering your own ID list.
+- When you enter an ID list in the text area and submit it (Figure 4A), the IDs are converted for each attribute, and the number of IDs corresponding to each item and its p-value are calculated (Figure 4B).
+- Items that contain corresponding IDs are marked with a pin, and items that contain none are grayed out, so that you can check the distribution and bias visually. The mapping can also be used as one of the filters for narrowing down.
 
-### 〈この操作によるデータ探索の例〉
-#### COSMICに収載されているがんとの因果関係が示唆されている変異を含む遺伝子の分布や偏りを調べる
-- [COSMIC (Catalogue Of Somatic Mutations In Cancer)](https://cancer.sanger.ac.uk/cosmic/) はがんと関連する体細胞変異の情報を集積したデータベースです。
-  - このデータベースでは、[Cancer Gene Census（CGC）](https://cancer.sanger.ac.uk/census/)と呼ばれるがんとの因果関係が示唆されている変異を含む遺伝子のカタログを作成しています。
-  - そのうち、[Tier 2グループ](https://cancer.sanger.ac.uk/cosmic/census?tier=2)はがんにおける役割が強く示唆されているが、利用可能なエビデンスが不足している158の遺伝子が含まれています。
-- これらは、TogoDX/Human上における Ensembl gene ID のMap your IDsの実行例として `"Try"` ボタンから利用可能です(図4A)。
-- 例えば、この158遺伝子がどの組織で特異的に高発現しているかの分類をすぐに確認することができます(図4B)
-- また、Gene Ontologyを使って分子機能別に分類することも容易です(図4C)。
+### 〈Example of a data exploration with these operations〉
+#### Examine the distribution and bias of genes listed in COSMIC that contain mutations suggested to be causally related to cancer
+- [COSMIC (Catalogue Of Somatic Mutations In Cancer)](https://cancer.sanger.ac.uk/cosmic/) is a database that accumulates information on somatic mutations associated with cancer.
+  - This database maintains the [Cancer Gene Census (CGC)](https://cancer.sanger.ac.uk/census/), a catalog of genes containing mutations that have been suggested to be causally related to cancer.
+  - Among them, the [Tier 2 group](https://cancer.sanger.ac.uk/cosmic/census?tier=2) contains 158 genes whose role in cancer is strongly suggested but for which the available evidence is insufficient.
+- These are available from the `"Try"` button as an example of running Map your IDs with Ensembl gene IDs on TogoDX/Human (Figure 4A).
+- For example, you can immediately see the classification of the tissues in which these 158 genes are specifically highly expressed (Figure 4B).
+- It is also easy to classify them by molecular function using Gene Ontology (Figure 4C).
 
-## その他
+## Others
 
-### ページヘッダ
+### Page header
 
 - `About`
-  - TogoDX/Humanについての概要へのリンク
+  - Link to an overview of TogoDX/Human
 - `Help`
-  - TogoDX/Humanの用語説明や機能説明へのリンク
+  - Link to explanations of the terms and functions of TogoDX/Human
 - `Example`
-  - TogoDX/Humanの具体的な事例解説へのリンク
+  - Link to explanations of concrete use cases of TogoDX/Human
 - `Contact`
-  - TogoDX/Humanに関するお問い合わせ
+  - Inquiries about TogoDX/Human
 
-### 初期化
+### Resetting
 
-- 起動時あるいは再読み込み時には、画面が全て初期設定に戻ります。
-- 上部にある`TogoDX`のロゴをクリックすることでも、初期設定に戻ります。
-- `Condition builder`の`Clear`ボタンをクリックすると検索条件が初期化されます。
-
-
-
-
-
+- On startup or reload, the whole screen returns to its initial settings.
+- Clicking the `TogoDX` logo at the top also returns it to the initial settings.
+- Clicking the `Clear` button of the `Condition builder` resets the search conditions.
 
