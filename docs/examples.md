@@ -1,160 +1,161 @@
+English | [日本語](examples_ja.md)
+
 # Examples
-## Case 1: 類似した発現状況を示す遺伝子・タンパク質を標的とする医薬品の開発状況を調べる
+## Case 1: Investigate the development status of drugs targeting genes/proteins that show a similar expression pattern
 
-##### 更新履歴
- - 2023-03-15作成
- - 2023-03-24更新 
+##### Update history
+ - Created 2023-03-15
+ - Updated 2023-03-24
 
-### 目的
-- 肺および腸で組織特異的に高い遺伝子発現が確認され、タンパク質として細胞膜表面に局在し、また何らかのタンパク質と化合物の直接の相互作用を検出する方法のデータが存在し、さらに「感染」に対する薬効がある化合物に関わる、ヒトのタンパク質の一覧を取得する
+### Purpose
+- Obtain the list of human proteins for which tissue-specific high gene expression has been observed in the lung and intestine, which are localized on the plasma membrane as proteins, for which data exist from a method that detects a direct interaction between the protein and some compound, and which are related to compounds that are effective against "infections"
 
-### 背景
-- COVID-19を引き起こすSARS-CoV-2ウイルスが細胞内に侵入する上で重要な役割を果たすタンパク質として、ACE2やTMPRSS2が知られています。そのため、これらのタンパク質を標的とする治療法や予防法の開発が研究されています。
-    - [ACE2 (Angiotensin-converting enzyme 2)](https://www.uniprot.org/uniprotkb/Q9BYF1/)： ACE2は、SARS-CoV-2ウイルスがヒト細胞に侵入するのに必要な受容体です。この受容体は、主に肺、小腸、心臓、腎臓などの細胞表面に存在しています。SARS-CoV-2ウイルスは、ACE2に結合することで細胞内に侵入し、感染を引き起こします。
-    - [TMPRSS2 (transmembrane serine protease 2)](https://www.uniprot.org/uniprotkb/O15393/)： TMPRSS2は、SARS-CoV-2ウイルスの融合に必要なタンパク質であり、ウイルスが細胞内に侵入するのを助けます。TMPRSS2は、ACE2と同様に、主に肺や小腸などの細胞表面に存在しています。SARS-CoV-2ウイルスは、まずACE2に結合し、次にTMPRSS2によって細胞内に侵入します。
-- ACE2およびTMPRSS2が、肺や小腸を構成する細胞の細胞膜表面で高発現することを手がかりに、類似した発現状況を示す遺伝子・タンパク質を標的とする医薬品(候補)がどのぐらい開発されているのかについて網羅的に調べてみます。
+### Background
+- ACE2 and TMPRSS2 are known as proteins that play an important role when the SARS-CoV-2 virus, which causes COVID-19, enters cells. Therapies and preventive measures targeting these proteins are therefore being studied.
+    - [ACE2 (Angiotensin-converting enzyme 2)](https://www.uniprot.org/uniprotkb/Q9BYF1/): ACE2 is the receptor that the SARS-CoV-2 virus needs in order to enter human cells. This receptor is present mainly on the surface of cells of the lung, small intestine, heart, kidney and so on. The SARS-CoV-2 virus enters cells by binding to ACE2 and causes infection.
+    - [TMPRSS2 (transmembrane serine protease 2)](https://www.uniprot.org/uniprotkb/O15393/): TMPRSS2 is a protein required for the fusion of the SARS-CoV-2 virus and helps the virus enter cells. Like ACE2, TMPRSS2 is present mainly on the surface of cells of the lung, small intestine and so on. The SARS-CoV-2 virus first binds to ACE2 and then enters the cell with the help of TMPRSS2.
+- Taking as a clue the fact that ACE2 and TMPRSS2 are highly expressed on the plasma membrane of the cells that make up the lung and small intestine, we comprehensively examine how many drugs (or drug candidates) have been developed that target genes/proteins showing a similar expression pattern.
 
-### 探索条件とその意図
-- [この検索条件を再現するための設定ファイル](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/togodx-preset_example_case1.json)
+### Exploration conditions and their intent
+- [Configuration file for reproducing these search conditions](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/togodx-preset_example_case1.json)
 
 #### Select target dataset
 - `UniProt`
-    - 最終的に出力したいのはタンパク質のIDリストなので、タンパク質DBである`UniProt`を選択 
+    - Since what we finally want to output is a list of protein IDs, select `UniProt`, a protein database
   
 #### Filtering
 
 - `Gene` / `Tissue-specific high expression (HPA)` / `Lung`
-    - [The Human Protein Atlas project(HPA)](https://www.proteinatlas.org/) (ヒトの細胞、組織、臓器に存在するすべてのヒトタンパク質を様々なオミックス技術を統合してマッピングするプロジェクト)で得られた37組織中で、「Lung(肺)」に高発現が認められた遺伝子(236個)
+    - Genes found to be highly expressed in "Lung" among the 37 tissues studied in [The Human Protein Atlas project (HPA)](https://www.proteinatlas.org/), a project that maps all the human proteins in human cells, tissues and organs by integrating various omics technologies (236 genes)
 - `Gene` / `Tissue-specific high expression (HPA)` / `Intestine`
-    - HPAで得られた37組織中で、「Intestine(腸)」に高発現が認められた遺伝子(758個)
+    - Genes found to be highly expressed in "Intestine" among the 37 tissues studied in HPA (758 genes)
 - `Protein` / `cellular component` / `cellular anatomical entity` / `membrane` / `plasma membrane`
-    - ヒトの各タンパク質に[UniProtが根拠情報とともに付与したGeneOntology(GO)](https://www.uniprot.org/help/gene_ontology)のCellular component (細胞内局在)カテゴリに由来する機能アノテーション(GO term)の中で、「plasma membrane(細胞膜)」に局在することが知られているタンパク質(7,400個)
+    - Proteins known to be localized to the "plasma membrane", among the functional annotations (GO terms) in the Cellular component category of the [Gene Ontology (GO) annotations that UniProt assigns to each human protein together with their evidence](https://www.uniprot.org/help/gene_ontology) (7,400 proteins)
 - `Interaction` / `ChEMBL assay existence` / `Conf-score 9: Direct single protein target assigned`
-    -  UniProtの各エントリーに対して、そのタンパク質と化合物の直接の相互作用を検出する方法（ChEMBL assay）が存在し、さらに、アッセイとターゲットの関係に付与された[信頼度スコア](https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/chembl-data-questions#what-is-the-confidence-score)の中で、最も高い信頼度(Direct single protein target assigned)が付与されているタンパク質(3,388個)
+    -  Proteins for which, for the UniProt entry, a method that detects a direct interaction between the protein and a compound (a ChEMBL assay) exists, and for which the highest confidence (Direct single protein target assigned) among the [confidence scores](https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/chembl-data-questions#what-is-the-confidence-score) given to the relationship between assay and target has been assigned (3,388 proteins)
 - `Compound` / `Drug indication` / `Infections`
-    - ChEMBLの化合物に対して、MeSH(Medical Subject Headings)シソーラスを用いた薬剤適応疾患の分類の中で、「Infections(感染)」に対する適応が認められている化合物(2,041個)
+    - ChEMBL compounds with an indication for "Infections" in the classification of drug indications based on the MeSH (Medical Subject Headings) thesaurus (2,041 compounds)
 
 #### Projection
 - `Structure` / `Structure data existence` 
-    - UniProtの各エントリーに付与されている、PDBにおけるタンパク質立体構造データの有無を区別して検索できます。同じタンパク質でも異なる条件で立体構造を取得されている場合があります。
+    - Lets you distinguish, for each UniProt entry, whether protein 3D structure data exist in PDB. Structures of the same protein may have been determined under different conditions.
 - `Compound` / `Max drug development phase` 
-    - ChEMBLの化合物には、世界のある地域で特定の疾患/診断（適応症）の治療薬として承認されている医薬品および臨床試験プロセスで適応症を調査中の臨床候補医薬品に関する情報が含まれており、すべての適応症における化合物の最高の開発段階（研究段階、第1-3相、上市後）に基づく分類です。
+    - ChEMBL compounds include information on drugs approved for the treatment of a specific disease/diagnosis (indication) in some region of the world, and on clinical candidate drugs whose indications are being investigated in the clinical trial process. This is a classification based on the maximum development phase of the compound across all indications (research stage, Phase 1–3, post-marketing).
 
-### 結果とその考察・応用
-- `97`のタンパク質(UniProt)の一覧が得られました。
-    - 肺および腸で組織特異的に高い遺伝子発現が確認され、タンパク質として細胞膜表面に局在し、また何らかのタンパク質と化合物の直接の相互作用を検出する方法のデータが存在し、さらに「感染」に対する薬効がある化合物に関わる、ヒトのタンパク質
+### Results, discussion and applications
+- A list of `97` proteins (UniProt) was obtained.
+    - Human proteins for which tissue-specific high gene expression has been observed in the lung and intestine, which are localized on the plasma membrane as proteins, for which data exist from a method that detects a direct interaction between the protein and some compound, and which are related to compounds that are effective against "infections"
 - ![Example case-1 view results](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20230804_example_case1_viewresults.png)
 
-#### 得られたリストの解釈例
-- このリストの中には、[ACE2](https://www.uniprot.org/uniprot/Q9BYF1)や[TMPRSS2(リスト中ではTMPS2)](https://www.uniprot.org/uniprotkb/O15393/)も含まれています。
-    - SARS-CoV-2ウイルスはACE2やTMPRSS2を標的とすることが知られていますが、今回の検索方法の組み合わせで**共起した他のタンパク質との関連性を調べる**ことや、また、将来、異なるウイルスによる呼吸器・消化器系の疾患が流行した場合に、**このタンパク質のリストをそのウイルスの標的候補として検討する**きっかけになります。
-    - 実際に、SARS-CoV-2ウイルスと関連する中東呼吸器症候群コロナウイルス（MERS-CoV)が細胞に感染するときの受容体である[DPP4(Dipeptidyl peptidase 4)](https://www.uniprot.org/uniprotkb/P27487/entry)は主に肺の肺細胞、多核上皮細胞、気管支粘膜下腺細胞、腎臓と小腸の上皮細胞、および活性白血球に発現していることが知られており([ref](https://doi.org/10.1038/nature12005))、このリストに含まれています。
-- リスト中で関連が示されたタンパク質と医薬品との関係
-    - ACE2 と [RIFAMPIN: CHEMBL374478](https://www.ebi.ac.uk/chembl/compound_report_card/CHEMBL374478/)
+#### Example interpretation of the obtained list
+- This list includes [ACE2](https://www.uniprot.org/uniprot/Q9BYF1) and [TMPRSS2 (TMPS2 in the list)](https://www.uniprot.org/uniprotkb/O15393/).
+    - The SARS-CoV-2 virus is known to target ACE2 and TMPRSS2, but this list can prompt you to **examine their relation to the other proteins that co-occurred** under this combination of search conditions, or, if a respiratory or digestive disease caused by a different virus spreads in the future, to **consider this list of proteins as candidate targets of that virus**.
+    - In fact, [DPP4 (Dipeptidyl peptidase 4)](https://www.uniprot.org/uniprotkb/P27487/entry), the receptor used when the Middle East respiratory syndrome coronavirus (MERS-CoV), which is related to the SARS-CoV-2 virus, infects cells, is known to be expressed mainly in pneumocytes of the lung, multinucleated epithelial cells, bronchial submucosal gland cells, epithelial cells of the kidney and small intestine, and activated leukocytes ([ref](https://doi.org/10.1038/nature12005)), and it is included in this list.
+- Relations between proteins and drugs shown in the list
+    - ACE2 and [RIFAMPIN: CHEMBL374478](https://www.ebi.ac.uk/chembl/compound_report_card/CHEMBL374478/)
         - - ![Example case-1 ACE2](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20230804_example_case1_ACE2.png)
-        - 1965年に発見されたリファンピシンは、1971年に米国で承認され、世界保健機関（WHO）の必須医薬品リストに掲載されている医薬品です。
-        - リファンピシンは、ウイルスによる細胞の形質転換を阻害する抗ウイルス薬であり、他の現代の抗ウイルス薬と比較して非常に安価なジェネリック医薬品として広く利用されています。
-        - 最近の*in-silico*解析によって、リファンピシンがコロナウイルス疾患の治療に再利用できる最も有望な既存薬の1つであることが示されています([ref](https://doi.org/10.5501%2Fwjv.v11.i2.90))。
-    - TMPRSS2 と [CAMOSTAT: CHEMBL590799](https://www.ebi.ac.uk/chembl/compound_report_card/CHEMBL590799/)
+        - Rifampicin, discovered in 1965, was approved in the United States in 1971 and is on the World Health Organization (WHO) Model List of Essential Medicines.
+        - Rifampicin is an antiviral drug that inhibits the transformation of cells by viruses, and is widely used as a generic drug that is very inexpensive compared with other modern antiviral drugs.
+        - A recent *in-silico* analysis has shown that rifampicin is one of the most promising existing drugs that could be repurposed for the treatment of coronavirus disease ([ref](https://doi.org/10.5501%2Fwjv.v11.i2.90)).
+    - TMPRSS2 and [CAMOSTAT: CHEMBL590799](https://www.ebi.ac.uk/chembl/compound_report_card/CHEMBL590799/)
         - - ![Example case-1 TMPRSS2](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/img/20230804_example_case1_TMPRSS2.png)
-        - カモスタットは、セリンプロテアーゼ阻害剤に分類されており、TMPRSS2の発現を抑制します。
-        - カモスタットは急性膵炎などの治療薬剤として日本で開発され、すでに国内で長年にわたって処方されてきた薬剤です。安全性については十分な臨床データが蓄積されており、速やかに臨床治験を行うことが可能です。
-        - カモスタットはSARS-CoV-2の治療薬としてフェーズ3まで進んでいるほか、カテプシンB阻害剤との組合せによりSARS-CoV-2感染効率を低下させることが確認されています([ref](https://www.cell.com/molecular-therapy-family/nucleic-acids/fulltext/S2162-2531(21)00259-6))。
+        - Camostat is classified as a serine protease inhibitor and suppresses the expression of TMPRSS2.
+        - Camostat was developed in Japan as a treatment for conditions such as acute pancreatitis and has already been prescribed in Japan for many years. Sufficient clinical data on its safety have been accumulated, so clinical trials can be carried out promptly.
+        - Camostat has progressed to Phase 3 as a treatment for SARS-CoV-2, and it has also been confirmed that combining it with a cathepsin B inhibitor reduces the efficiency of SARS-CoV-2 infection ([ref](https://www.cell.com/molecular-therapy-family/nucleic-acids/fulltext/S2162-2531(21)00259-6)).
 
 ---
 
-## Case 2: 特定の疾患に関連する遺伝子をリストアップし、それらのタンパク質と相互作用する可能性のある化合物を取得する
+## Case 2: List the genes related to a specific disease and obtain the compounds that may interact with their proteins
 
-##### 更新履歴
- - 2023-07-25作成
+##### Update history
+ - Created 2023-07-25
 
-### 目的
-「網膜色素変性症」に関わるヒト遺伝子についてリストアップした後、それらのオーソログ遺伝子がゼブラフィッシュにおいて保存されているものに絞り込み、それらの表現型、タンパク質と相互作用する可能性のある化合物を調べます。
+### Purpose
+After listing the human genes involved in "retinitis pigmentosa", we narrow them down to those whose orthologous genes are conserved in zebrafish, and examine their phenotypes and the compounds that may interact with their proteins.
 
-### 背景
-網膜色素変性症は指定難病の一つで治療方法も確立していないが、研究アプローチとしてモデル生物（ゼブラフィッシュ）を用いた薬剤候補スクリーニング実験が考えられます([参考文献](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8425951/))。ここでは、網膜色素変性症およびそれに関連する表現型に着目した場合のデータ探索を行います。
+### Background
+Retinitis pigmentosa is one of the designated intractable diseases in Japan and no treatment has been established, but one possible research approach is a screening experiment for drug candidates using a model organism (zebrafish) ([reference](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8425951/)). Here we explore data focusing on retinitis pigmentosa and its related phenotypes.
 
-### 探索条件とその意図
-- [この検索条件を再現するための設定ファイル](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/togodx-preset_example_case2.json)
+### Exploration conditions and their intent
+- [Configuration file for reproducing these search conditions](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/togodx-preset_example_case2.json)
 
 #### Select target dataset
 - `Ensembl gene`
-  - 遺伝子ごとに情報をまとめたリストを作成したいので、遺伝子DBである`Ensembl gene`を選択
+  - Since we want to create a list that summarizes the information per gene, select `Ensembl gene`, a gene database
 
 #### Filtering
 - `Protein` / `Disease-related proteins`
-  - Retinitis pigmentosa（網膜色素変性症）
-  - Congenital stationary night blindness（先天停止性夜盲）
-  - Cone-rod dystrophy（錐体桿体ジストロフィー）
-  - Leber congenital amaurosis（レーバー先天黒内障
+  - Retinitis pigmentosa
+  - Congenital stationary night blindness
+  - Cone-rod dystrophy
+  - Leber congenital amaurosis
 - `Gene` / `Tissue-specific high expression (HPA)`
-  - Retina（網膜）
+  - Retina
 - `Gene` / `Ortholog existence`
   - Zebrafish (Danio rerio)
-    - ゼブラフィッシュを網膜疾患のモデル生物と想定して、オーソログが存在することを条件として指定
+    - Assuming zebrafish as a model organism for retinal diseases, the existence of an ortholog is specified as a condition
 
 #### Projection
 - `Compound` / `Max drug development phase`
-  - 関連する化合物を抽出します
+  - Extracts the related compounds
 - `Disease` / `Phenotypic abnormality`
-  - 関連する表現型を抽出します
+  - Extracts the related phenotypes
 
-### 結果とその考察
+### Results and discussion
 
-#### 結果
-- 指定した疾患に関連するヒト遺伝子で、ゼブラフィッシュにもオーソログが存在する42の遺伝子が得られました。
+#### Results
+- 42 human genes related to the specified diseases that also have an ortholog in zebrafish were obtained.
 
-#### 得られたリストの解釈例
-- 結果として得られた遺伝子群が持つ表現型の解釈
-  - Resultを押すと結果が一覧されるが、その上部でヒット率のヒストグラムが表示される。その中でも、”Abnormality of the eye”のヒット率が群を抜いており、抽出された遺伝子群の表現型として、目に何かしらの異常をおよぼす事が示唆される。
+#### Example interpretation of the obtained list
+- Interpretation of the phenotypes of the obtained group of genes
+  - Pressing Result lists the results, with histograms of the hit rates displayed above them. Among them, the hit rate of "Abnormality of the eye" stands out, suggesting that, as a phenotype, the extracted group of genes causes some abnormality of the eye.
 ![]()
-- 結果として得られた遺伝子群と関連するタンパク質と相互作用する可能性のある化合物の解釈
-  - 結果として得られる化合物は935個あるが、このうち、第IV相試験(製造販売後臨床試験)に達している化合物は46件でした。関連する遺伝子が多く、また表現型も多様なため、得られた化合物が疾患に対して有効かどうかをこの探索結果から判定することは難しいが、少なくともCHEMBL91 (Miconazole) については、上記参考文献の実験でも網膜色素変性症に対し神経保護剤として有効であるという結果が出ています。
+- Interpretation of the compounds that may interact with the proteins related to the obtained group of genes
+  - 935 compounds were obtained, of which 46 have reached Phase IV trials (post-marketing clinical trials). Because there are many related genes and the phenotypes are diverse, it is difficult to judge from these exploration results whether the obtained compounds are effective against the disease, but at least for CHEMBL91 (Miconazole), the experiments in the reference above also showed that it is effective as a neuroprotective agent against retinitis pigmentosa.
 
 
 ---
 
-## Case 3: ドラッグリポジショニングの例からその薬剤の適応疾患について類似性等を比較する
+## Case 3: Starting from an example of drug repositioning, compare the indications of the drug in terms of similarity and so on
 
-##### 更新履歴
- - 2023-07-25作成
+##### Update history
+ - Created 2023-07-25
   
-### 目的・背景
-「Fluoxetine hydrochloride (ChEMBL: CHEMBL1201082)」フルオキセチンは、当初 "Major Depressive Disorder (MDD)"用の薬として利用されていたが、その後　”premenstrual syndrome(PMS), Premenstrual dysphoric disorder (PMDD)"にも適用されるようになりました。なお、現在も両方の疾患の治療薬としても用いられています。この例では、TogoDX/Humanを使って、フルオキセチンについて網羅的に探索し、どうしてリポジショニングが可能だったのかを考察します。
+### Purpose and background
+Fluoxetine ("Fluoxetine hydrochloride (ChEMBL: CHEMBL1201082)") was initially used as a drug for "Major Depressive Disorder (MDD)", but later came to be applied also to "premenstrual syndrome (PMS), Premenstrual dysphoric disorder (PMDD)". It is still used today as a treatment for both diseases. In this example, we use TogoDX/Human to explore fluoxetine comprehensively and consider why the repositioning was possible.
 
-### 探索条件とその意図
-- [この検索条件を再現するための設定ファイル](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/togodx-preset_example_case3.json)
+### Exploration conditions and their intent
+- [Configuration file for reproducing these search conditions](https://raw.githubusercontent.com/togodx/togodx-config-human/develop/docs/togodx-preset_example_case3.json)
 
 #### Select target dataset
 - `ChEMBL compound`
-  - Map your IDsに入れるIDのデータベースを選択
+  - Select the database of the IDs to enter in Map your IDs
 
-#### Map your IDｓ
-- Fluoxetine hydrochloride (ChEMBL: CHEMBL1201082)」フルオキセチンをMapします
+#### Map your IDs
+- Map fluoxetine, "Fluoxetine hydrochloride (ChEMBL: CHEMBL1201082)"
 
 #### Filtering
-Mapされた結果から、興味のあるカテゴリーを選択してFilteringを行います
+From the mapped results, select the categories of interest and perform Filtering
 - `Disease` / `Phenotypic abnormality`/`Abnormality of the nervous system`
-  - フルオキセチンが関連する表現型を選択
+  - Select the phenotypes related to fluoxetine
 - `Disease` / `Disease in Mondo`/`human disease`
-  - フルオキセチンが関連する疾患名を選択
+  - Select the disease names related to fluoxetine
 - `Gene` / `Gene biotype`/`protein coding`
-  - フルオキセチンが関連する遺伝子を選択
+  - Select the genes related to fluoxetine
 
 #### Projection
 - `protein`/`Disease-related proteins`
-  - 複数Mapされているので、比率を見るためにProjectionを利用します
+  - Since multiple items are mapped, use Projection to see the ratios
 
-### 結果とその考察
+### Results and discussion
 
-#### 結果
-フルオキセチンをキーとして、関連する疾患(4)、表現型(5)、遺伝子(16）、タンパク質（16）の情報が得られました。
+#### Results
+With fluoxetine as the key, information was obtained on the related diseases (4), phenotypes (5), genes (16) and proteins (16).
 
-#### 得られたリストの解釈例
-- 結果として得られた関連疾患及び表現型について
-  - フルオキセチンに関連する表現型はすべて「Abnormality of the nervous system」でヒットしました。このことから、フルオキセチンが神経伝達の異常に対して何かしらの作用をもたらすことが示唆されます。関連疾患として「抑うつ症状」が見られる疾患が抽出されているため、フルオキセチンが「抑うつ症状」に作用をもたらすことが推察されます。
-- 結果として得られた関連遺伝子について
-  - 遺伝学的研究により、うつ症状と関連する可能性のある遺伝子や遺伝子変異がいくつか特定されており、これらの遺伝子は、脳内の神経伝達物質の調節や神経回路の機能に関与していることが多いです。特にセロトニン、ドーパミン、ノルアドレナリンなどの神経伝達物質に関連する遺伝子がうつ症状と関連していることが示唆されています。結果として得られた遺伝子リストの中には、SLC6A4遺伝子（セロトニントランスポーター遺伝子）、HTR1A遺伝子（セロトニン1A 受容体(または5-HT 1A受容体)）等、「抑うつ症状」に深く関わると思われる遺伝子が含まれていました。 
-  - MDDやPMDDの論文の中で、「選択的セロトニン再取り込み阻害薬（SSRI）」の利用を推奨しており、フルオキセチンはSSRIの一つです。MDD及びPMDDの特徴的な症状の一つとして「抑うつ症状」が含まれており、抑うつ症状の発生にセロトニンが大きく関与するため、SSRIを用いる事で症状の軽減が期待できます。MDDもPMDDも精神障害であり「抑うつ症状」がその特徴の一つです。そのため、フルオキセチンは「抑うつ症状の改善」に対して、効果が見られたものと考察できます。
-
+#### Example interpretation of the obtained list
+- On the related diseases and phenotypes obtained
+  - All the phenotypes related to fluoxetine were hits under "Abnormality of the nervous system". This suggests that fluoxetine has some effect on abnormalities of neurotransmission. Since diseases in which "depressive symptoms" are seen were extracted as related diseases, it can be inferred that fluoxetine acts on "depressive symptoms".
+- On the related genes obtained
+  - Genetic studies have identified several genes and genetic variants that may be associated with depressive symptoms, and these genes are often involved in the regulation of neurotransmitters in the brain and in the function of neural circuits. In particular, genes related to neurotransmitters such as serotonin, dopamine and noradrenaline have been suggested to be associated with depressive symptoms. The obtained gene list included genes that appear to be deeply involved in "depressive symptoms", such as the SLC6A4 gene (serotonin transporter gene) and the HTR1A gene (serotonin 1A receptor, or 5-HT 1A receptor).
+  - Papers on MDD and PMDD recommend the use of "selective serotonin reuptake inhibitors (SSRIs)", and fluoxetine is one of the SSRIs. "Depressive symptoms" are among the characteristic symptoms of both MDD and PMDD, and since serotonin is heavily involved in the occurrence of depressive symptoms, the use of SSRIs can be expected to relieve the symptoms. Both MDD and PMDD are mental disorders, and "depressive symptoms" are one of their features. It can therefore be considered that fluoxetine was effective in "improving depressive symptoms".
 
