@@ -60,11 +60,12 @@ Search conditions in TogoDX can be saved as a URL and shared with other users.
 - [ID link relations between datasets](https://togodx.github.io/togodx-path/path-highlight-2022-11.html)
 
 ## Update history
-- 2026.10.13 Data update
+- 2026.10.16 Data update
   - Data update
     - Ensembl (human release 115)
     - HomoloGene (release_20230517)
     - NCBI Gene (release_20230525)
+    - TogoID (2026-08-20)
     - UniProt (release 2026_01)
     - PDB (Release_20260902)
     - Reactome (V97)

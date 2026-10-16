@@ -60,11 +60,12 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
 - [データセット間のIDリンク関係](https://togodx.github.io/togodx-path/path-highlight-2022-11.html)
 
 ## 更新履歴
-- 2026.10.13 データ更新
+- 2026.10.16 データ更新
   - データ更新
     - Ensembl (human release 115)
     - HomoloGene (release_20230517)
     - NCBI Gene (release_20230525)
+    - TogoID (2026-08-20)
     - UniProt (release 2026_01)
     - PDB (Release_20260902)
     - Reactome (V97)

@@ -202,10 +202,10 @@
       "datamodel": "classification",
       "source": [
         {
-          "label": "NCBI Gene",
-          "url": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/",
-          "version": "release_20230525",
-          "updated": "2022-05-25"
+          "label": "TogoID",
+          "url": "https://togoid.dbcls.jp/",
+          "version": "2026-08-20",
+          "updated": "2026-08-20"
         }
       ]
     },
@@ -218,10 +218,10 @@
       "datamodel": "classification",
       "source": [
         {
-          "label": "NCBI Gene",
-          "url": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/",
-          "version": "release_20230525",
-          "updated": "2022-05-25"
+          "label": "TogoID",
+          "url": "https://togoid.dbcls.jp/",
+          "version": "2026-08-20",
+          "updated": "2026-08-20"
         }
       ]
     },
@@ -234,10 +234,10 @@
       "datamodel": "classification",
       "source": [
         {
-          "label": "NCBI Gene",
-          "url": "https://ftp.ncbi.nlm.nih.gov/gene/DATA/",
-          "version": "release_20230525",
-          "updated": "2022-05-25"
+          "label": "TogoID",
+          "url": "https://togoid.dbcls.jp/",
+          "version": "2026-08-20",
+          "updated": "2026-08-20"
         }
       ]
     },
