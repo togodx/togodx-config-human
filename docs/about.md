@@ -1,65 +1,87 @@
-# TogoDX とは
+English | [日本語](about_ja.md)
 
-TogoDX (Togo Data eXplorer)は、知識グラフ(Knowledge graph)化された様々なデータベースを統合的に探索するためのフレームワークです。異なるデータベースに由来する多数のデータセットを、同じものを示すIDの互換性や、異なるデータ間のつながりを整理したID関係に基づいて統合しています。TogoDXでは、データセットが持つ多様な属性(attribute)によって絞り込みを行い、データサイエンスに有用なデータを柔軟に抽出する新しい仕組みの提供を目指しています。
+# What is TogoDX?
 
-## 開発の経緯
+TogoDX (Togo Data eXplorer) is a framework for the integrated exploration of various databases that have been turned into knowledge graphs. It integrates many datasets derived from different databases, based on the compatibility of IDs that refer to the same entity and on ID relations that organize the connections between different kinds of data. TogoDX aims to provide a new mechanism for flexibly extracting data useful for data science, by narrowing down data with the diverse attributes that the datasets have.
 
-### 問題点
+## Background
 
-生命科学分野には異なる対象を取り扱う様々なデータベースがあります。これらを統合的に処理し、データサイエンスに用いるためには、以下のような問題がありました。
+### Problems
 
-#### データベースごとに異なるインターフェース
+In the life sciences there are many databases dealing with different subjects. Processing them in an integrated manner and using them for data science involved the following problems.
 
-データベースはそれぞれインターフェースが異なります。ウェブサイトへのアクセス方法、検索条件の指定方法、使われている用語などが異なるため、それぞれのデータベースの使い方を個別に調べる必要があります。扱うデータベースの数が増えるほど利用方法の調査にかかるコストは高くなります。
+#### Interfaces differ from database to database
 
-#### データベース間を繋ぐリンク情報の欠如
+Each database has its own interface. Because the way to access the website, the way to specify search conditions, and the terminology all differ, users have to learn how to use each database individually. The more databases are involved, the higher the cost of learning how to use them.
 
-複数のデータベースに収載されたデータを組み合わせるためには、意味のある対応関係（リンク情報）を整備する必要があります。外部リンクのIDが記載されていないデータベースであっても、他のデータベースを経由することで繋がる可能性があります。このためには自らリンク情報を作成する必要があり、扱うデータベースの数が増えるほどリンク構築のコストは高くなります。
+#### Lack of link information connecting databases
 
-#### データベースごとに異なる出力形式
+To combine data stored in multiple databases, meaningful correspondences (link information) have to be prepared. Even databases that do not list the IDs of external links may be connected by way of other databases. This requires users to build the link information themselves, and the more databases are involved, the higher the cost of building the links.
 
-データベースごとに用いられている出力形式は様々です。複数のデータベースに由来する異なる形式のデータを、統合的に利用できる形式に変換する作業も、取り扱うデータベースの数が増えるほどコストが高くなります。
+#### Output formats differ from database to database
 
-### 知識グラフによるデータ統合とTogoDXの開発
+The output formats used by databases vary. The work of converting data in different formats, derived from multiple databases, into a format that can be used in an integrated manner also becomes more costly as the number of databases increases.
 
-NBDC/DBCLSでは、これまでデータベース利用者に委ねられていた、これらの問題を解決するために、知識グラフによる生命科学分野のデータベース統合を進めてきました。知識グラフの技術基盤としてRDF (Resource Description Framework)を用いることで、以下のような利点を得ることができます。
+### Data integration with knowledge graphs and the development of TogoDX
 
-- 複数のデータセットが共通のURIで連結される
-- 各データとそのつながりの意味が表現できる、すなわち、知識が表現できる
+To solve these problems, which had so far been left to database users, NBDC/DBCLS has been integrating life science databases with knowledge graphs. Using RDF (Resource Description Framework) as the technical foundation of the knowledge graphs brings the following advantages.
 
-RDFによって表現されたデータは、問い合わせ言語であるSPARQLでクエリを記述することで検索・加工することができます。RDFを用いてデータベースを統合したことにより、異なるデータセットをまたいだ情報の検索や取得が可能になりました。
+- Multiple datasets are linked by common URIs
+- The meaning of each piece of data and of its connections can be expressed; in other words, knowledge can be expressed
 
-一方で、統合されたデータ量は非常に大きく複雑なものとなり、検索にはある程度専門的な知識が必要です。そこで、統合されたデータを高速に処理し、ウェブブラウザ上の操作で探索することができるTogoDXが開発されました。
+Data expressed in RDF can be searched and processed by writing queries in SPARQL, its query language. Integrating databases with RDF has made it possible to search and retrieve information across different datasets.
 
-なお、TogoDXは知識グラフを用いて統合されたデータであれば、生物学に限らずあらゆるドメインの情報を扱うことの出来る汎用的なフレームワークとなっています。
+On the other hand, the integrated data has become very large and complex, and searching it requires a certain degree of expertise. TogoDX was therefore developed to process the integrated data at high speed and to make it explorable through operations in a web browser.
 
-# TogoDX/Humanについて
+Note that TogoDX is a general-purpose framework: as long as the data is integrated with a knowledge graph, it can handle information from any domain, not only biology.
 
-## TogoDX/Humanとは
+# About TogoDX/Human
 
-TogoDX/HumanはTogoDXのフレームワークを用いて、ヒトに関するデータを統合的に探索するためのインターフェースを提供します。遺伝子、タンパク質、化合物、疾患などの情報を国内外のデータベースから収集・統合しています。本サイトは、[NBDC](https://biosciencedbc.jp/)/[DBCLS](https://dbcls.rois.ac.jp/)が開発・提供しています。
+## What is TogoDX/Human?
 
-## TogoDX/Humanの特長
+TogoDX/Human uses the TogoDX framework to provide an interface for the integrated exploration of data related to humans. It collects and integrates information on genes, proteins, compounds, diseases and more from databases in Japan and abroad. This site is developed and provided by [NBDC](https://biosciencedbc.jp/)/[DBCLS](https://dbcls.rois.ac.jp/).
 
-TogoDX/Humanでは、これまで多種多様なデータベースに散在して収録されてきたヒトに関する情報をワンストップで探索することができます。現在、21個のデータセットに由来する50個の属性(各データセットから抽出されたattribute)が利用可能です。
+## Features of TogoDX/Human
 
-## 使い方
+TogoDX/Human lets you explore, in one place, information on humans that has so far been scattered across a wide variety of databases. Currently, 50 attributes (attributes extracted from each dataset) derived from 21 datasets are available.
 
-TogoDXは、全データを俯瞰しながらデータを探索する使い方と、自分のデータをIDとしてマッピングする使い方があり、その結果がさらなる解析につながるようなフレームワークを目指しています。
+## How to use
 
-- 利用者の目的や興味に応じて、各属性の階層分類または連続値分布の一部を選択することにより、それらの条件を満たす結果（該当するタンパク質のリストなど）を取得できるため、研究対象の絞り込みに応用できます。
-- また、利用者の持つIDリスト（実験から得られた遺伝子のリストなど）を入力することで、各属性における分布を俯瞰的に把握したり、他の属性における想定外の繋がりや偏りから、実験結果の解釈や考察の一助となります。
-- さらに、絞り込んだ結果については、そのIDに関連する情報が容易に確認できるほか、属性情報をダウンロードしてさらなる統合解析に利用することができます。
+TogoDX can be used in two ways: exploring data while getting an overview of all the data, and mapping your own data as IDs. It aims to be a framework whose results lead to further analysis.
 
-TogoDXの検索条件はURLとして保存可能で、他のユーザーと共有することができます。
+- By selecting part of the hierarchical classification or of the distribution of continuous values of each attribute according to your purpose and interests, you can obtain the results that satisfy those conditions (such as a list of matching proteins), which can be applied to narrowing down research targets.
+- By entering your own ID list (such as a list of genes obtained from an experiment), you can get an overview of its distribution in each attribute, and unexpected connections or biases in other attributes can help you interpret and discuss your experimental results.
+- For the narrowed-down results, you can easily check the information related to each ID, and download the attribute information to use it in further integrated analysis.
 
-- [使い方の詳細についてはこちら](https://togodx.github.io/togodx-config-human/usage.html)
-- [具体的な利用事例はこちら](https://togodx.github.io/togodx-config-human/examples.html)
-- [データセット間のIDリンク関係](https://togodx.github.io/togodx-path/path-highlight-2022-11.html)
+Search conditions in TogoDX can be saved as a URL and shared with other users.
 
-## 更新履歴
-- 2024.04.03 データ更新
-  - データ更新
+- [Details on how to use TogoDX/Human](https://togodx.github.io/togodx-config-human/usage.html)
+- [Concrete use cases](https://togodx.github.io/togodx-config-human/examples.html)
+- [ID link relations between datasets](https://togodx.github.io/togodx-path/path-highlight-2022-11.html)
+
+## Update history
+- 2026.10.16 Data update
+  - Data update
+    - Ensembl (human release 115)
+    - HomoloGene (release_20230517)
+    - NCBI Gene (release_20230525)
+    - TogoID (2026-08-20)
+    - UniProt (release 2026_01)
+    - PDB (Release_20260902)
+    - Reactome (V97)
+    - ChEMBL (CHEMBL36)
+    - ChEBI (Release 244)
+    - PubChem (2026-05-06 updated)
+    - GlyCosmos (2026-03-17 updated)
+    - Mondo Disease Ontology (2026-08-04 updated)
+    - MeSH (2025)
+    - NANDO (2026-05-29 updated)
+    - HPO (2026-06-23 updated)
+    - GWAS Catalog All associations (2025-11-12 updated)
+    - ClinVar (2026-07-02 updated)
+  - Because neXtProt has been discontinued, the attributes "Isoform specific GO existence" and "Isoform specific interaction existence" (Protein) were discontinued, and the data source of "Evidence of existence" was switched from neXtProt to UniProt.
+- 2024.04.03 Data update
+  - Data update
     - Ensembl (human release 111)
     - UniProt (release 2024_01)
     - PDB (2023-10-20 updated)
@@ -73,16 +95,16 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
     - HPO (2024-02-08 updated)
     - GWAS Catalog All associations (2023-05-09 updated)
     - ClinVar (2024-02-07 updated)
-- 2023.09.01 [TogoDX/Human v1\.2を公開]()
-  - UI更新・追加 (v1.2)
-    - 表示するAttributeを取捨選択できる機能およびPresetの新設
-    - 深い階層のTermを検索可能なオントロジーブラウザ
-    - Filterを組み合わせた探索結果をプレビューできる機能
-    - JSONファイルによる探索条件の保存・共有機能
-  - 属性(Attribute)追加(v2023-09)
+- 2023.09.01 [TogoDX/Human v1\.2 released]()
+  - UI updates and additions (v1.2)
+    - Added the ability to choose which attributes to display, and introduced presets
+    - Ontology browser that can search for terms deep in the hierarchy
+    - Preview of the results of an exploration that combines filters
+    - Saving and sharing of exploration conditions as JSON files
+  - Attribute added (v2023-09)
       - Disease
         - Mode of inheritance
-  - データ更新(v2023-09)
+  - Data update (v2023-09)
     - ATC (2022AB) 
     - ChEBI (Release 219)
     - ChEMBL (CHEMBL32)
@@ -99,8 +121,8 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
     - UBERON (2023-03-15)
     - UniProt (release 2023_01)
     - PDB (2023-03-15 updated) 
-- 2023.01.11 [データ更新](https://dbcls.rois.ac.jp/ja/2023/01/11/post1.html) (v2023-01)
-  - データ更新
+- 2023.01.11 [Data update](https://dbcls.rois.ac.jp/ja/2023/01/11/post1.html) (v2023-01)
+  - Data update
     - Ensembl (human release 108)
     - UniProt (release 2022_05)
     - PDB (2022-12-14 updated)
@@ -112,8 +134,8 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
     - HPO (2022-12-15 updated)
     - GWAS Catalog All associations (2022-12-16 updated)
     - ClinVar (2022-12-01 updated)
-- 2022.11.11 [新規Attribute追加およびデータ更新](https://dbcls.rois.ac.jp/ja/2022/11/11/post1.html) (v2022-11)
-    - 14種類の属性(Attribute)を追加
+- 2022.11.11 [New attributes and data update](https://dbcls.rois.ac.jp/ja/2022/11/11/post1.html) (v2022-11)
+    - Added 14 attributes
         - Gene
             - Ortholog existence
             - Biological process
@@ -131,8 +153,8 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
             - \# of turn structures
             - \# of disulfide bonds
             - Rate of disorder regions 
-    - 探索の起点となるID(target dataset)として “Ensembl transcript” を追加
-    - データ更新
+    - Added "Ensembl transcript" as an ID from which to start an exploration (target dataset)
+    - Data update
         - Ensembl (human release 107)
         - UniProt (release 2022_03)
         - PDB (2022-09-28 updated)
@@ -143,23 +165,23 @@ TogoDXの検索条件はURLとして保存可能で、他のユーザーと共�
         - MeSH (2022-09-20 updated)
         - GWAS Catalog All associations (2022-09-20 updated)
         - ClinVar (2022-09-01 updated)     
-- 2022.06.20 [TogoDX/Human v1\.1を公開](http://dbcls.rois.ac.jp/ja/2022/06/20/post1.html)
-    - アプリケーションの操作性向上を目的として様々な技術的な調整を行い、v1.0と比較して約1000倍の高速化を実現
-    - TogoDX/Humanで使用されているデータセット間のIDの対応関係を掲載
-    - ”# of alpha-helices”、”# of beta-sheets” のオリジナルデータをPDBからUniProtに変更し、単量体における”Rate of helical regions”、”Rate of beta strand regions”にそれぞれ変更
-- 2021.10.05 [TogoDX/Human (v1.0)を公開](http://dbcls.rois.ac.jp/ja/2021/10/05/post1.html) 
+- 2022.06.20 [TogoDX/Human v1\.1 released](http://dbcls.rois.ac.jp/ja/2022/06/20/post1.html)
+    - Made various technical adjustments to improve the usability of the application, making it about 1,000 times faster than v1.0
+    - Published the ID correspondences between the datasets used in TogoDX/Human
+    - Changed the original data of "# of alpha-helices" and "# of beta-sheets" from PDB to UniProt, and changed them to "Rate of helical regions" and "Rate of beta strand regions" in the monomer, respectively
+- 2021.10.05 [TogoDX/Human (v1.0) released](http://dbcls.rois.ac.jp/ja/2021/10/05/post1.html) 
 
-# 推奨ブラウザ
-- Google Chrome (最新版)
-- Mozilla Firefox　(最新版)
-- Microsoft Edge　(最新版)
-- Apple Safari　(最新版)
+# Recommended browsers
+- Google Chrome (latest version)
+- Mozilla Firefox (latest version)
+- Microsoft Edge (latest version)
+- Apple Safari (latest version)
 
-# ファンディング
+# Funding
 
-このサービスは、NBDCのライフサイエンスデータベース統合推進事業の一環として開発されました。
+This service was developed as part of the Life Science Database Integration Project of NBDC.
 
-# サイトポリシー
+# Site policy
 
-- [DBCLSのサイトポリシー](http://dbcls.rois.ac.jp/policy.html)に準ずる。
+- This site follows the [DBCLS site policy](http://dbcls.rois.ac.jp/policy.html).
 
